@@ -1035,6 +1035,34 @@ table tbody tr td {
             }
           }
         }
+        &.upload_file {
+          label {
+            margin-bottom: 1rem;
+          }
+          .upload_file_label {
+            background-color: #f5f8fa;
+            border: 1px dashed #d1d3d6;
+            width: 100%;
+            text-align: center;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 0;
+            cursor: pointer;
+            svg {
+              color: $PrimaryColor;
+              font-size: 2.5rem;
+            }
+            p {
+              font-family: "semibold";
+              color: #5f666f;
+              margin: 1.5rem 0 0.5rem !important;
+            }
+            span {
+              font-family: "semibold";
+              color: #5f666f;
+            }
+          }
+        }
       }
     }
 
