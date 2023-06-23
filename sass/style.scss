@@ -1,0 +1,1132 @@
+$PrimaryColor: #06797E;
+$SecondColor: #e4aa3c;
+$PrimaryText: #011c1e;
+$SecondText: #828C8D;
+
+@font-face {
+  font-family: "light";
+  src: url("../fonts/alfont_com_Somar-Light.otf");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("../fonts/alfont_com_Somar-Regular.otf");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url("../fonts/alfont_com_Somar-Medium.otf");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("../fonts/alfont_com_Somar-Bold.otf");
+}
+
+@import "./_layout.scss";
+@import "./_auth.scss";
+
+body {
+  overflow-x: hidden;
+  direction: rtl;
+}
+
+.accordion-button {
+  text-align: start !important;
+}
+
+.chart-container {
+  height: 70vh;
+  width: 100%;
+  position: relative;
+}
+
+table tbody tr td {
+  vertical-align: middle;
+}
+
+.swal2-title {
+  font-family: "semibold";
+  font-size: 0.9rem !important;
+  margin: 0 !important;
+  color: $PrimaryText;
+}
+
+.swal2-html-container {
+  font-family: "regular";
+  font-size: 0.8rem !important;
+  width: 90% !important;
+  margin: 1rem auto 0 !important;
+  color: #596364;
+
+  img {
+    width: 40%;
+  }
+
+  .view_department {
+    font-family: "medium";
+    color: #fff;
+    background-color: $PrimaryColor;
+    margin: 1rem auto 0;
+    display: block;
+    width: 70%;
+    font-size: 0.8rem;
+    padding: 0.75rem;
+    border-color: transparent;
+    transition: 0.7s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: $PrimaryColor;
+      border: 1px solid $PrimaryColor;
+      transition: 0.7s ease-in-out;
+    }
+  }
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+  padding: 1.5rem;
+}
+
+.show_project_swal {
+  background-color: $PrimaryColor;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "semibold";
+  padding: 0.75rem 2rem;
+  margin-top: 1rem;
+}
+
+.show_project_swal {
+  &:active,
+  &:focus {
+    background-color: $PrimaryColor;
+    border-color: transparent;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "semibold";
+    padding: 0.75rem 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.show_project_swal:hover {
+  border-color: transparent;
+  background-color: $PrimaryColor;
+  color: #fff;
+}
+
+.index_cards {
+  // padding: 0;
+  // background-color: #fff;
+  // width: 100%;
+  // position: relative;
+
+  div.dataTables_wrapper div.dataTables_filter input {
+    margin-inline-start: 1rem;
+  }
+
+  div.dataTables_wrapper div.dataTables_length select {
+    margin: 0 0.5rem;
+  }
+
+  .dataTables_length,
+  .dataTables_filter,
+  .dataTables_info,
+  .dataTables_paginate {
+    font-family: "regular";
+  }
+
+  .dataTables_paginate {
+    .pagination {
+      .page-link {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .dataTables_info,
+  .dataTables_length,
+  .dataTables_filter {
+    font-size: 0.8rem;
+  }
+
+  .active > .page-link,
+  .page-link.active {
+    background-color: $PrimaryColor;
+    border-color: $PrimaryColor;
+  }
+
+  .pagination {
+    --bs-pagination-border-radius: 0;
+  }
+
+  .title_head {
+    font-family: "semibold";
+    color: $PrimaryText;
+    margin-bottom: 0;
+  }
+
+  .form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #06797E;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+  }
+
+  .btn {
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: transparent;
+    }
+  }
+  .PrimaryButton {
+    background-color: $PrimaryColor;
+    color: #fff;
+    font-family: "semibold";
+    font-size: .8rem;
+    padding: .75rem 5rem;
+    transition: .7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: $PrimaryColor;
+      border: 1px solid $PrimaryColor;
+      transition: .7s ease-in-out;
+    }
+  }
+
+  .content {
+    background-color: #fff;
+    padding: 5rem 1rem;
+    min-height: 100vh;
+    height: 100%;
+
+    .title_section {
+      font-family: "semibold";
+      color: $PrimaryText;
+      margin-bottom: 2rem;
+    }
+
+    .btn_title_page {
+      font-family: "semibold";
+      background-color: $PrimaryColor;
+      color: #fff;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      margin-bottom: 2rem;
+      padding: 0.75rem 1.5rem;
+      transition: 0.7s ease-in-out;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        transition: 0.7s ease-in-out;
+      }
+    }
+
+    .empty {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+
+      h6 {
+        color: #102b21;
+        margin: 1rem 0;
+        font-family: "semibold";
+      }
+
+      p {
+        color: #828282;
+        font-family: "semibold";
+        width: 30%;
+        font-size: 0.8rem;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .btn {
+        background-color: $PrimaryColor;
+        color: #fff;
+        font-family: "semibold";
+        font-size: 0.8rem;
+        padding: 0.75rem 2.5rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+      }
+
+      img {
+        width: 20%;
+      }
+    }
+
+    .nav-pills {
+      width: 30%;
+      padding-inline-end: 5%;
+
+      h4 {
+        font-family: "medium";
+        color: $PrimaryText;
+      }
+
+      p {
+        font-family: "regular";
+        color: $SecondText;
+        font-size: 0.8rem;
+      }
+
+      .nav-link {
+        font-family: "regular";
+        color: #b0b9b9;
+        text-align: start;
+        padding: 1rem 1rem;
+        border-radius: 0;
+
+        svg {
+          color: #b0b9b9;
+          padding-inline-end: 1rem;
+        }
+
+        &.active {
+          background-color: rgba(228, 170, 60, 0.1);
+          color: $PrimaryText;
+
+          svg {
+            color: $SecondColor;
+          }
+        }
+      }
+    }
+
+    .welcome {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+        font-family: "semibold";
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+
+        lottie-player {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .new_job {
+        font-family: "semibold";
+        background-color: $PrimaryColor;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 0.75rem 1.5rem;
+        float: left;
+      }
+
+      .edit_btn {
+        font-family: "semibold";
+        background-color: $PrimaryColor;
+        color: #fff;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 0.75rem 1.5rem;
+        margin-inline-start: 1rem;
+        float: left;
+      }
+
+      .delete_btn {
+        font-family: "semibold";
+        border-color: $PrimaryColor;
+        color: $PrimaryColor;
+        background-color: transparent;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 0.75rem 1.5rem;
+        float: left;
+      }
+
+      .modal {
+        .modal-dialog {
+          max-width: 45%;
+          font-family: "regular";
+          font-size: 0.8rem;
+
+          .modal-header {
+            border-bottom: none;
+
+            .modal-title {
+              margin-bottom: 0;
+              font-size: 1rem;
+
+              span {
+                margin-inline-start: 1rem;
+              }
+            }
+          }
+
+          table {
+            margin-top: 2rem !important;
+
+            td {
+              font-family: "regular";
+              color: $PrimaryText;
+              font-size: 0.8rem;
+            }
+
+            .title {
+              font-family: "semibold";
+              font-size: 0.9rem;
+            }
+
+            .menu {
+              font-size: 1rem;
+
+              .dropdown-toggle::after {
+                content: none;
+              }
+
+              .dropdown-item {
+                font-size: 0.8rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .orders {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+
+      h5 {
+        font-family: "medium";
+        color: $PrimaryText;
+        margin-bottom: 0;
+      }
+
+      .dropdown {
+        .dropdown-toggle {
+          &::after {
+            content: unset;
+          }
+        }
+
+        .dropdown-menu {
+          .dropdown-item {
+            font-family: "regular";
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .card_order {
+        background-color: #fafafa;
+        width: 48%;
+        margin-top: 1rem;
+        margin-inline-end: 1.5%;
+        border-radius: 6px;
+        display: inline-block;
+        padding: 1rem;
+
+        .title {
+          font-family: "medium";
+          color: $PrimaryText;
+          font-size: 0.9rem;
+          margin-bottom: 0;
+        }
+
+        .status {
+          padding: 0.25rem 0.5rem;
+          color: $PrimaryColor;
+          background-color: rgba(5, 138, 148, 0.08);
+          font-family: "regular";
+          font-size: 0.8rem;
+        }
+
+        .position {
+          font-family: "regular";
+          color: #b0b9b9;
+          font-size: 0.8rem;
+        }
+
+        .details {
+          margin-top: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+
+          .price,
+          .time,
+          .posted {
+            svg {
+              color: $PrimaryText;
+              margin-inline-end: 0.5rem;
+            }
+
+            span {
+              color: $SecondText;
+              font-family: "regular";
+              font-size: 0.8rem;
+            }
+          }
+        }
+
+        .description {
+          margin: 1rem 0;
+          font-family: "regular";
+          color: #596364;
+          font-size: 0.8rem;
+        }
+
+        .job_applicants {
+          display: flex;
+          align-items: center;
+          font-size: 0.8rem;
+
+          svg {
+            color: $SecondText;
+            margin-inline-end: 0.5rem;
+          }
+
+          span {
+            color: $SecondText;
+            font-family: "regular";
+            margin-bottom: 0;
+            margin-inline-end: 0.5rem;
+          }
+
+          p {
+            color: $PrimaryText;
+            font-family: "medium";
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .employment_rate {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      margin: 1rem 0;
+
+      h5 {
+        font-family: "medium";
+        color: $PrimaryText;
+        margin-bottom: 0;
+      }
+
+      .dropdown {
+        .dropdown-toggle {
+          background-color: rgba(143, 146, 161, 0.05);
+          font-family: "regular";
+          font-size: 0.8rem;
+        }
+
+        .dropdown-menu {
+          .dropdown-item {
+            font-size: 0.8rem;
+            font-family: "regular";
+          }
+        }
+      }
+    }
+
+    .departments {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      display: inline-flex;
+      flex-direction: column;
+
+      .dropdown-toggle::after {
+        content: none;
+      }
+
+      .dropdown-item {
+        font-size: 0.8rem;
+        text-align: start;
+        font-family: "regular";
+      }
+
+      .card_department {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        .title {
+          font-family: "medium";
+          color: $PrimaryText;
+          margin-bottom: 0;
+        }
+
+        .tag {
+          font-family: "regular";
+          color: $SecondText;
+          font-size: 0.8rem;
+        }
+
+        .circle {
+          background-color: $SecondColor;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.8rem;
+          font-family: "regular";
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .add_department {
+        border: 1px solid $PrimaryColor;
+        color: $PrimaryColor;
+        text-decoration: none;
+        font-family: "regular";
+        width: 100%;
+        display: block;
+        padding: 0.75rem;
+        font-size: 0.8rem;
+        border-radius: 5px;
+        text-align: center;
+        transition: 0.7s ease-in-out;
+        margin-top: auto;
+        height: auto;
+
+        &:hover {
+          background-color: $PrimaryColor;
+          color: #fff;
+          transition: 0.7s ease-in-out;
+        }
+      }
+    }
+
+    .visitors_year {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+
+      .number_visitor_year {
+        p {
+          margin-bottom: 0;
+          font-family: "medium";
+          color: #171717;
+          font-size: 1.2rem;
+        }
+
+        span {
+          font-family: "regular";
+          color: #8f92a1;
+          font-size: 0.8rem;
+        }
+      }
+
+      .increase {
+        color: $SecondColor;
+        font-family: "regular";
+
+        svg {
+          margin-inline-end: 0.5rem;
+        }
+      }
+    }
+
+    .emplyees_locations {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      margin: 1rem 0;
+
+      h5 {
+        font-family: "medium";
+        color: $PrimaryText;
+        margin-bottom: 0;
+      }
+
+      img {
+        width: 90%;
+        height: 380px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .statistics {
+        width: 90%;
+        margin: 0 auto;
+
+        .increase {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 2rem;
+          margin-bottom: 3rem;
+
+          .customers {
+            p {
+              margin-bottom: 0;
+              font-family: "regular";
+              color: #171717;
+              font-size: 1.4rem;
+            }
+
+            span {
+              font-family: "regular";
+              color: #8f92a1;
+              font-size: 0.8rem;
+            }
+          }
+
+          .increase_number {
+            color: $PrimaryColor;
+            font-family: "regular";
+          }
+        }
+
+        .card_emplyees_locations {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          border-radius: 16px;
+          margin-bottom: 1rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:nth-child(2) {
+            background-color: rgba(5, 138, 148, 0.05);
+          }
+
+          &:nth-child(3) {
+            background-color: rgba(228, 170, 60, 0.05);
+          }
+
+          &:nth-child(4) {
+            background-color: rgba(210, 86, 86, 0.05);
+          }
+
+          &:nth-child(5) {
+            background-color: rgba(0, 82, 204, 0.05);
+          }
+
+          &:nth-child(6) {
+            background-color: rgba(109, 204, 0, 0.05);
+          }
+
+          &:nth-child(7) {
+            background-color: rgba(245, 255, 0, 0.05);
+          }
+
+          p {
+            margin-bottom: 0;
+            font-family: "regular";
+            color: #171717;
+          }
+        }
+      }
+    }
+
+    .staff_rate {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      width: 100%;
+      display: inline-block;
+
+      .dropdown-toggle::after {
+        content: none;
+      }
+
+      .dropdown-item {
+        font-size: 0.8rem;
+        text-align: start;
+        font-family: "regular";
+      }
+
+      .card_staff_rate {
+        width: 23%;
+        margin-inline-end: 1%;
+        display: inline-block;
+        background-color: #fafafa;
+        border-radius: 6px;
+        padding: 1rem;
+
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+
+        .name {
+          margin-top: 0.5rem;
+          margin-bottom: 0;
+          font-family: "medium";
+          color: $PrimaryText;
+          font-size: 1rem;
+        }
+
+        .title {
+          font-family: "regular";
+          color: $PrimaryColor;
+          font-size: 0.8rem;
+          margin-bottom: 1rem;
+          display: block;
+        }
+
+        .time,
+        .date {
+          color: $SecondText;
+          font-family: "regular";
+          font-size: 0.8rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .table_details {
+      background-color: #fff;
+      border: 1px solid #EBEAED;
+      padding: 2rem;
+      border-radius: 5px;
+      width: 100%;
+
+      .filters {
+        display: flex;
+        margin-bottom: 1rem;
+        padding: 0;
+        .form-group {
+          position: relative;
+          width: 30%;
+          margin-inline-start: 1%;
+          input {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: 0.8rem;
+            padding: 0.75rem;
+            padding-inline-start: 2rem;
+            background-color: rgba(143, 146, 161, 0.05);
+            border: 0;
+          }
+          svg {
+            position: absolute;
+            top: 32%;
+            right: 0.5rem;
+            color: $SecondText;
+          }
+          &:first-child {
+            width: 50%;
+            margin-inline-start: 0;
+          }
+          .bootstrap-select {
+            .dropdown-toggle {
+              padding: 0.7rem;
+              font-size: 0.8rem;
+              font-family: "regular";
+              background-color: rgba(143, 146, 161, 0.05);
+              &:hover {
+                background-color: rgba(143, 146, 161, 0.05);
+              }
+              .filter-option-inner-inner {
+                text-align: start;
+              }
+            }
+            .dropdown-menu {
+              .dropdown-item {
+                font-family: "regular";
+                font-size: 0.8rem;
+                text-align: start;
+              }
+            }
+          }
+        }
+      }
+
+      .dataTables_wrapper {
+        margin-top: 2rem;
+        .dataTables_length {
+          float: right;
+          display: none;
+        }
+        .dataTables_filter {
+          float: left;
+          display: none;
+        }
+        .dataTables_info {
+          float: right;
+        }
+        .dataTables_paginate {
+          float: left;
+          .paginate_button {
+            padding: 0;
+            margin: 0;
+            &:hover {
+              border: 1px solid transparent;
+            }
+          }
+        }
+      }
+
+      table {
+        thead {
+          tr {
+            th {
+              text-align: start;
+              font-size: 0.8rem;
+              color: $SecondText;
+              font-family: "regular";
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              font-family: "semibold";
+              color: $PrimaryText;
+              font-size: 0.8rem;
+              vertical-align: middle;
+
+              .name {
+                display: flex;
+                align-items: center;
+
+                img {
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  margin-inline-end: 1rem;
+                }
+
+                p {
+                  font-family: "semibold";
+                  color: $PrimaryText;
+                  margin-bottom: 0;
+                }
+
+                span {
+                  font-family: "regular";
+                  color: $SecondText;
+                }
+              }
+
+              svg {
+                color: #84818a;
+                margin-inline-end: 0.5rem;
+              }
+
+              &:last-child {
+                text-align: end;
+                .dropdown-toggle::after {
+                  content: none;
+                }
+  
+                .dropdown-menu {
+                  .dropdown-item {
+                    font-size: 0.8rem;
+                    text-align: start;
+                  }
+                }
+              }
+              &:first-child {
+                .form-check-input {
+                  margin-inline-end: 1rem;
+                  width: 1.1em;
+                  height: 1.1em;
+                }
+              }
+            }
+
+            td.select-checkbox:after {
+              margin-top: -10px;
+            }
+
+            td.select-checkbox:before {
+              top: 1.6rem;
+            }
+            td.select-checkbox:before, td.select-checkbox:after, th.select-checkbox:before, th.select-checkbox:after {
+              right: 5%;
+              left: unset;
+            }
+            &.selected>* {
+              box-shadow: inset 0 0 0 9999px rgba(6, 121, 126, 0.9);
+              color: #fff;
+            }
+            &.selected {
+              a {
+                svg {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .add_form {
+      width: 50%;
+      .form-group {
+        margin-bottom: 1.5rem;
+        label {
+          font-family: "regular";
+          color: $PrimaryText;
+          font-size: .8rem;
+        }
+        input {
+          font-family: "regular";
+          color: $SecondText;
+          font-size: .7rem;
+          padding: .75rem;
+          margin-top: 1rem;
+        }
+        .bootstrap-select {
+          margin-top: 1rem;
+          .dropdown-toggle {
+            background-color: transparent;
+            border: 1px solid #ced4da;
+            padding: 0;
+            &:focus {
+              outline: transparent !important;
+              box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+            }
+            
+            &::after {
+              margin: 0 .55em;
+            }
+            .filter-option-inner-inner {
+              text-align: start;
+              font-family: "regular";
+              font-size: .7rem;
+              padding: .75rem;
+            }
+          }
+          .dropdown-menu {
+            li {
+              a {
+                text-align: start;
+                font-family: "regular";
+                font-size: .8rem;
+                color: $PrimaryText;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .charts {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      width: 100%;
+
+      .nav-tabs {
+        .nav-item {
+          margin: 0 0.5rem;
+
+          .nav-link {
+            color: $SecondText;
+            font-family: "Medium";
+            font-size: 0.9rem;
+
+            &:hover,
+            &:focus {
+              border-color: transparent;
+              outline: unset;
+            }
+
+            &:focus-visible {
+              outline: unset;
+            }
+
+            &.active {
+              border: 0;
+              border-bottom: 3px solid $PrimaryColor;
+              color: $PrimaryText;
+            }
+          }
+        }
+      }
+
+      .tab-content {
+        margin-top: 2rem;
+      }
+
+      .hiring_department {
+        border: 0.7px solid #ebeaed;
+        padding: 1.5rem;
+        border-radius: 4px;
+
+        h6 {
+          margin-bottom: 0;
+        }
+
+        p {
+          font-family: "Medium";
+          color: $PrimaryText;
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.3rem;
+
+          svg {
+            color: #fff;
+            background-color: $PrimaryColor;
+            padding: 0.2rem;
+            width: 15px;
+            height: 15px;
+            margin-inline-start: 0.5rem;
+          }
+        }
+
+        span {
+          font-family: "regular";
+          color: $SecondText;
+          font-size: 0.8rem;
+        }
+
+        .chart-container {
+          height: 30vh;
+          width: 100%;
+          position: relative;
+          margin-top: 1rem;
+        }
+      }
+
+      .accuracy_department,
+      .visitors_year,
+      .employment_rate,
+      .statistics {
+        border: 0.7px solid #ebeaed;
+        padding: 1.5rem;
+        border-radius: 4px;
+        height: 100%;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@import "./_responsive.scss";

@@ -1,0 +1,40 @@
+@media only screen and (max-width: 600px) {
+  .tableAllProjects {
+    padding: 1rem 1rem 5rem !important;
+
+    .dataTables_length {
+      position: absolute;
+      bottom: 0;
+      right: 10%;
+      left: 10%;
+      width: 80%;
+    }
+  }
+
+  .sidebar.open {
+    .nav-pills {
+      .nav-item {
+        width: 20%;
+
+        .nav-link {
+          span {
+            font-size: 0.5rem;
+          }
+        }
+
+        &.disable_mobile {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .navbar .d-flex.w-25 {
+    width: 50% !important;
+  }
+
+  .index_cards {
+    .content {
+    }
+  }
+}
