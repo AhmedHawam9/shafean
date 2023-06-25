@@ -14,6 +14,10 @@
 
   <!-- ? Custom CSS -->
   <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+  <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
+  <link rel="stylesheet" href="css/select.dataTables.min.css" />
+  <link rel="stylesheet" href="css/daterangepicker.css" />
   <!-- ? Custom CSS -->
 
   <!-- ? Main JavaScript -->
@@ -25,9 +29,12 @@
 
   <!-- ? Custom JavaScript -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="js/charts.js"></script>
   <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
   <script src="js/dataTables.bootstrap5.min.js"></script>
+  <script src="js/bootstrap-select.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.min.js"></script>
   <!-- ? Custom JavaScript -->
 
   <!-- ? Title -->
@@ -206,7 +213,29 @@
 
       <!-- ======= Start Content ======= -->
       <section class="content">
-        
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="title_section">إضافة مرحلة دراسية جديدة</h5>
+            </div>
+            <form action="grade.html" class="add_form">
+                <div class="form-group">
+                    <label for="">*اسم الاختبار</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="اكتب اسم الاختبار">
+                </div>
+                <div class="form-group">
+                    <label for="">* المجموعة</label>
+                    <select name="" id="" class="form-control selectpicker" title="اختر المجموعة">
+                        <option value="">مجموعة 1</option>
+                        <option value="">مجموعة 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">* وقت الامتحان</label>
+                    <input type="date" name="" id="" class="form-control">
+                </div>
+                <button type="submit" class="btn PrimaryButton">اضافة</button>
+            </form>
+        </div>
       </section>
       <!-- ======= End Content ======= -->
     </section>
@@ -214,52 +243,7 @@
   </div>
   <!-- ? ======= footer =========== -->
 
-  <!-- ======= Chart onload =========== -->
-  <script>
-    window.onload = function () {
-      var Rates = document.getElementById("Rates").getContext("2d");
-      window.myBar = new Chart(Rates, {
-        data: barChartDataRates,
-        options: chartOptionsRates
-      });
-      var percentageProjectsDay = document.getElementById("percentageProjectsDay").getContext("2d");
-      window.myBar = new Chart(percentageProjectsDay, {
-        data: barChartDataProjectsDay,
-        options: chartOptionsProjectsDay,
-        options: {
-          scales: {
-            x: {
-              display: false,
-              grid: {
-                display: false,
-              }
-            },
-            y: {
-              display: false,
-              grid: {
-                display: false
-              }
-            },
-          },
-          plugins: {
-            legend: {
-              display: false
-            }
-          }
-        }
-      });
-    };
-  </script>
-  <!-- ======= Chart onload =========== -->
   <script src="js/main.js"></script>
-  <script src="js/counterup.min.js"></script>
-  <script src="js/waypoints.min.js"></script>
-  <script>
-    $('.counter').counterUp({
-      delay: 20,
-      time: 2000
-    });
-  </script>
 </body>
 
 </html>

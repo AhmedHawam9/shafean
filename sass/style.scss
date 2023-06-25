@@ -304,510 +304,6 @@ table tbody tr td {
       }
     }
 
-    .welcome {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      h5 {
-        font-family: "semibold";
-        margin-bottom: 2rem;
-        display: flex;
-        align-items: center;
-
-        lottie-player {
-          width: 50px;
-          height: 50px;
-        }
-      }
-
-      .new_job {
-        font-family: "semibold";
-        background-color: $PrimaryColor;
-        color: #fff;
-        border-radius: 12px;
-        font-size: 0.8rem;
-        margin-bottom: 2rem;
-        padding: 0.75rem 1.5rem;
-        float: left;
-      }
-
-      .edit_btn {
-        font-family: "semibold";
-        background-color: $PrimaryColor;
-        color: #fff;
-        border-radius: 12px;
-        font-size: 0.8rem;
-        margin-bottom: 2rem;
-        padding: 0.75rem 1.5rem;
-        margin-inline-start: 1rem;
-        float: left;
-      }
-
-      .delete_btn {
-        font-family: "semibold";
-        border-color: $PrimaryColor;
-        color: $PrimaryColor;
-        background-color: transparent;
-        border-radius: 12px;
-        font-size: 0.8rem;
-        margin-bottom: 2rem;
-        padding: 0.75rem 1.5rem;
-        float: left;
-      }
-
-      .modal {
-        .modal-dialog {
-          max-width: 45%;
-          font-family: "regular";
-          font-size: 0.8rem;
-
-          .modal-header {
-            border-bottom: none;
-
-            .modal-title {
-              margin-bottom: 0;
-              font-size: 1rem;
-
-              span {
-                margin-inline-start: 1rem;
-              }
-            }
-          }
-
-          table {
-            margin-top: 2rem !important;
-
-            td {
-              font-family: "regular";
-              color: $PrimaryText;
-              font-size: 0.8rem;
-            }
-
-            .title {
-              font-family: "semibold";
-              font-size: 0.9rem;
-            }
-
-            .menu {
-              font-size: 1rem;
-
-              .dropdown-toggle::after {
-                content: none;
-              }
-
-              .dropdown-item {
-                font-size: 0.8rem;
-                text-align: start;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .orders {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 20px;
-
-      h5 {
-        font-family: "medium";
-        color: $PrimaryText;
-        margin-bottom: 0;
-      }
-
-      .dropdown {
-        .dropdown-toggle {
-          &::after {
-            content: unset;
-          }
-        }
-
-        .dropdown-menu {
-          .dropdown-item {
-            font-family: "regular";
-            font-size: 0.8rem;
-          }
-        }
-      }
-
-      .card_order {
-        background-color: #fafafa;
-        width: 48%;
-        margin-top: 1rem;
-        margin-inline-end: 1.5%;
-        border-radius: 6px;
-        display: inline-block;
-        padding: 1rem;
-
-        .title {
-          font-family: "medium";
-          color: $PrimaryText;
-          font-size: 0.9rem;
-          margin-bottom: 0;
-        }
-
-        .status {
-          padding: 0.25rem 0.5rem;
-          color: $PrimaryColor;
-          background-color: rgba(5, 138, 148, 0.08);
-          font-family: "regular";
-          font-size: 0.8rem;
-        }
-
-        .position {
-          font-family: "regular";
-          color: #b0b9b9;
-          font-size: 0.8rem;
-        }
-
-        .details {
-          margin-top: 0.5rem;
-          display: flex;
-          justify-content: space-between;
-
-          .price,
-          .time,
-          .posted {
-            svg {
-              color: $PrimaryText;
-              margin-inline-end: 0.5rem;
-            }
-
-            span {
-              color: $SecondText;
-              font-family: "regular";
-              font-size: 0.8rem;
-            }
-          }
-        }
-
-        .description {
-          margin: 1rem 0;
-          font-family: "regular";
-          color: #596364;
-          font-size: 0.8rem;
-        }
-
-        .job_applicants {
-          display: flex;
-          align-items: center;
-          font-size: 0.8rem;
-
-          svg {
-            color: $SecondText;
-            margin-inline-end: 0.5rem;
-          }
-
-          span {
-            color: $SecondText;
-            font-family: "regular";
-            margin-bottom: 0;
-            margin-inline-end: 0.5rem;
-          }
-
-          p {
-            color: $PrimaryText;
-            font-family: "medium";
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-
-    .employment_rate {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 20px;
-      margin: 1rem 0;
-
-      h5 {
-        font-family: "medium";
-        color: $PrimaryText;
-        margin-bottom: 0;
-      }
-
-      .dropdown {
-        .dropdown-toggle {
-          background-color: rgba(143, 146, 161, 0.05);
-          font-family: "regular";
-          font-size: 0.8rem;
-        }
-
-        .dropdown-menu {
-          .dropdown-item {
-            font-size: 0.8rem;
-            font-family: "regular";
-          }
-        }
-      }
-    }
-
-    .departments {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-      display: inline-flex;
-      flex-direction: column;
-
-      .dropdown-toggle::after {
-        content: none;
-      }
-
-      .dropdown-item {
-        font-size: 0.8rem;
-        text-align: start;
-        font-family: "regular";
-      }
-
-      .card_department {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 1.5rem;
-
-        .title {
-          font-family: "medium";
-          color: $PrimaryText;
-          margin-bottom: 0;
-        }
-
-        .tag {
-          font-family: "regular";
-          color: $SecondText;
-          font-size: 0.8rem;
-        }
-
-        .circle {
-          background-color: $SecondColor;
-          color: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 0.8rem;
-          font-family: "regular";
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-
-      .add_department {
-        border: 1px solid $PrimaryColor;
-        color: $PrimaryColor;
-        text-decoration: none;
-        font-family: "regular";
-        width: 100%;
-        display: block;
-        padding: 0.75rem;
-        font-size: 0.8rem;
-        border-radius: 5px;
-        text-align: center;
-        transition: 0.7s ease-in-out;
-        margin-top: auto;
-        height: auto;
-
-        &:hover {
-          background-color: $PrimaryColor;
-          color: #fff;
-          transition: 0.7s ease-in-out;
-        }
-      }
-    }
-
-    .visitors_year {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 20px;
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-
-      .number_visitor_year {
-        p {
-          margin-bottom: 0;
-          font-family: "medium";
-          color: #171717;
-          font-size: 1.2rem;
-        }
-
-        span {
-          font-family: "regular";
-          color: #8f92a1;
-          font-size: 0.8rem;
-        }
-      }
-
-      .increase {
-        color: $SecondColor;
-        font-family: "regular";
-
-        svg {
-          margin-inline-end: 0.5rem;
-        }
-      }
-    }
-
-    .emplyees_locations {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 20px;
-      margin: 1rem 0;
-
-      h5 {
-        font-family: "medium";
-        color: $PrimaryText;
-        margin-bottom: 0;
-      }
-
-      img {
-        width: 90%;
-        height: 380px;
-        display: block;
-        margin: 0 auto;
-      }
-
-      .statistics {
-        width: 90%;
-        margin: 0 auto;
-
-        .increase {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 2rem;
-          margin-bottom: 3rem;
-
-          .customers {
-            p {
-              margin-bottom: 0;
-              font-family: "regular";
-              color: #171717;
-              font-size: 1.4rem;
-            }
-
-            span {
-              font-family: "regular";
-              color: #8f92a1;
-              font-size: 0.8rem;
-            }
-          }
-
-          .increase_number {
-            color: $PrimaryColor;
-            font-family: "regular";
-          }
-        }
-
-        .card_emplyees_locations {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 1rem;
-          border-radius: 16px;
-          margin-bottom: 1rem;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-
-          &:nth-child(2) {
-            background-color: rgba(5, 138, 148, 0.05);
-          }
-
-          &:nth-child(3) {
-            background-color: rgba(228, 170, 60, 0.05);
-          }
-
-          &:nth-child(4) {
-            background-color: rgba(210, 86, 86, 0.05);
-          }
-
-          &:nth-child(5) {
-            background-color: rgba(0, 82, 204, 0.05);
-          }
-
-          &:nth-child(6) {
-            background-color: rgba(109, 204, 0, 0.05);
-          }
-
-          &:nth-child(7) {
-            background-color: rgba(245, 255, 0, 0.05);
-          }
-
-          p {
-            margin-bottom: 0;
-            font-family: "regular";
-            color: #171717;
-          }
-        }
-      }
-    }
-
-    .staff_rate {
-      background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 20px;
-      width: 100%;
-      display: inline-block;
-
-      .dropdown-toggle::after {
-        content: none;
-      }
-
-      .dropdown-item {
-        font-size: 0.8rem;
-        text-align: start;
-        font-family: "regular";
-      }
-
-      .card_staff_rate {
-        width: 23%;
-        margin-inline-end: 1%;
-        display: inline-block;
-        background-color: #fafafa;
-        border-radius: 6px;
-        padding: 1rem;
-
-        img {
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-        }
-
-        .name {
-          margin-top: 0.5rem;
-          margin-bottom: 0;
-          font-family: "medium";
-          color: $PrimaryText;
-          font-size: 1rem;
-        }
-
-        .title {
-          font-family: "regular";
-          color: $PrimaryColor;
-          font-size: 0.8rem;
-          margin-bottom: 1rem;
-          display: block;
-        }
-
-        .time,
-        .date {
-          color: $SecondText;
-          font-family: "regular";
-          font-size: 0.8rem;
-          margin-bottom: 0.5rem;
-        }
-      }
-    }
-
     .table_details {
       background-color: #fff;
       border: 1px solid #EBEAED;
@@ -839,7 +335,7 @@ table tbody tr td {
             color: $SecondText;
           }
           &:first-child {
-            width: 50%;
+            width: 70%;
             margin-inline-start: 0;
           }
           .bootstrap-select {
@@ -938,6 +434,51 @@ table tbody tr td {
                 color: #84818a;
                 margin-inline-end: 0.5rem;
               }
+              &.phone {
+                unicode-bidi: plaintext;
+                text-align: end;
+              }
+              .status {
+                font-family: "regular";
+                font-size: .8rem;
+                padding: .5rem .8rem;
+                &.done {
+                  background-color: rgba($color: #4259CC, $alpha: 0.1);
+                  color: #4259CC;
+                }
+                &.not_done {
+                  background-color: rgba($color: #CC5E42, $alpha: 0.1);
+                  color: #CC5E42;
+                }
+              }
+              .exam_status {
+                &.done {
+                  color: #E63232;
+                }
+                &.now {
+                  color: #06797E;
+                }
+              }
+              .audience {
+                display: flex;
+                align-items: center;
+                font-family: "semibold";
+                font-size: .7rem;
+                &.yes {
+                  color: #06797E;
+                  svg {
+                    color: #06797E;
+                    font-size: 1rem;
+                  }
+                }
+                &.no {
+                  color: #E84C33;
+                  svg {
+                    color: #E84C33;
+                    font-size: 1rem;
+                  }
+                }
+              }
 
               &:last-child {
                 text-align: end;
@@ -986,7 +527,115 @@ table tbody tr td {
           }
         }
       }
+
+      .modal {
+        .form-group {
+          margin-bottom: 1.5rem;
+          label {
+            font-family: "regular";
+            color: $PrimaryText;
+            font-size: .8rem;
+          }
+          input {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .7rem;
+            padding: .75rem;
+            margin-top: .7rem;
+          }
+          .bootstrap-select {
+            margin-top: .7rem;
+            .dropdown-toggle {
+              background-color: transparent;
+              border: 1px solid #ced4da;
+              padding: 0;
+              &:focus {
+                outline: transparent !important;
+                box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+              }
+              
+              &::after {
+                margin: 0 .55em;
+              }
+              .filter-option-inner-inner {
+                text-align: start;
+                font-family: "regular";
+                font-size: .7rem;
+                padding: .75rem;
+              }
+            }
+            div.dropdown-menu {
+              transform: translate(0px, 45px) !important;
+              li {
+                a {
+                  text-align: start;
+                  font-family: "regular";
+                  font-size: .8rem;
+                  color: $PrimaryText;
+                }
+              }
+            }
+          }
+          &.upload_file {
+            label {
+              margin-bottom: 1rem;
+            }
+            .upload_file_label {
+              background-color: #f5f8fa;
+              border: 1px dashed #d1d3d6;
+              width: 100%;
+              text-align: center;
+              padding: 1.5rem;
+              border-radius: 8px;
+              margin-bottom: 0;
+              cursor: pointer;
+              svg {
+                color: $PrimaryColor;
+                font-size: 2.5rem;
+              }
+              p {
+                font-family: "semibold";
+                color: #5f666f;
+                margin: 1.5rem 0 0.5rem !important;
+              }
+              span {
+                font-family: "semibold";
+                color: #5f666f;
+              }
+            }
+          }
+        }
+        .PrimaryButton {
+          padding: .75rem 3rem;
+        }
+      }
+
+      .nav-tabs {
+        margin-bottom: 1rem;
+        padding: 0;
+        .nav-link {
+          color: #828282;
+          font-family: "semibold";
+          font-size: .8rem;
+          padding: .5rem 2rem;
+          &:hover {
+            border-color: transparent;
+          }
+          &.active {
+            border-color: transparent;
+            border-bottom: 2px solid $PrimaryColor;
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .table-responsive {
+            min-height: 40vh;
+          }
+        }
+      }
     }
+
     .add_form {
       width: 50%;
       .form-group {
@@ -1031,6 +680,10 @@ table tbody tr td {
                 font-family: "regular";
                 font-size: .8rem;
                 color: $PrimaryText;
+                &.active {
+                  background-color: $PrimaryColor;
+                  color: #fff;
+                }
               }
             }
           }
@@ -1062,6 +715,158 @@ table tbody tr td {
               color: #5f666f;
             }
           }
+        }
+        &.form-check {
+          display: flex;
+          align-items: center;
+          .form-check-input {
+            padding: 0;
+            font-size: 1rem;
+            float: right;
+            margin-top: 0;
+            &:focus {
+              color: #212529;
+              background-color: #fff;
+              border-color: $PrimaryColor;
+              outline: 0;
+              box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+            }
+            &:checked {
+              background-color: $PrimaryColor;
+              color: $PrimaryColor;
+              &:focus {
+                background-color: $PrimaryColor;
+              }
+            }
+          }
+          .form-check-label {
+            margin-inline-start: 2.2rem;
+          }
+        }
+      }
+    }
+
+    .details_group {
+      background-color: #fff;
+      border-radius: 10px;
+      padding-bottom: 1rem;
+      img {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+      }
+      .title {
+        text-align: center;
+        font-family: "semibold";
+        color: $PrimaryText;
+        margin-top: 1rem;
+      }
+      .division {
+        font-family: "regular";
+        color: $PrimaryColor;
+        text-align: center;
+      }
+      .details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        p {
+          font-family: "regular";
+          color: $PrimaryText;
+          margin-bottom: 0;
+          font-size: .8rem;
+          svg {
+            color: $PrimaryColor;
+            margin-inline-end: .5rem;
+          }
+        }
+      }
+    }
+
+    .details_student {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      img {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      .title {
+        text-align: center;
+        font-family: "semibold";
+        color: $PrimaryText;
+        margin-top: 2rem;
+      }
+      .text {
+        font-family: "regular";
+        color: $PrimaryColor;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $SecondText;
+      }
+      .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        .info {
+          background-color: rgba($color:$PrimaryColor, $alpha: 0.1);
+          font-family: "regular";
+          color: #64666A;
+          padding: .5rem;
+          margin-bottom: 0;
+          margin-inline-end: 1rem;
+          width: 45%;
+          font-size: .7rem;
+          text-align: center;
+          svg {
+            color: $PrimaryColor;
+            margin-inline-end: .5rem;
+          }
+          &:nth-child(3) {
+            margin-inline-end: 0;
+          }
+          &.date {
+            margin-bottom: 1rem;
+            margin-inline-end: 0;
+            width: fit-content;
+          }          
+        }
+      }
+    }
+    .basic_information {
+      padding: 2.5rem;
+      background-color: #fff;
+      border: 1px solid #ebeaed;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      .title {
+        font-family: "semibold";
+        color: $PrimaryText;
+        width: 100%;
+      }
+      .info {
+        width: 25%;
+        text-align: start;
+        font-size: .8rem;
+        margin-top: 2rem;
+        .title {
+          font-family: "regular";
+          color: #828282;
+          margin-bottom: .8rem;
+        }
+        .text {
+          font-family: "semibold";
+          color: $PrimaryText;
+          margin-bottom: 0;
         }
       }
     }
