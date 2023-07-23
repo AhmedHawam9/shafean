@@ -250,7 +250,7 @@
             <div class="row">
               <div class="col-lg-3 col-md-12 col-12">
                 <div class="details_group">
-                  <img src="./media/image/7w7w.jpg" alt="group_img">
+                  <img src="./media/image/7w7w.jpg" alt="group_img" />
                   <h5 class="title">مجموعة العهد الحديث</h5>
                   <p class="division">الفرقة الدراسية الاولى</p>
                   <div class="details">
@@ -386,10 +386,11 @@
                                 <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
                                 1
                               </td>
-                              <td>درس على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
                               <td>
-                                مايو 22 , 2022 - 2:30 م
+                                درس على الجزء الأول من سورة البقرة ( 1- 25)
+                                بالتجويد
                               </td>
+                              <td>مايو 22 , 2022 - 2:30 م</td>
                               <td class="flex_mobile">
                                 <div class="dropdown">
                                   <a
@@ -435,10 +436,11 @@
                                 <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
                                 1
                               </td>
-                              <td>درس على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
                               <td>
-                                مايو 22 , 2022 - 2:30 م
+                                درس على الجزء الأول من سورة البقرة ( 1- 25)
+                                بالتجويد
                               </td>
+                              <td>مايو 22 , 2022 - 2:30 م</td>
                               <td class="flex_mobile">
                                 <div class="dropdown">
                                   <a
@@ -496,185 +498,212 @@
                       aria-labelledby="students-tab"
                       tabindex="0"
                     >
-                    <div
-                      class="d-flex justify-content-between align-items-center"
-                    >
-                      <h5 class="title_section">كل الطلاب</h5>
-                      <a href="add_student.html" class="btn btn_title_page"
-                        >+ اضافة طالب جديد</a
+                      <div
+                        class="d-flex justify-content-between align-items-center"
                       >
-                    </div>
-
-                    <!-- Start filters -->
-                    <div class="filters">
-                      <div class="form-group">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input
-                          type="search"
-                          name=""
-                          id=""
-                          class="form-control"
-                          placeholder=".ابحث باسم الطالب"
-                        />
+                        <h5 class="title_section">كل الطلاب</h5>
+                        <a href="add_student.html" class="btn btn_title_page"
+                          >+ اضافة طالب جديد</a
+                        >
                       </div>
-                      <div class="form-group">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="daterange"
-                          value=""
-                        />
-                        <script>
-                          $(function () {
-                            $('input[name="daterange"]').daterangepicker(
-                              {
-                                opens: "left",
-                              },
-                              function (start, end, label) {
-                                console.log(
-                                  "A new date selection was made: " +
-                                    start.format("YYYY-MM-DD") +
-                                    " to " +
-                                    end.format("YYYY-MM-DD")
-                                );
-                              }
-                            );
-                          });
-                        </script>
-                      </div>
-                    </div>
-                    <!-- End filters -->
 
-                    <div class="table-responsive">
-                      <table class="table" id="table">
-                        <thead>
-                          <tr class="trAltCizgi">
-                            <th class="th">رقم الطالب</th>
-                            <th class="th">اسم الطالب</th>
-                            <th class="th">نوع الاعاقة</th>
-                            <th class="th">رقم الهاتف</th>
-                            <th class="th"></th>
-                          </tr>
-                        </thead>
-                        <tbody class="tbody">
-                          <!-- For loop this tr -->
-                          <tr>
-                            <td class="id">
-                              <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                              1
-                            </td>
-                            <td>أحمد حوام</td>
-                            <td>إعاقة نظر</td>
-                            <td class="phone">010 2555 222 5</td>
-                            <td class="flex_mobile">
-                              <div class="dropdown">
-                                <a
-                                  class="btn dropdown-toggle"
-                                  href="#"
-                                  role="button"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i
-                                    class="fa-solid fa-ellipsis-vertical"
-                                  ></i>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a class="dropdown-item" href="details_student.html"
-                                      >تفاصيل الطالب</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changeGroupModal"
-                                      >نقل الى مجموعة اخري</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >تعديل</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">حذف </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- For loop this tr -->
-
-                          <!-- For loop this tr -->
-                          <tr>
-                            <td class="id">
-                              <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                              1
-                            </td>
-                            <td>أحمد حوام</td>
-                            <td>إعاقة نظر</td>
-                            <td class="phone">010 2555 222 5</td>
-                            <td class="flex_mobile">
-                              <div class="dropdown">
-                                <a
-                                  class="btn dropdown-toggle"
-                                  href="#"
-                                  role="button"
-                                  data-bs-toggle="dropdown"
-                                  aria-expanded="false"
-                                >
-                                  <i
-                                    class="fa-solid fa-ellipsis-vertical"
-                                  ></i>
-                                </a>
-
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a class="dropdown-item" href="details_student.html"
-                                      >تفاصيل الطالب</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#changeGroupModal"
-                                      >نقل الى مجموعة اخري</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#"
-                                      >تعديل</a
-                                    >
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="#">حذف </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </td>
-                          </tr>
-                          <!-- For loop this tr -->
-                        </tbody>
-                      </table>
-
-                      <!-- Modal chnage student grroup -->
-                      <div class="modal fade" id="changeGroupModal" tabindex="-1" aria-labelledby="changeGroupModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                          <div class="modal-content">
-                            <form class="modal-body">
-                              <h5 class="title_section">اختر المجموعة التي تريد نقل الطالب اليها</h5>
-                              <div class="form-group">
-                                <label for="">المجموعة</label>
-                                <select name="" id="" class="form-control selectpicker" title="اختر المجموعة">
-                                  <option value="">مجموعة 1</option>
-                                  <option value="">مجموعة 2</option>
-                                </select>
-                              </div>
-                              <button type="submit" class="btn PrimaryButton">تأكيد النقل</button>
-                            </form>
-                          </div>
+                      <!-- Start filters -->
+                      <div class="filters">
+                        <div class="form-group">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <input
+                            type="search"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder=".ابحث باسم الطالب"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="daterange"
+                            value=""
+                          />
+                          <script>
+                            $(function () {
+                              $('input[name="daterange"]').daterangepicker(
+                                {
+                                  opens: "left",
+                                },
+                                function (start, end, label) {
+                                  console.log(
+                                    "A new date selection was made: " +
+                                      start.format("YYYY-MM-DD") +
+                                      " to " +
+                                      end.format("YYYY-MM-DD")
+                                  );
+                                }
+                              );
+                            });
+                          </script>
                         </div>
                       </div>
-                      <!-- Modal chnage student grroup -->
+                      <!-- End filters -->
+
+                      <div class="table-responsive">
+                        <table class="table" id="table">
+                          <thead>
+                            <tr class="trAltCizgi">
+                              <th class="th">رقم الطالب</th>
+                              <th class="th">اسم الطالب</th>
+                              <th class="th">نوع الاعاقة</th>
+                              <th class="th">رقم الهاتف</th>
+                              <th class="th"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="tbody">
+                            <!-- For loop this tr -->
+                            <tr>
+                              <td class="id">
+                                <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                                1
+                              </td>
+                              <td>أحمد حوام</td>
+                              <td>إعاقة نظر</td>
+                              <td class="phone">010 2555 222 5</td>
+                              <td class="flex_mobile">
+                                <div class="dropdown">
+                                  <a
+                                    class="btn dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <i
+                                      class="fa-solid fa-ellipsis-vertical"
+                                    ></i>
+                                  </a>
+
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="details_student.html"
+                                        >تفاصيل الطالب</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#changeGroupModal"
+                                        >نقل الى مجموعة اخري</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >تعديل</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">حذف </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- For loop this tr -->
+
+                            <!-- For loop this tr -->
+                            <tr>
+                              <td class="id">
+                                <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                                1
+                              </td>
+                              <td>أحمد حوام</td>
+                              <td>إعاقة نظر</td>
+                              <td class="phone">010 2555 222 5</td>
+                              <td class="flex_mobile">
+                                <div class="dropdown">
+                                  <a
+                                    class="btn dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <i
+                                      class="fa-solid fa-ellipsis-vertical"
+                                    ></i>
+                                  </a>
+
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="details_student.html"
+                                        >تفاصيل الطالب</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        class="dropdown-item"
+                                        href="#"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#changeGroupModal"
+                                        >نقل الى مجموعة اخري</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >تعديل</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">حذف </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- For loop this tr -->
+                          </tbody>
+                        </table>
+
+                        <!-- Modal chnage student grroup -->
+                        <div
+                          class="modal fade"
+                          id="changeGroupModal"
+                          tabindex="-1"
+                          aria-labelledby="changeGroupModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <form class="modal-body">
+                                <h5 class="title_section">
+                                  اختر المجموعة التي تريد نقل الطالب اليها
+                                </h5>
+                                <div class="form-group">
+                                  <label for="">المجموعة</label>
+                                  <select
+                                    name=""
+                                    id=""
+                                    class="form-control selectpicker"
+                                    title="اختر المجموعة"
+                                  >
+                                    <option value="">مجموعة 1</option>
+                                    <option value="">مجموعة 2</option>
+                                  </select>
+                                </div>
+                                <button type="submit" class="btn PrimaryButton">
+                                  تأكيد النقل
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal chnage student grroup -->
                       </div>
                     </div>
                     <div
@@ -684,7 +713,145 @@
                       aria-labelledby="exams-tab"
                       tabindex="0"
                     >
-                      
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <h5 class="title_section">كل الاختبارت</h5>
+                        <a href="add_exam.html" class="btn btn_title_page"
+                          >+ اضافة اختبار جديد</a
+                        >
+                      </div>
+
+                      <!-- Start filters -->
+                      <div class="filters">
+                        <div class="form-group">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          <input
+                            type="search"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder=".ابحث باسم الطالب"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="daterange"
+                            value=""
+                          />
+                          <script>
+                            $(function () {
+                              $('input[name="daterange"]').daterangepicker(
+                                {
+                                  opens: "left",
+                                },
+                                function (start, end, label) {
+                                  console.log(
+                                    "A new date selection was made: " +
+                                      start.format("YYYY-MM-DD") +
+                                      " to " +
+                                      end.format("YYYY-MM-DD")
+                                  );
+                                }
+                              );
+                            });
+                          </script>
+                        </div>
+                      </div>
+                      <!-- End filters -->
+
+                      <div class="table-responsive">
+                        <table class="table" id="table">
+                          <thead>
+                            <tr class="trAltCizgi">
+                              <th class="th">رقم الدرس</th>
+                              <th class="th">اسم الاختبار</th>
+                              <th class="th">موعد الاختبار</th>
+                              <th class="th">الحالة</th>
+                              <th class="th"></th>
+                            </tr>
+                          </thead>
+                          <tbody class="tbody">
+                            <!-- For loop this tr -->
+                            <tr>
+                              <td class="id">
+                                <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                                1
+                              </td>
+                              <td>درس على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                              <td>مايو 22 , 2022 - 2:30 م</td>
+                              <td>
+                                <span class="status done"><i class="fa-regular fa-circle-check"></i> منتهي</span>
+                              </td>
+                              <td class="flex_mobile">
+                                <div class="dropdown">
+                                  <a
+                                    class="btn dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                  >
+                                    <i
+                                      class="fa-solid fa-ellipsis-vertical"
+                                    ></i>
+                                  </a>
+
+                                  <ul class="dropdown-menu">
+                                    <li>
+                                      <a class="dropdown-item" href="#"
+                                        >تفاصيل الاختبار</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a class="dropdown-item" href="#">حذف </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                            <!-- For loop this tr -->
+                          </tbody>
+                        </table>
+
+                        <!-- Modal chnage student grroup -->
+                        <div
+                          class="modal fade"
+                          id="changeGroupModal"
+                          tabindex="-1"
+                          aria-labelledby="changeGroupModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <form class="modal-body">
+                                <h5 class="title_section">
+                                  اختر المجموعة التي تريد نقل الطالب اليها
+                                </h5>
+                                <div class="form-group">
+                                  <label for="">المجموعة</label>
+                                  <select
+                                    name=""
+                                    id=""
+                                    class="form-control selectpicker"
+                                    title="اختر المجموعة"
+                                  >
+                                    <option value="">مجموعة 1</option>
+                                    <option value="">مجموعة 2</option>
+                                  </select>
+                                </div>
+                                <button type="submit" class="btn PrimaryButton">
+                                  تأكيد النقل
+                                </button>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Modal chnage student grroup -->
+                      </div>
                     </div>
                   </div>
                 </div>

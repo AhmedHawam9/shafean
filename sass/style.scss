@@ -405,6 +405,7 @@ table tbody tr td {
               font-family: "semibold";
               color: $PrimaryText;
               font-size: 0.8rem;
+              padding: 1rem 0;
               vertical-align: middle;
 
               .name {
@@ -445,10 +446,16 @@ table tbody tr td {
                 &.done {
                   background-color: rgba($color: #4259CC, $alpha: 0.1);
                   color: #4259CC;
+                  svg {
+                    color: #4259CC;
+                  }
                 }
                 &.not_done {
                   background-color: rgba($color: #CC5E42, $alpha: 0.1);
                   color: #CC5E42;
+                  svg {
+                    color: #CC5E42;
+                  }
                 }
               }
               .exam_status {
