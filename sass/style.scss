@@ -1,7 +1,7 @@
-$PrimaryColor: #06797E;
+$PrimaryColor: #06797e;
 $SecondColor: #e4aa3c;
 $PrimaryText: #011c1e;
-$SecondText: #828C8D;
+$SecondText: #828c8d;
 
 @font-face {
   font-family: "light";
@@ -34,7 +34,51 @@ body {
 .accordion-button {
   text-align: start !important;
 }
-
+.details_exam_card {
+  border: 1px solid #878787;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  .status {
+    font-family: "regular";
+    font-size: 0.8rem;
+    padding: 0.5rem 0.8rem;
+    &.done {
+      background-color: rgba($color: #4259cc, $alpha: 0.1);
+      color: #4259cc;
+      svg {
+        color: #4259cc;
+      }
+    }
+    &.not_done {
+      background-color: rgba($color: #cc5e42, $alpha: 0.1);
+      color: #cc5e42;
+      svg {
+        color: #cc5e42;
+      }
+    }
+  }
+  .list_details {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    padding: 0;
+    li {
+      width: 16%;
+      .title {
+        font-family: "regular";
+        color: $SecondText;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .text {
+        font-family: "semibold";
+        color: $PrimaryText;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
 .chart-container {
   height: 70vh;
   width: 100%;
@@ -86,6 +130,19 @@ table tbody tr td {
 
 .swal2-container.swal2-center > .swal2-popup {
   padding: 1.5rem;
+}
+
+.modal-body {
+  padding: 2rem;
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    .btn {
+      padding: 0.75rem 1rem;
+      width: 70%;
+      margin: 1rem auto 0;
+    }
+  }
 }
 
 .show_project_swal {
@@ -170,9 +227,9 @@ table tbody tr td {
   .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #06797E;
+    border-color: #06797e;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+    box-shadow: 0 0 0 0.25rem rgba(6, 121, 126, 0.25);
   }
 
   .btn {
@@ -186,14 +243,29 @@ table tbody tr td {
     background-color: $PrimaryColor;
     color: #fff;
     font-family: "semibold";
-    font-size: .8rem;
-    padding: .75rem 5rem;
-    transition: .7s ease-in-out;
+    font-size: 0.8rem;
+    padding: 0.75rem 5rem;
+    transition: 0.7s ease-in-out;
     &:hover {
       background-color: transparent;
       color: $PrimaryColor;
       border: 1px solid $PrimaryColor;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
+    }
+  }
+  .SecondButton {
+    background-color: transparent;
+    color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
+    font-family: "semibold";
+    font-size: 0.8rem;
+    padding: 0.75rem 5rem;
+    transition: 0.7s ease-in-out;
+    &:hover {
+      background-color: $PrimaryColor;
+      color: #fff;
+      border: 1px solid $PrimaryColor;
+      transition: 0.7s ease-in-out;
     }
   }
 
@@ -207,6 +279,129 @@ table tbody tr td {
       font-family: "semibold";
       color: $PrimaryText;
       margin-bottom: 2rem;
+    }
+    .modal_title {
+      font-family: "semibold";
+      color: $PrimaryText;
+    }
+    .modal_text {
+      font-family: "regular";
+      color: $SecondText;
+    }
+    .modal_child {
+      .modal-dialog {
+        max-width: 35%;
+        .card_child {
+          margin-top: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .info {
+            display: flex;
+            align-items: center;
+            img {
+              width: 100px;
+              height: 100px;
+              margin-inline-end: 1.5rem;
+            }
+            .data {
+              .name {
+                font-family: "semibold";
+                color: $PrimaryText;
+              }
+              .text {
+                font-family: "semibold";
+                color: #64666a;
+              }
+            }
+          }
+          .SecondButton {
+            padding: 0.75rem 2rem;
+          }
+        }
+      }
+    }
+
+    .questionBankModal {
+      .modal-dialog {
+        max-width: 50%;
+        .modal-body {
+          padding: 2rem;
+          .table_data,
+          .table_details {
+            background-color: transparent;
+            padding: 1rem;
+            .filter_table {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 2rem;
+              .form-group {
+                width: 85%;
+                position: relative;
+                .form-control {
+                  font-family: "regular";
+                  font-size: 0.9rem;
+                  padding: 0.75rem;
+                  padding-inline-start: 2rem;
+                  border-color: transparent !important;
+                  &:focus {
+                    border-color: transparent !important;
+                  }
+                  &::placeholder {
+                    color: #a1a1a1;
+                  }
+                }
+                svg {
+                  position: absolute;
+                  top: 2rem;
+                  right: 0.5rem;
+                }
+              }
+              .bootstrap-select {
+                width: 15% !important;
+                margin-inline-start: 0.75rem;
+                .dropdown-toggle {
+                  background-color: transparent;
+                  padding: 0.8rem;
+                  &:hover {
+                    border-color: transparent !important;
+                  }
+                }
+                .dropdown-menu {
+                  li {
+                    a {
+                      text-align: start;
+                      font-family: "regular";
+                      font-size: 0.9rem;
+                      color: #000;
+                    }
+                  }
+                }
+                .filter-option-inner-inner {
+                  text-align: start;
+                  font-family: "regular";
+                  font-size: 0.8rem;
+                  color: #a1a1a1;
+                }
+              }
+            }
+            .table {
+              tbody {
+                tr {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .modal_add_new_question {
+      .modal-dialog {
+        max-width: 40%;
+      }
     }
 
     .btn_title_page {
@@ -304,9 +499,10 @@ table tbody tr td {
       }
     }
 
-    .table_details {
+    .table_details,
+    .table_data {
       background-color: #fff;
-      border: 1px solid #EBEAED;
+      border: 1px solid #ebeaed;
       padding: 2rem;
       border-radius: 5px;
       width: 100%;
@@ -401,7 +597,8 @@ table tbody tr td {
 
         tbody {
           tr {
-            td {
+            td,
+            th {
               font-family: "semibold";
               color: $PrimaryText;
               font-size: 0.8rem;
@@ -441,47 +638,47 @@ table tbody tr td {
               }
               .status {
                 font-family: "regular";
-                font-size: .8rem;
-                padding: .5rem .8rem;
+                font-size: 0.8rem;
+                padding: 0.5rem 0.8rem;
                 &.done {
-                  background-color: rgba($color: #4259CC, $alpha: 0.1);
-                  color: #4259CC;
+                  background-color: rgba($color: #4259cc, $alpha: 0.1);
+                  color: #4259cc;
                   svg {
-                    color: #4259CC;
+                    color: #4259cc;
                   }
                 }
                 &.not_done {
-                  background-color: rgba($color: #CC5E42, $alpha: 0.1);
-                  color: #CC5E42;
+                  background-color: rgba($color: #cc5e42, $alpha: 0.1);
+                  color: #cc5e42;
                   svg {
-                    color: #CC5E42;
+                    color: #cc5e42;
                   }
                 }
               }
               .exam_status {
                 &.done {
-                  color: #E63232;
+                  color: #e63232;
                 }
                 &.now {
-                  color: #06797E;
+                  color: #06797e;
                 }
               }
               .audience {
                 display: flex;
                 align-items: center;
                 font-family: "semibold";
-                font-size: .7rem;
+                font-size: 0.7rem;
                 &.yes {
-                  color: #06797E;
+                  color: #06797e;
                   svg {
-                    color: #06797E;
+                    color: #06797e;
                     font-size: 1rem;
                   }
                 }
                 &.no {
-                  color: #E84C33;
+                  color: #e84c33;
                   svg {
-                    color: #E84C33;
+                    color: #e84c33;
                     font-size: 1rem;
                   }
                 }
@@ -492,7 +689,7 @@ table tbody tr td {
                 .dropdown-toggle::after {
                   content: none;
                 }
-  
+
                 .dropdown-menu {
                   .dropdown-item {
                     font-size: 0.8rem;
@@ -516,11 +713,14 @@ table tbody tr td {
             td.select-checkbox:before {
               top: 1.6rem;
             }
-            td.select-checkbox:before, td.select-checkbox:after, th.select-checkbox:before, th.select-checkbox:after {
+            td.select-checkbox:before,
+            td.select-checkbox:after,
+            th.select-checkbox:before,
+            th.select-checkbox:after {
               right: 5%;
               left: unset;
             }
-            &.selected>* {
+            &.selected > * {
               box-shadow: inset 0 0 0 9999px rgba(6, 121, 126, 0.9);
               color: #fff;
             }
@@ -541,34 +741,34 @@ table tbody tr td {
           label {
             font-family: "regular";
             color: $PrimaryText;
-            font-size: .8rem;
+            font-size: 0.8rem;
           }
           input {
             font-family: "regular";
             color: $SecondText;
-            font-size: .7rem;
-            padding: .75rem;
-            margin-top: .7rem;
+            font-size: 0.7rem;
+            padding: 0.75rem;
+            margin-top: 0.7rem;
           }
           .bootstrap-select {
-            margin-top: .7rem;
+            margin-top: 0.7rem;
             .dropdown-toggle {
               background-color: transparent;
               border: 1px solid #ced4da;
               padding: 0;
               &:focus {
                 outline: transparent !important;
-                box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+                box-shadow: 0 0 0 0.25rem rgba(6, 121, 126, 0.25);
               }
-              
+
               &::after {
-                margin: 0 .55em;
+                margin: 0 0.55em;
               }
               .filter-option-inner-inner {
                 text-align: start;
                 font-family: "regular";
-                font-size: .7rem;
-                padding: .75rem;
+                font-size: 0.7rem;
+                padding: 0.75rem;
               }
             }
             div.dropdown-menu {
@@ -577,7 +777,7 @@ table tbody tr td {
                 a {
                   text-align: start;
                   font-family: "regular";
-                  font-size: .8rem;
+                  font-size: 0.8rem;
                   color: $PrimaryText;
                 }
               }
@@ -613,7 +813,7 @@ table tbody tr td {
           }
         }
         .PrimaryButton {
-          padding: .75rem 3rem;
+          padding: 0.75rem 3rem;
         }
       }
 
@@ -623,8 +823,8 @@ table tbody tr td {
         .nav-link {
           color: #828282;
           font-family: "semibold";
-          font-size: .8rem;
-          padding: .5rem 2rem;
+          font-size: 0.8rem;
+          padding: 0.5rem 2rem;
           &:hover {
             border-color: transparent;
           }
@@ -645,18 +845,67 @@ table tbody tr td {
 
     .add_form {
       width: 50%;
+      .avatar-upload {
+        position: relative;
+        max-width: 205px;
+        margin: 1rem 0 2rem;
+        .avatar-edit {
+          position: absolute;
+          right: 12px;
+          z-index: 1;
+          top: 10px;
+          input {
+            display: none;
+            + label {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 34px;
+              height: 34px;
+              margin-bottom: 0;
+              border-radius: 100%;
+              background: #ffffff;
+              border: 1px solid transparent;
+              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+              cursor: pointer;
+              font-weight: normal;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                background: #f1f1f1;
+                border-color: #d6d6d6;
+              }
+            }
+          }
+        }
+        .avatar-preview {
+          width: 150px;
+          height: 150px;
+          position: relative;
+          border-radius: 100%;
+          border: 6px solid #f8f8f8;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
       .form-group {
         margin-bottom: 1.5rem;
         label {
           font-family: "regular";
           color: $PrimaryText;
-          font-size: .8rem;
+          font-size: 0.8rem;
         }
         input {
           font-family: "regular";
           color: $SecondText;
-          font-size: .7rem;
-          padding: .75rem;
+          font-size: 0.7rem;
+          padding: 0.75rem;
           margin-top: 1rem;
         }
         .bootstrap-select {
@@ -667,17 +916,17 @@ table tbody tr td {
             padding: 0;
             &:focus {
               outline: transparent !important;
-              box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+              box-shadow: 0 0 0 0.25rem rgba(6, 121, 126, 0.25);
             }
-            
+
             &::after {
-              margin: 0 .55em;
+              margin: 0 0.55em;
             }
             .filter-option-inner-inner {
               text-align: start;
               font-family: "regular";
-              font-size: .7rem;
-              padding: .75rem;
+              font-size: 0.7rem;
+              padding: 0.75rem;
             }
           }
           .dropdown-menu {
@@ -685,7 +934,7 @@ table tbody tr td {
               a {
                 text-align: start;
                 font-family: "regular";
-                font-size: .8rem;
+                font-size: 0.8rem;
                 color: $PrimaryText;
                 &.active {
                   background-color: $PrimaryColor;
@@ -736,7 +985,7 @@ table tbody tr td {
               background-color: #fff;
               border-color: $PrimaryColor;
               outline: 0;
-              box-shadow: 0 0 0 0.25rem rgba(6,121,126,.25);
+              box-shadow: 0 0 0 0.25rem rgba(6, 121, 126, 0.25);
             }
             &:checked {
               background-color: $PrimaryColor;
@@ -748,6 +997,98 @@ table tbody tr td {
           }
           .form-check-label {
             margin-inline-start: 2.2rem;
+          }
+        }
+        .AppendAnswer {
+          padding-inline-start: 2.5rem;
+        }
+        .append_answer {
+          margin-bottom: 1rem;
+          position: relative;
+          .form-control {
+            border-radius: 0 0.375rem 0.375rem 0;
+            margin-top: 0;
+          }
+          .remove {
+            &.btn {
+              background-color: #dc3545;
+              color: #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 35px;
+              height: 35px;
+              margin: 0;
+              margin-inline-start: 1rem;
+              border-radius: 50%;
+              border: transparent;
+              border-inline-start: 1px solid #cdcdcd;
+              &:hover {
+                border-color: transparent;
+                border-inline-start: 1px solid #cdcdcd;
+              }
+            }
+          }
+          .form-check-input {
+            position: absolute;
+            left: 4rem;
+            margin-top: 0;
+            background-color: rgba($color: $PrimaryColor, $alpha: 0.1);
+            border-color: transparent;
+            border-radius: 3px;
+            &:checked {
+              background-color: $PrimaryColor;
+              background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+            }
+          }
+        }
+        .btnAdd {
+          font-family: "semibold";
+          font-size: 0.9rem;
+          color: $PrimaryColor;
+        }
+      }
+      .question_exam {
+        border: 1px solid #d6d6d6;
+        border-radius: 9px;
+        width: 100%;
+        .card_question_exam {
+          border-bottom: 1px solid #d6d6d6;
+          padding: 1.5rem 0;
+          margin: 0 1.5rem;
+          .colorPrimary {
+            color: $PrimaryColor;
+            font-size: 1.5rem;
+          }
+          .title {
+            margin-bottom: 0;
+            font-family: "semibold";
+          }
+          .title_name {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-top: 1.3rem;
+          }
+          .category {
+            font-size: 0.8rem;
+            font-family: "regular";
+            color: $PrimaryColor;
+          }
+          .question_data {
+            display: flex;
+            .data {
+              display: flex;
+              align-items: center;
+              margin-inline-end: 3rem;
+              svg {
+                margin-inline-end: 0.5rem;
+              }
+              .title,
+              .text {
+                margin-bottom: 0;
+                font-family: "regular";
+              }
+            }
           }
         }
       }
@@ -783,10 +1124,10 @@ table tbody tr td {
           font-family: "regular";
           color: $PrimaryText;
           margin-bottom: 0;
-          font-size: .8rem;
+          font-size: 0.8rem;
           svg {
             color: $PrimaryColor;
-            margin-inline-end: .5rem;
+            margin-inline-end: 0.5rem;
           }
         }
       }
@@ -824,27 +1165,26 @@ table tbody tr td {
         width: 100%;
         margin: 0 auto;
         .info {
-          background-color: rgba($color:$PrimaryColor, $alpha: 0.1);
+          background-color: rgba($color: $PrimaryColor, $alpha: 0.1);
           font-family: "regular";
-          color: #64666A;
-          padding: .5rem;
-          margin-bottom: 0;
-          margin-inline-end: 1rem;
+          color: #64666a;
+          padding: 0.5rem;
+          margin-bottom: 1rem;
+          margin-inline-start: 1rem;
           width: 45%;
-          font-size: .7rem;
+          font-size: 0.7rem;
           text-align: center;
           svg {
             color: $PrimaryColor;
-            margin-inline-end: .5rem;
+            margin-inline-end: 0.5rem;
           }
           &:nth-child(3) {
             margin-inline-end: 0;
           }
           &.date {
-            margin-bottom: 1rem;
             margin-inline-end: 0;
             width: fit-content;
-          }          
+          }
         }
       }
     }
@@ -863,12 +1203,12 @@ table tbody tr td {
       .info {
         width: 25%;
         text-align: start;
-        font-size: .8rem;
+        font-size: 0.8rem;
         margin-top: 2rem;
         .title {
           font-family: "regular";
           color: #828282;
-          margin-bottom: .8rem;
+          margin-bottom: 0.8rem;
         }
         .text {
           font-family: "semibold";

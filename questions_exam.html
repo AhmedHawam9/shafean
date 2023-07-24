@@ -244,264 +244,216 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="title_section">إضافة اختبار جديد</h5>
-            </div>
-            <form action="questions_exam.html" class="add_form">
-              <div class="form-group">
-                <label for="">* نوع السؤال</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">*اسم السؤال</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="form-control"
-                  placeholder="اكتب اسم السؤال"
-                />
-              </div>
-              <div class="form-group">
-                <label for="">* المادة</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر المجموعة"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">* المرحلة الدراسية</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر المجموعة"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <div id="AppendAnswer" class="AppendAnswer">
-                  <label for="" class="mb-2">الاجابات</label>
-                  <div class="d-flex align-items-center append_answer">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder=""
-                    />
-                    <button type="button" class="remove btn">x</button>
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radioAnswer"
-                      id=""
-                      checked
-                    />
+            <h4 class="title_section">اضافة امتحان جديد</h4>
+            <form action="index.html" class="add_form">
+              <h4 class="title">الاسألة</h4>
+              <p class="text">ابدأ بإضافة الاسألة على الجزء المختار الآن</p>
+              <div class="question_exam">
+                <div class="card_question_exam">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h6 class="title">السؤال الاول</h6>
+                    <a
+                      href="#"
+                      class="colorPrimary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editQuestionModal"
+                      ><i class="fa-solid fa-pen-to-square"></i
+                    ></a>
                   </div>
-                </div>
-                <small class="d-block text-start"
-                  ><button id="btnAdd" class="btn btnAdd" type="button">
-                    + إضافة إجابة اخري
-                  </button></small
-                >
-                <script>
-                  $(function () {
-                    $("#btnAdd").bind("click", function () {
-                      var div = $("<div />");
-                      div.html(GetDynamicNewAnswer(""));
-                      $("#AppendAnswer").append(div);
-                    });
-                    $("body").on("click", ".remove", function () {
-                      $(this).closest("div").remove();
-                    });
-                  });
-                  function GetDynamicNewAnswer(value) {
-                    return (
-                      '<div class="d-flex align-items-center append_answer">' +
-                      '<input type="text" name="" id="" class="form-control" placeholder="">' +
-                      '<button type="button" class="remove btn">x</button>' +
-                      '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
-                      "</div>"
-                    );
-                  }
-                </script>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="form-group">
-                      <label for="">* مدة السؤال</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="ادخل درجة السؤال"
-                      />
+                  <h6 class="title_name">تعتبر مادة المحاسبة المالية مادة</h6>
+                  <p class="category">اختياري</p>
+                  <div class="question_data">
+                    <div class="data">
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="title">مدة السؤال :</p>
+                      <p class="text">20 دقيقة</p>
+                    </div>
+                    <div class="data">
+                      <i class="fa-regular fa-star"></i>
+                      <p class="title">درجة السؤال :</p>
+                      <p class="text">20</p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="form-group">
-                      <label for="">* درجة السؤال</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="ادخل درجة السؤال"
-                      />
+                </div>
+                <div class="card_question_exam">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h6 class="title">السؤال الاول</h6>
+                    <a
+                      href="#"
+                      class="colorPrimary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#editQuestionModal"
+                      ><i class="fa-solid fa-pen-to-square"></i
+                    ></a>
+                  </div>
+                  <h6 class="title_name">تعتبر مادة المحاسبة المالية مادة</h6>
+                  <p class="category">اختياري</p>
+                  <div class="question_data">
+                    <div class="data">
+                      <i class="fa-regular fa-clock"></i>
+                      <p class="title">مدة السؤال :</p>
+                      <p class="text">20 دقيقة</p>
+                    </div>
+                    <div class="data">
+                      <i class="fa-regular fa-star"></i>
+                      <p class="title">درجة السؤال :</p>
+                      <p class="text">20</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <button
-                type="button"
-                class="btn SecondButton d-block mb-3 px-5"
-                data-bs-toggle="modal"
-                data-bs-target="#addQuestionModal"
-              >
-                اضافة سؤال جديد
-              </button>
 
-              <!-- Modal choose question bank or new question -->
+              <!-- Modal -->
               <div
-                class="modal fade"
-                id="addQuestionModal"
+                class="modal edit-modal-question fade"
+                id="editQuestionModal"
                 tabindex="-1"
-                aria-labelledby="addQuestionModalLabel"
+                aria-labelledby="editQuestionModalLabel"
                 aria-hidden="true"
               >
                 <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-body">
-                      <h4 class="modal_title text-center">
-                        هل تريد إضافة الاسألة من بنك الاسالة المتاح في الداش
-                        بورد ؟
-                      </h4>
-                      <div class="buttons">
-                        <button
-                          type="button"
-                          class="btn PrimaryButton"
-                          data-bs-toggle="modal"
-                          data-bs-target="#questionBankModal"
+                      <div class="form-group w-100">
+                        <label for="">نوع السؤال</label>
+                        <select
+                          name=""
+                          id=""
+                          class="form-control selectpicker"
+                          title="نوع السؤال"
                         >
-                          نعم , عرض الاسالة
-                        </button>
-                        <button
-                          type="button"
-                          class="btn SecondButton"
-                          data-bs-toggle="modal"
-                          data-bs-target="#newQuestionModal"
-                        >
-                          اضافة اسألة جديدة
-                        </button>
+                          <option value="">اختياري</option>
+                          <option value="">مقالي</option>
+                        </select>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                      <div class="form-group w-100">
+                        <label for="">نص السؤال</label>
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="اكتب نص السؤال"
+                        />
+                        <div class="d-flex justify-content-between">
+                          <p id="fileName"></p>
+                          <small class="d-block text-start mt-2"
+                            ><label for="image" class="cursor">
+                              + إضافة صورة</label
+                            ><input type="file" name="" id="image" hidden
+                          /></small>
+                        </div>
+                        <script>
+                          // Get file input element
+                          let fileInput = document.getElementById("image");
+                          let span = document.getElementById("fileName");
+                          // Fires on file upload
+                          fileInput.addEventListener(
+                            "change",
+                            function (event) {
+                              // Get file name
+                              let fileName = fileInput.files[0].name;
 
-              <!-- Modal question Bank -->
-              <div
-                class="modal questionBankModal fade"
-                id="questionBankModal"
-                tabindex="-1"
-                aria-labelledby="questionBankModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <h2 class="modal_title">اضافة سؤال جديد</h2>
-                      <p class="modal_text">
-                        يمكنك الحصول على السؤال المناسب من خلال البحث باسم
-                        المادة او السؤال
-                      </p>
-                      <div class="table_data">
-                        <div class="filter_table">
-                          <div class="form-group">
+                              // Update file name in span
+                              span.innerText = fileName;
+                            }
+                          );
+                        </script>
+                      </div>
+                      <div class="form-group w-100">
+                        <label for="">الاجابات</label>
+                        <div id="AppendAnswer">
+                          <div class="d-flex align-items-center append_answer">
+                            <span class="mx-2">A</span>
                             <input
-                              type="search"
+                              type="text"
                               name=""
                               id=""
                               class="form-control"
-                              placeholder="ابحث بإسم القاعة , المكان"
+                              placeholder=""
                             />
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <button type="button" class="remove btn">x</button>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              name="radioAnswer"
+                              id=""
+                              checked
+                            />
                           </div>
                         </div>
-                        <table class="table">
-                          <tbody>
-                            <tr>
-                              <th scope="row">
-                                مادة المحاسبة المالية تعتبر مادة ....
-                              </th>
-                              <td>اختياري</td>
-                              <td>الإجابة: اساسية</td>
-                              <td>الدرجة:50</td>
-                              <td>
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
-                                />
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">
-                                مادة المحاسبة المالية تعتبر مادة ....
-                              </th>
-                              <td>اختياري</td>
-                              <td>الإجابة: اساسية</td>
-                              <td>الدرجة:50</td>
-                              <td>
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
-                                />
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">
-                                مادة المحاسبة المالية تعتبر مادة ....
-                              </th>
-                              <td>اختياري</td>
-                              <td>الإجابة: اساسية</td>
-                              <td>الدرجة:50</td>
-                              <td>
-                                <input
-                                  class="form-check-input"
-                                  type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
-                                />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <small class="d-block text-start"
+                          ><button id="btnAdd" class="btn btnAdd" type="button">
+                            + إضافة إجابة اخري
+                          </button></small
+                        >
+                        <script>
+                          $(function () {
+                            $("#btnAdd").bind("click", function () {
+                              var div = $("<div />");
+                              div.html(GetDynamicNewAnswer(""));
+                              $("#AppendAnswer").append(div);
+                            });
+                            $("body").on("click", ".remove", function () {
+                              $(this).closest("div").remove();
+                            });
+                          });
+                          function GetDynamicNewAnswer(value) {
+                            return (
+                              '<div class="d-flex align-items-center append_answer">' +
+                              '<span class="mx-2">A</span>' +
+                              '<input type="text" name="" id="" class="form-control" placeholder="">' +
+                              '<button type="button" class="remove btn">x</button>' +
+                              '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
+                              "</div>"
+                            );
+                          }
+                        </script>
                       </div>
+                      <div class="form-group w-100">
+                        <label for="">النقاط</label>
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="ادخل نقاط السؤال"
+                        />
+                      </div>
+                      <div class="form-group w-100">
+                        <label for="">مدة السؤال</label>
+                        <input
+                          type="text"
+                          name=""
+                          id=""
+                          class="form-control"
+                          placeholder="ادخل مدة السؤال بالدقيقة"
+                        />
+                      </div>
+                      <button type="submit" class="btn PrimaryButton w-100">
+                        حفظ
+                      </button>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div class="buttons mt-4">
+                <button type="button" class="btn PrimaryButton">
+                    الحفظ
+                </button>
+                <a
+                  href="#"
+                  type="button"
+                  class="btn SecondButton"
+                  data-bs-toggle="modal"
+                    data-bs-target="#newQuestionModal"
+                  >اضافة سؤال جديد</a
+                >
               </div>
 
               <!-- Modal add new question -->
@@ -639,8 +591,6 @@
                   </div>
                 </div>
               </div>
-
-              <button type="submit" class="btn PrimaryButton">الحفظ</button>
             </form>
           </div>
         </section>
