@@ -40,7 +40,7 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
-    <title>الاختبارات</title>
+    <title>الأسألة التفاعلية</title>
     <!-- ? Title -->
 
     <!-- ? Favicon -->
@@ -245,9 +245,9 @@
         <section class="content">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-              <h5 class="title_section">الاختبارات</h5>
-              <a href="add_exam.html" class="btn btn_title_page"
-                >+ اضافة اختبار جديد</a
+              <h5 class="title_section">الأسألة التفاعلية</h5>
+              <a href="add_grade.html" class="btn btn_title_page"
+                >+ اضافة سؤال جديد</a
               >
             </div>
             <div class="table_details">
@@ -260,7 +260,7 @@
                     name=""
                     id=""
                     class="form-control"
-                    placeholder="ابحث باسم الاختبار , المجموعة , المدرس"
+                    placeholder="ابحث باسم المادة , المدرس"
                   />
                 </div>
                 <div class="form-group">
@@ -290,15 +290,27 @@
                   </script>
                 </div>
                 <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="كل المدرسين"
+                    >
+                      <option value="">فرقة 1</option>
+                      <option value="">فرقة 2</option>
+                      <option value="">فرقة 3</option>
+                    </select>
+                  </div>
+                <div class="form-group">
                   <select
                     name=""
                     id=""
                     class="selectpicker form-control"
-                    title="كل المدرسين"
+                    title="كل المواد"
                   >
-                    <option value="">ابتدائي</option>
-                    <option value="">اعدادي</option>
-                    <option value="">ثانوي</option>
+                    <option value="">فرقة 1</option>
+                    <option value="">فرقة 2</option>
+                    <option value="">فرقة 3</option>
                   </select>
                 </div>
               </div>
@@ -308,27 +320,20 @@
                 <table class="table" id="table">
                   <thead>
                     <tr class="trAltCizgi">
-                      <th class="th">رقم الاختبار</th>
-                      <th class="th">اسم الاختبار</th>
-                      <th class="th">حالة الامتحان</th>
-                      <th class="th">المجموعة</th>
-                      <th class="th">عدد الأسألة</th>
+                      <th class="th">رقم السؤال</th>
+                      <th class="th">اسم السؤال</th>
+                      <th class="th">المادة</th>
+                      <th class="th">المرحلة الدراسية</th>
                       <th class="th"></th>
                     </tr>
                   </thead>
                   <tbody class="tbody">
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        1
-                      </td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td><span class="exam_status done">امتحان منتهي</span></td>
-                      <td>مجموعة العهد الحديث</td>
-                      <td>20</td>
+                      <td class="id">1</td>
+                      <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                      <td> القرآن الكريم</td>
+                      <td>الفرقة الاولى</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
                           <a
@@ -343,8 +348,11 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="details_exam.html">تفاصيل الاختبار</a>
+                              <a class="dropdown-item" href="edit_grade.html"
+                                >تعديل البيانات</a
+                              >
                             </li>
+                            <li><a class="dropdown-item" href="#">حذف </a></li>
                           </ul>
                         </div>
                       </td>
@@ -353,108 +361,129 @@
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        1
-                      </td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td><span class="exam_status now">امتحان حالى</span></td>
-                      <td>مجموعة العهد الحديث</td>
-                      <td>20</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="details_exam.html">تفاصيل الاختبار</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
+                        <td class="id">1</td>
+                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                        <td> القرآن الكريم</td>
+                        <td>الفرقة الاولى</td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="edit_grade.html"
+                                  >تعديل البيانات</a
+                                >
+                              </li>
+                              <li><a class="dropdown-item" href="#">حذف </a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
                     <!-- For loop this tr -->
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        1
-                      </td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td><span class="exam_status now">امتحان حالى</span></td>
-                      <td>مجموعة العهد الحديث</td>
-                      <td>20</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="details_exam.html">تفاصيل الاختبار</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
+                        <td class="id">1</td>
+                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                        <td> القرآن الكريم</td>
+                        <td>الفرقة الاولى</td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="edit_grade.html"
+                                  >تعديل البيانات</a
+                                >
+                              </li>
+                              <li><a class="dropdown-item" href="#">حذف </a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
                     <!-- For loop this tr -->
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        1
-                      </td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td><span class="exam_status done">امتحان منتهي</span></td>
-                      <td>مجموعة العهد الحديث</td>
-                      <td>20</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
+                        <td class="id">1</td>
+                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                        <td> القرآن الكريم</td>
+                        <td>الفرقة الاولى</td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="edit_grade.html"
+                                  >تعديل البيانات</a
+                                >
+                              </li>
+                              <li><a class="dropdown-item" href="#">حذف </a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    <!-- For loop this tr -->
 
-                          <ul class="dropdown-menu">
-                            <li>
-                              <a class="dropdown-item" href="details_exam.html">تفاصيل الاختبار</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
+                    <!-- For loop this tr -->
+                    <tr>
+                        <td class="id">1</td>
+                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
+                        <td> القرآن الكريم</td>
+                        <td>الفرقة الاولى</td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="edit_grade.html"
+                                  >تعديل البيانات</a
+                                >
+                              </li>
+                              <li><a class="dropdown-item" href="#">حذف </a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
                     <!-- For loop this tr -->
                   </tbody>
                 </table>
-
                 <script>
                   $(document).ready(function () {
                     $("#table tbody").on("click", "tr", function () {
@@ -471,6 +500,7 @@
       <!-- ======= Main ======= -->
     </div>
     <!-- ? ======= footer =========== -->
+    
 
     <script src="js/main.js"></script>
   </body>

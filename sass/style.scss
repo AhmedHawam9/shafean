@@ -65,7 +65,7 @@ body {
     padding: 0;
     
     li {
-      width: 16%;
+      width: 23%;
       .title {
         font-family: "regular";
         color: $SecondText;
@@ -1328,14 +1328,17 @@ p.cont {
   margin-top: 23px;
 }
 .prises {
-  background-color: #64666a1c;
+  background-color: rgba(100,102,106,.1098039216);
   display: flex;
   justify-content: space-between;
- align-items: center;
-  font-family: 'regular';
+  align-items: center;
+  font-family: "regular";
   border-radius: 3px;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 0.5rem;
+  margin-top: 10px;
+  margin-inline-end: 300px;
 }
+
 .prises h6 {
 
   font-size: 0.6rem;
@@ -1345,24 +1348,30 @@ p.cont {
   font-size: 0.6rem
 }
 .prises-1 {
-  background-color: #64666a1c;
+  background-color: rgba(100,102,106,.1098039216);
   display: flex;
   justify-content: space-between;
- align-items: center;
-  font-family: 'regular';
+  align-items: center;
+  font-family: "regular";
   border-radius: 3px;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 0.5rem;
+  margin-top: 10px;
+  margin-inline-end: 400px;
+}
 
-}
+
 .prises-2 {
-  background-color: #64666a1c;
+  background-color: rgba(100,102,106,.1098039216);
   display: flex;
   justify-content: space-between;
- align-items: center;
-  font-family: 'regular';
+  align-items: center;
+  font-family: "regular";
   border-radius: 3px;
-  padding: 0.8rem 1rem;
+  padding: 0.9rem 0.5rem;
+  margin-top: 10px;
+  margin-inline-end: 500px;
 }
+
 .prises-1 h6 {
  
   font-size: 0.6rem;
@@ -1380,4 +1389,39 @@ p.cont {
   font-size: 0.6rem
 
 }
+.text-interactive h4 {
+  font-size: 0.6rem;
+  font-family: "regular";
+  margin-top:1rem
+}
+input.form-control.nasr {
+ margin-top: 20px
+}
+div#v-pills-tabContent {
+  width: 80%;
+}
+button.btn.PrimaryButton.nasr {
+margin-top: 20px;
+padding: 0.5rem 1rem;
+margin-inline-start: auto;
+display: block
+}
+h5.name {
+  font-family: "regular";
+  font-size: 0.6rem;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: unset;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #000;
+  border-bottom: 2px solid #102b21;
+ 
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  color: #000;
+  font-family: "regular";
+  border: unset;
+}
+
 @import "./_responsive.scss";
