@@ -1423,5 +1423,237 @@ h5.name {
   font-family: "regular";
   border: unset;
 }
+.notifacatin-page {
+  padding: 2rem;
+  background-color: #d6d6d631;
+  .head h6{
+    font-size: 0.9rem;
+    font-family: "bold"; 
+  
+  }
+  .head p{
+    font-size: 0.7rem;
+    font-family: "regular"; 
+    width: 70%;
+    color: #707070;
+  
+  }
+  .form-group p {
+    font-size: 0.7rem;
+    font-family: "regular"; 
+    padding-right: 1.2rem;
+    padding-top: 0.6rem;
+    color: #707070;
+  
+  }
+  .form-group {
+    input[type="checkbox"] {
+      &:checked {
+        background-color: $PrimaryColor;
+        border-color: $PrimaryColor
+      }
+    }
+  }
+  .form-group label {
+    font-size: 0.7rem;
+    font-family: "bold"; 
+  }
+}
+.Help-Center{
+  padding: 2rem;
+  background-color: #d6d6d631;
+  position: relative;
+  .form-group svg {
+    padding: 2rem;
+    position: absolute;
+    top:10px;
+    left: 10px;
+   color: #707070; 
+  }
+  .form-group ::placeholder {
+    font-family: "regular";
+  }
+  .header h4 {
+    padding-top: 5rem;
+    font-size: 0.9rem;
+    font-family: bold;
+
+  }
+  .header p{
+    color: #707070;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    font-family: "regular";
+
+  }
+  .header h5 {
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    font-family: bold;
+  }
+  
+  
+  
+}
+.accordion {
+  padding-top: 20px;
+}
+.accordion-item h4 {
+  font-size: 0.8rem;
+  font-family: bold;
+}
+.accordion-body p {
+  font-size: 0.7rem;
+  font-family: "regular";
+}
+.accordion-button:focus {
+  box-shadow: unset;
+}
+.accordion-button:not(.collapsed) {
+  color: unset;
+  background-color: unset;
+}
+.accordion-button::after {
+  margin-inline-start: auto;
+    display: block;
+    margin-inline-end: 0;
+    filter: brightness(0.5);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "-";
+  font-size: 1.5rem;
+  color: #24684F;
+  
+}
+.accordion-button::after {
+  background-image: none;
+  content: "+";
+  font-size: 1.5rem;
+}
+.sitiang {
+  display: flex;
+  justify-content: center;
+
+ .nav-pills .nav-link.active{
+  background-color: unset !important;
+    color: #011c1e !important;
+    border-right: 3px solid #24684F !important;
+}
+  
+}
+ .delet {
+  padding: 2rem;
+  background-color: #d6d6d631;
+  .form-group {
+    input[type="checkbox"] {
+      &:checked {
+        background-color: $PrimaryColor;
+        border-color: $PrimaryColor
+      }
+    }
+  }
+  button.btn.PrimaryButton.dele {
+    margin-top: 30px;
+    padding: 0.5rem 1rem;
+    background-color: #D25656;
+    color:white;
+  }
+  button.btn.PrimaryButton.dele:hover{
+    background-color: white;
+    color:#D25656;
+    border: 1px solid #D25656; 
+  }
+  h6 {
+    font-size: 0.9rem;
+    font-family: "bold"; 
+  }
+  p{
+    color: #707070;
+    padding-top: 10px;
+    font-size: 0.8rem;
+    font-family: "regular";
+  }
+  .form-group label {
+    font-size: 0.7rem;
+    font-family: "bold"; 
+  }
+
+ }
+ .information {
+  background-color: #FAFAFA;
+  padding: 4rem 2rem;
+ }
+.card{
+  width: 20rem;
+  border: unset;
+  position: relative;
+  
+  .dropdown-toggle::after {
+    content: unset
+
+   }
+   .dropdown-toggle {
+   position: absolute;
+   right: 10rem;
+  }
+   }
+ 
+  
+  .card-body {
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    img {
+      width: 35%;
+    }
+    .card-title {
+      padding-top: 0.5rem;
+      font-size: 0.9rem;
+      font-family: "bold"
+    }
+    .card-grup {
+      font-size: .5rem;
+    padding-top: 10px;
+    font-family: "regular";
+    color: #24684f;
+    }
+    .card-text {
+      font-size: .5rem;
+      font-family: "regular";
+      color: #828282;
+      margin-bottom: 0.4rem;
+      
+
+    }
+    svg.svg-inline--fa.fa-calendar-days {
+     margin-inline-end: 10px;
+     font-size: 0.8rem;
+    }
+    svg.svg-inline--fa.fa-envelope {
+      margin-inline-end: 10px;
+      font-size: 0.8rem;
+    }
+    svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+      margin-inline-end: 10px;
+      font-size: 0.8rem;
+    }
+    
+   }
+   
+   
+
+
+ 
+ 
+ 
+
+
+
+
+
+
 
 @import "./_responsive.scss";

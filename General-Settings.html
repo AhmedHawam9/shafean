@@ -245,7 +245,8 @@
         <section class="content">
           <div class="container">
             <h5 class="title_section">الاعدادات العامة</h5>
-            <div class="d-flex align-items-start">
+            <div class="sitiang">
+              <!-- frit taps -->
               <div
                 class="nav flex-column nav-pills me-3"
                 id="v-pills-tab"
@@ -262,8 +263,9 @@
                   aria-controls="v-pills-home"
                   aria-selected="true"
                 >
-                اعدادات الحساب
+                  اعدادات الحساب
                 </button>
+                <!-- secend taps -->
                 <button
                   class="nav-link"
                   id="v-pills-profile-tab"
@@ -274,8 +276,9 @@
                   aria-controls="v-pills-profile"
                   aria-selected="false"
                 >
-                معلومات الموظفين
+                  معلومات المشرفين
                 </button>
+                <!-- third taps -->
                 <button
                   class="nav-link"
                   id="v-pills-messages-tab"
@@ -286,8 +289,9 @@
                   aria-controls="v-pills-messages"
                   aria-selected="false"
                 >
-                الاشعارات
+                  الاشعارات
                 </button>
+                <!-- fourth taps -->
                 <button
                   class="nav-link"
                   id="v-pills-settings-tab"
@@ -298,33 +302,35 @@
                   aria-controls="v-pills-settings"
                   aria-selected="false"
                 >
-                مركز المساعدة
+                  مركز المساعدة
                 </button>
                 <button
-                class="nav-link"
-                id="v-pills-settings-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#v-pills-settings"
-                type="button"
-                role="tab"
-                aria-controls="v-pills-settings"
-                aria-selected="false"
-              >
-              حذف الحساب
-              </button>
-              <button
-              class="nav-link"
-              id="v-pills-settings-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#v-pills-settings"
-              type="button"
-              role="tab"
-              aria-controls="v-pills-settings"
-              aria-selected="false"
-            >
-            تسجيل الخروج
-            </button>
+                  class="nav-link"
+                  id="v-pills-delet-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-delet"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-delet"
+                  aria-selected="false"
+                >
+                  حذف الحساب
+                </button>
+                <!-- five taps -->
+                <button
+                  class="nav-link"
+                  id="v-pills-signeout-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-signeout"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-signeout"
+                  aria-selected="false"
+                >
+                  تسجيل الخروج
+                </button>
               </div>
+              <!-- frit taps -->
               <div class="tab-content" id="v-pills-tabContent">
                 <div
                   class="tab-pane fade show active"
@@ -332,93 +338,528 @@
                   role="tabpanel"
                   aria-labelledby="v-pills-home-tab"
                 >
-                <h5 class="title_section">اعدادات الحساب</h5>
-                <nav>
+                  <h5 class="title_section">اعدادات الحساب</h5>
+
+                  <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">كلمة المرور</button>
-                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">البريد الالكتروني</button>
-                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">اللغة</button>
+                      <button
+                        class="nav-link active"
+                        id="nav-home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-home"
+                        aria-selected="true"
+                      >
+                        كلمة المرور
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                      >
+                        البريد الالكتروني
+                      </button>
+                      <button
+                        class="nav-link"
+                        id="nav-contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-contact"
+                        aria-selected="false"
+                      >
+                        اللغة
+                      </button>
                     </div>
                   </nav>
                   <div class="tab-content add_form w-100" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-home"
+                      role="tabpanel"
+                      aria-labelledby="nav-home-tab"
+                    >
                       <div class="form-group">
-                        <label for="" style="margin-top: 50px">كلمة المرور الحالية</label>
-                        <input  class="form-control" type="password" >
-                      
-                     
+                        <label for="" style="margin-top: 50px"
+                          >كلمة المرور الحالية</label
+                        >
+                        <input class="form-control" type="password" />
                       </div>
                       <div class="form-group">
                         <label for="">كلمة المرور الجديدة</label>
-                        <input  class="form-control" type="password">
+                        <input class="form-control" type="password" />
                       </div>
                       <div class="form-group">
                         <label for="">إعادة كلمة المرور الجديدة</label>
-                        <input  class="form-control" type="password">
+                        <input class="form-control" type="password" />
                       </div>
-                      <button type="submit" class="btn PrimaryButton nasr">حفظ التغييرات</button>
+                      <button type="submit" class="btn PrimaryButton nasr">
+                        حفظ التغييرات
+                      </button>
                     </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="form-group">
-                            <label for="" style="margin-top: 50px"
-                              >كلمة المرور الحالية</label
-                            >
-                            <input class="form-control" type="password" />
-                          </div>
-                          <div class="form-group">
-                            <label for="">البريد الالكتروني الجديد</label>
-                            <input class="form-control" type="email" />
-                          </div>
-
-                          <button type="submit" class="btn PrimaryButton nasr">
-                            حفظ التغييرات
-                          </button>
-                    </div>
-                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">  <div class="form-group">
+                    <div
+                      class="tab-pane fade"
+                      id="nav-profile"
+                      role="tabpanel"
+                      aria-labelledby="nav-profile-tab"
+                    >
                       <div class="form-group">
-                        <div class="form-group">
-                            <h5 class="name" style="margin-top: 50px;">اللغة المستخدمة حاليا هي اللغة العربية , يمكنك الآن اختيار اللغة التي ترغب بها</h5>
-                            
-                            <label for="">أختر اللغة</label>
-                            <select name="" id="" class="form-control selectpicker" title="العربية">
-                                <option value="">العربية</option>
-                                <option value="">الانجيليزيه</option>
-                            </select>
-                       
+                        <label for="" style="margin-top: 50px"
+                          >كلمة المرور الحالية</label
+                        >
+                        <input class="form-control" type="password" />
+                      </div>
+                      <div class="form-group">
+                        <label for="">البريد الالكتروني الجديد</label>
+                        <input class="form-control" type="email" />
+                      </div>
 
                       <button type="submit" class="btn PrimaryButton nasr">
                         حفظ التغييرات
-                      </button></div>
+                      </button>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nav-contact"
+                      role="tabpanel"
+                      aria-labelledby="nav-contact-tab"
+                    >
+                      <div class="form-group">
+                        <div class="form-group">
+                          <div class="form-group">
+                            <h5 class="name" style="margin-top: 50px">
+                              اللغة المستخدمة حاليا هي اللغة العربية , يمكنك
+                              الآن اختيار اللغة التي ترغب بها
+                            </h5>
+
+                            <label for="">أختر اللغة</label>
+                            <select
+                              name=""
+                              id=""
+                              class="form-control selectpicker"
+                              title="العربية"
+                            >
+                              <option value="">العربية</option>
+                              <option value="">الانجيليزيه</option>
+                            </select>
+
+                            <button
+                              type="submit"
+                              class="btn PrimaryButton nasr"
+                            >
+                              حفظ التغييرات
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
+                <!-- frit taps -->
+                <!-- second tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-profile"
                   role="tabpanel"
                   aria-labelledby="v-pills-profile-tab"
                 >
-                  ...
+                <h5 class="title_section">معلومات المشرفين</h5>
+                <div class="Help-Center">
+                  <div class="row">
+                    <div class="col-lg-6 col-sm-12 col-12 ">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="media/Rectangle 8917.png" class="card-img-top" alt="...">
+                         <div class="card-info">
+                          <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">..</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                            </ul>
+                        </div>
+                          <h5 class="card-title">أحمد مروان</h5>
+                          <p class="card-grup">مجموعة العهد الحديث</p>
+                          <p class="card-text"><i class="fa-solid fa-phone-flip"></i> 256825582</p>
+                          <p class="card-text"><i class="fa-regular fa-envelope"></i>someone@gmail.com</p>
+                          <p class="card-text"> <i class="fa-regular fa-calendar-days"></i>تاريخ الإضافة: 22 مايو 2022</p>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="media/Rectangle 8917.png" class="card-img-top" alt="...">
+                         <div class="card-info">
+                          <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">..</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                            </ul>
+                        </div>
+                          <h5 class="card-title">أحمد مروان</h5>
+                          <p class="card-grup">مجموعة العهد الحديث</p>
+                          <p class="card-text"><i class="fa-solid fa-phone-flip"></i> 256825582</p>
+                          <p class="card-text"><i class="fa-regular fa-envelope"></i>someone@gmail.com</p>
+                          <p class="card-text"> <i class="fa-regular fa-calendar-days"></i>تاريخ الإضافة: 22 مايو 2022</p>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-12">
+                      <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                          <img src="media/Rectangle 8917.png" class="card-img-top" alt="...">
+                         <div class="card-info">
+                          <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">..</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                            </ul>
+                        </div>
+                          <h5 class="card-title">أحمد مروان</h5>
+                          <p class="card-grup">مجموعة العهد الحديث</p>
+                          <p class="card-text"><i class="fa-solid fa-phone-flip"></i> 256825582</p>
+                          <p class="card-text"><i class="fa-regular fa-envelope"></i>someone@gmail.com</p>
+                          <p class="card-text"> <i class="fa-regular fa-calendar-days"></i>تاريخ الإضافة: 22 مايو 2022</p>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12 col-12">
+                      <div class="card" style="margin-top: 10px;">
+                        <div class="card-body">
+                          <img src="media/Rectangle 8917.png" class="card-img-top" alt="...">
+                         <div class="card-info">
+                          <div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">..</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                                <li><a class="dropdown-item" href="#">.</a></li>
+                            </ul>
+                        </div>
+                          <h5 class="card-title">أحمد مروان</h5>
+                          <p class="card-grup">مجموعة العهد الحديث</p>
+                          <p class="card-text"><i class="fa-solid fa-phone-flip"></i> 256825582</p>
+                          <p class="card-text"><i class="fa-regular fa-envelope"></i>someone@gmail.com</p>
+                          <p class="card-text"> <i class="fa-regular fa-calendar-days"></i>تاريخ الإضافة: 22 مايو 2022</p>
+                         </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
+                  
+                </div>
+                <!-- second tab -->
+                <!-- third tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-messages"
                   role="tabpanel"
                   aria-labelledby="v-pills-messages-tab"
                 >
-                  ...
+                  <h5 class="title_section">الاشعارات</h5>
+                  <div class="notifacatin-page">
+                    <div class="head">
+                      <h6>رسائل البريد الالكتروني</h6>
+                      <p>
+                        الحصول على رسائل بريد إلكتروني لمعرفة ما يحدث عندما لا
+                        تكون متصلاً بالإنترنت ، يمكنك إيقاف تشغيلها في أي وقت.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="c" class="form-check-input" />
+                      <label for="c">الأخبار والتحديثات</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="v" class="form-check-input" />
+                      <label for="v">نصائح لترقية حسابك</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <hr />
+                    <div class="head">
+                      <h6>نشاط العمل و الطلاب المتقدمين</h6>
+                      <p>
+                        الحصول على رسائل بريد إلكتروني لمعرفة ما يحدث عندما لا
+                        تكون متصلاً بالإنترنت ، يمكنك إيقاف تشغيلها في أي وقت.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="b" class="form-check-input" />
+                      <label for="b">لا تخطرني</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="n" class="form-check-input" />
+                      <label for="n">الرسائل المهمة فقط</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="g" class="form-check-input" />
+                      <label for="g">ارسال كل الرسائل</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <hr />
+                    <div class="head">
+                      <h6>نشاطك على لوحة القيادة</h6>
+                      <p>
+                        الحصول على رسائل بريد إلكتروني لمعرفة ما يحدث عندما لا
+                        تكون متصلاً بالإنترنت ، يمكنك إيقاف تشغيلها في أي وقت.
+                      </p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="m" class="form-check-input" />
+                      <label for="m">لا تخطرني</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <div class="form-group">
+                      <input type="checkbox" id="a" class="form-check-input" />
+                      <label for="a">الرسائل المهمة فقط</label>
+                      <p>تلقي آخر التحديثات والأخبار الخاصة بنا</p>
+                    </div>
+                    <hr />
+                  </div>
                 </div>
+                <!-- thrid tab -->
+                <!-- fourth tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-settings"
                   role="tabpanel"
                   aria-labelledby="v-pills-settings-tab"
                 >
-                  ...
+                  <h5 class="title_section">مركز المساعدة</h5>
+                  <div class="Help-Center">
+                    <div class="form-group">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder=" كلمات البحث هنا عن ما تريد...."
+                      />
+                      <!-- accordion -->
+                      <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                            >
+                              <h4>
+                                كيف يمكنني طلب المزيد من الموظفين لفرص العمل ؟
+                              </h4>
+                            </button>
+                          </h2>
+                          <div
+                            id="collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="accordion-body">
+                              <div class="header">
+                                <p>
+                                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                  المساحة، لقد تم توليد هذا النص من مولد النص
+                                  العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ... الأخرى ...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
+                              >
+                                <h4>
+                                  كيف يمكنني طلب المزيد من الموظفين لفرص العمل ؟
+                                </h4>
+                              </button>
+                            </h2>
+                            <div
+                              id="collapseTwo"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                  المساحة، لقد تم توليد هذا النص من مولد النص
+                                  العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ... الأخرى ...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
+                              >
+                                <h4>
+                                  كيف يمكنني طلب المزيد من الموظفين لفرص العمل ؟
+                                </h4>
+                              </button>
+                            </h2>
+                            <div
+                              id="collapseThree"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample"
+                            >
+                              <div class="accordion-body">
+                                <p>
+                                  هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                  المساحة، لقد تم توليد هذا النص من مولد النص
+                                  العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ...هذا النص هو مثال لنص يمكن أن يستبدل
+                                  في نفس المساحة، لقد تم توليد هذا النص من مولد
+                                  النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                  العديد من النصوص الأخرى ...هذا النص هو مثال
+                                  لنص يمكن أن يستبدل في نفس المساحة، لقد تم
+                                  توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                  أن تولد مثل هذا النص أو العديد من النصوص
+                                  الأخرى ... الأخرى ...
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+                <!-- fourth tab -->
+                <!-- five tab -->
+                <div
+                class="tab-pane fade"
+                id="v-pills-delet"
+                role="tabpanel"
+                aria-labelledby="v-pills-delet-tab"
+              >
+              <h5 class="title_section">حذف الحساب</h5>
+              <div class="delet">
+                <h6>هل أنت متأكد من حذف  الحساب الخاص بك</h6>
+                <p>
+                  عندما تحذف حسابك ، ستفقد جميع الأنشطة في لوحة التحكم ، وعندما تحذف حسابك ستفقد جميع الأنشطة في لوحة التحكم ،
+                </p>
+                <div class="form-group">
+                  <input type="checkbox" id="z" class="form-check-input" />
+                  <label for="z">أوافق على حذف الحساب الخاص بي</label>
+                </div>
+                <button type="submit" class="btn PrimaryButton dele">
+                  حذف الآن
+                </button>
 
-            <!-- ======= Main ======= -->
+              </div>
+            
+
+              
+              </div>
+              </div>
+            
+
+              <!-- ======= Main ======= -->
+            </div>
           </div>
         </section>
       </section>
