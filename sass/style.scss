@@ -63,7 +63,7 @@ body {
     list-style: none;
     flex-wrap: wrap;
     padding: 0;
-    
+
     li {
       width: 23%;
       .title {
@@ -1308,27 +1308,41 @@ table tbody tr td {
         margin-top: 0;
       }
     }
+    .sitiang {
+      display: flex;
+      justify-content: center;
+      .nav-pills {
+        width: 20%;
+        padding-inline-end: 0;
+      }
+
+      .nav-pills .nav-link.active {
+        background-color: unset !important;
+        color: #011c1e !important;
+        border-right: 3px solid #24684f !important;
+      }
+    }
   }
 }
 p.end {
-  color:red;
+  color: red;
 }
 p.cont {
-  color:green;
+  color: green;
 }
 .one-prise {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 .one-prise h6 {
   font-size: 0.6rem;
   width: 105px;
-  font-family: 'regular';
+  font-family: "regular";
   margin-top: 23px;
 }
 .prises {
-  background-color: rgba(100,102,106,.1098039216);
+  background-color: rgba(100, 102, 106, 0.1098039216);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1340,15 +1354,14 @@ p.cont {
 }
 
 .prises h6 {
-
   font-size: 0.6rem;
   font-family: bold;
 }
 .prises h5 {
-  font-size: 0.6rem
+  font-size: 0.6rem;
 }
 .prises-1 {
-  background-color: rgba(100,102,106,.1098039216);
+  background-color: rgba(100, 102, 106, 0.1098039216);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1359,9 +1372,8 @@ p.cont {
   margin-inline-end: 400px;
 }
 
-
 .prises-2 {
-  background-color: rgba(100,102,106,.1098039216);
+  background-color: rgba(100, 102, 106, 0.1098039216);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1373,52 +1385,51 @@ p.cont {
 }
 
 .prises-1 h6 {
- 
   font-size: 0.6rem;
   font-family: bold;
 }
 .prises-1 h5 {
-  font-size: 0.6rem
+  font-size: 0.6rem;
 }
 .prises-2 h6 {
-  
   font-size: 0.6rem;
   font-family: bold;
 }
 .prises-2 h5 {
-  font-size: 0.6rem
-
+  font-size: 0.6rem;
 }
 .text-interactive h4 {
   font-size: 0.6rem;
   font-family: "regular";
-  margin-top:1rem
+  margin-top: 1rem;
 }
 input.form-control.nasr {
- margin-top: 20px
+  margin-top: 20px;
 }
 div#v-pills-tabContent {
   width: 80%;
 }
 button.btn.PrimaryButton.nasr {
-margin-top: 20px;
-padding: 0.5rem 1rem;
-margin-inline-start: auto;
-display: block
+  margin-top: 20px;
+  padding: 0.5rem 1rem;
+  margin-inline-start: auto;
+  display: block;
 }
 h5.name {
   font-family: "regular";
   font-size: 0.6rem;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   border: unset;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
   color: #000;
   border-bottom: 2px solid #102b21;
- 
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
   color: #000;
   font-family: "regular";
   border: unset;
@@ -1426,49 +1437,46 @@ h5.name {
 .notifacatin-page {
   padding: 2rem;
   background-color: #d6d6d631;
-  .head h6{
+  .head h6 {
     font-size: 0.9rem;
-    font-family: "bold"; 
-  
+    font-family: "bold";
   }
-  .head p{
+  .head p {
     font-size: 0.7rem;
-    font-family: "regular"; 
+    font-family: "regular";
     width: 70%;
     color: #707070;
-  
   }
   .form-group p {
     font-size: 0.7rem;
-    font-family: "regular"; 
+    font-family: "regular";
     padding-right: 1.2rem;
     padding-top: 0.6rem;
     color: #707070;
-  
   }
   .form-group {
     input[type="checkbox"] {
       &:checked {
         background-color: $PrimaryColor;
-        border-color: $PrimaryColor
+        border-color: $PrimaryColor;
       }
     }
   }
   .form-group label {
     font-size: 0.7rem;
-    font-family: "bold"; 
+    font-family: "bold";
   }
 }
-.Help-Center{
+.Help-Center {
   padding: 2rem;
   background-color: #d6d6d631;
   position: relative;
   .form-group svg {
     padding: 2rem;
     position: absolute;
-    top:10px;
+    top: 10px;
     left: 10px;
-   color: #707070; 
+    color: #707070;
   }
   .form-group ::placeholder {
     font-family: "regular";
@@ -1477,23 +1485,18 @@ h5.name {
     padding-top: 5rem;
     font-size: 0.9rem;
     font-family: bold;
-
   }
-  .header p{
+  .header p {
     color: #707070;
     padding-top: 10px;
     font-size: 0.8rem;
     font-family: "regular";
-
   }
   .header h5 {
     padding-top: 1rem;
     font-size: 0.9rem;
     font-family: bold;
   }
-  
-  
-  
 }
 .accordion {
   padding-top: 20px;
@@ -1515,61 +1518,50 @@ h5.name {
 }
 .accordion-button::after {
   margin-inline-start: auto;
-    display: block;
-    margin-inline-end: 0;
-    filter: brightness(0.5);
+  display: block;
+  margin-inline-end: 0;
+  filter: brightness(0.5);
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: none;
   content: "-";
   font-size: 1.5rem;
-  color: #24684F;
-  
+  color: #24684f;
 }
 .accordion-button::after {
   background-image: none;
   content: "+";
   font-size: 1.5rem;
 }
-.sitiang {
-  display: flex;
-  justify-content: center;
 
- .nav-pills .nav-link.active{
-  background-color: unset !important;
-    color: #011c1e !important;
-    border-right: 3px solid #24684F !important;
-}
-  
-}
- .delet {
+.delet {
   padding: 2rem;
   background-color: #d6d6d631;
   .form-group {
     input[type="checkbox"] {
       &:checked {
         background-color: $PrimaryColor;
-        border-color: $PrimaryColor
+        border-color: $PrimaryColor;
       }
     }
   }
   button.btn.PrimaryButton.dele {
     margin-top: 30px;
     padding: 0.5rem 1rem;
-    background-color: #D25656;
-    color:white;
+    background-color: #d25656;
+    color: white;
   }
-  button.btn.PrimaryButton.dele:hover{
+  button.btn.PrimaryButton.dele:hover {
     background-color: white;
-    color:#D25656;
-    border: 1px solid #D25656; 
+    color: #d25656;
+    border: 1px solid #d25656;
   }
   h6 {
     font-size: 0.9rem;
-    font-family: "bold"; 
+    font-family: "bold";
   }
-  p{
+  p {
     color: #707070;
     padding-top: 10px;
     font-size: 0.8rem;
@@ -1577,83 +1569,76 @@ h5.name {
   }
   .form-group label {
     font-size: 0.7rem;
-    font-family: "bold"; 
+    font-family: "bold";
   }
-
- }
- .information {
-  background-color: #FAFAFA;
+}
+.information {
+  background-color: #fafafa;
   padding: 4rem 2rem;
- }
-.card{
-  width: 20rem;
+}
+.card {
+  width:100%;
   border: unset;
   position: relative;
-  
-  .dropdown-toggle::after {
-    content: unset
 
-   }
-   .dropdown-toggle {
-   position: absolute;
-   right: 10rem;
+  .dropdown-toggle::after {
+    content: unset;
   }
-   }
- 
-  
-  .card-body {
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    img {
-      width: 35%;
-    }
-    .card-title {
-      padding-top: 0.5rem;
-      font-size: 0.9rem;
-      font-family: "bold"
-    }
-    .card-grup {
-      font-size: .5rem;
+  .dropdown-toggle {
+    position: absolute;
+    right: 10rem;
+  }
+}
+
+.card-body {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  img {
+    width: 35%;
+  }
+  .card-title {
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+    font-family: "bold";
+  }
+  .card-grup {
+    font-size: 0.5rem;
     padding-top: 10px;
     font-family: "regular";
     color: #24684f;
-    }
-    .card-text {
-      font-size: .5rem;
-      font-family: "regular";
-      color: #828282;
-      margin-bottom: 0.4rem;
-      
-
-    }
-    svg.svg-inline--fa.fa-calendar-days {
-     margin-inline-end: 10px;
-     font-size: 0.8rem;
-    }
-    svg.svg-inline--fa.fa-envelope {
-      margin-inline-end: 10px;
-      font-size: 0.8rem;
-    }
-    svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
-      margin-inline-end: 10px;
-      font-size: 0.8rem;
-    }
-    
-   }
-   
-   
-
-
- 
- 
- 
-
-
-
-
-
-
+  }
+  .card-text {
+    font-size: 0.5rem;
+    font-family: "regular";
+    color: #828282;
+    margin-bottom: 0.4rem;
+  }
+  svg.svg-inline--fa.fa-calendar-days {
+    margin-inline-end: 10px;
+    font-size: 0.8rem;
+  }
+  svg.svg-inline--fa.fa-envelope {
+    margin-inline-end: 10px;
+    font-size: 0.8rem;
+  }
+  svg:not(:host).svg-inline--fa,
+  svg:not(:root).svg-inline--fa {
+    margin-inline-end: 10px;
+    font-size: 0.8rem;
+  }
+}
+.accordion-body {
+  background-color: rgba(214, 214, 214, 0.1921568627);
+}
+.accordion-item:first-of-type .accordion-button {
+  background-color: rgba(214, 214, 214, 0.1921568627);
+}
+.archives {
+  border-bottom: unset;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+}
 
 @import "./_responsive.scss";
