@@ -847,6 +847,12 @@ table tbody tr td {
     .add_form {
       width: 50%;
       .avatar-upload {
+        .avatar-edit.supervisor {
+          position: absolute;
+          right: 12px;
+          z-index: 1;
+          top: 144px;
+        }
         position: relative;
         max-width: 205px;
         margin: 1rem 0 2rem;
@@ -875,7 +881,25 @@ table tbody tr td {
                 background: #f1f1f1;
                 border-color: #d6d6d6;
               }
+             
             }
+            
+          }
+          label.change-pic {
+            margin-top: 3rem;
+            width: unset !important;
+            height: unset !important;
+            border-radius: unset !important;
+            box-shadow: unset;
+            border: 1px solid #24684F;
+            padding: 0.5rem;
+            font-family: 'regular';
+            font-size: 0.8rem;
+            color: #06797E;
+          }
+          label.change-pic:hover {
+            background-color: #06797E;
+            color: white;
           }
         }
         .avatar-preview {
@@ -1640,5 +1664,207 @@ h5.name {
     border: 1px solid #e9ecef;
     border-radius: 4px;
 }
+.modal-content {
+  .modal-title {
+    font-family: bold;
+    font-size: 0.8rem;
+  }
+  .modal-body.library{
+   
+    padding: 0rem 1rem !important;
+    p{
+      font-family: "regular" ;
+      font-size: 0.6rem;
+      padding: 0 !important
+    }
+    iframe {
+    border-radius: 5px;
+  }
+  }
+  .modal-header {
+    border-bottom: unset;
+  }
+  button.btn-close {
+    margin: 0 !important;
+  }
+  .delet-eidt {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h4{
+      font-family:"regular" ;
+    font-size: 0.8rem;
+   
+    }
+    .icons {
+      padding-left: 3rem;
+     
+    }
+    .del {
+      color: #E63232;
+
+    }
+    .edt {
+      color: #06797E;
+    }
+  h6 {
+    color: #06797E
+  }
+  }
+  .lest {
+    padding-top: 3rem;
+    h6 {
+      color: #06797E;
+      font-family:"regular"; 
+    }
+    h3 {
+      padding-top: 3rem;
+      font-family:"bold"; 
+      font-size: 0.7rem;
+      padding-bottom: 0.7rem;
+}
+    }
+   
+  }
+  .modal-dialog {
+   max-width: 73% !important;
+  }
+  .modal-body{
+    position: relative;
+    h4{
+      padding-top: 2rem;
+      font-size: 0.8rem;
+      font-family: bold;
+    }
+    padding: 1rem 1rem;
+    .main-model {
+      background-color: #7070701e;
+      padding: 1rem 1rem;
+      border-radius: 8px;
+      h4 {
+        font-size: 0.8rem;
+        font-family: bold;
+        padding-bottom: 1rem;
+      }
+      .home-work {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        h3{
+          font-size: .8rem;
+          font-family: 'regular';
+          color: #707070;
+        }
+        span {
+          color: #000
+        }
+      }
+    }
+    .lest-model {
+      padding-right: 60px;
+      position: relative;
+      h3{
+        font-size: 0.7rem;
+        font-family: 'regular';
+        padding-top: 4rem;
+
+      }
+      p{
+        font-size: 0.7rem;
+        font-family: 'regular';
+        color: red;
+
+      }
+      h5 {
+        font-size: 0.7rem;
+        font-family: 'regular';
+        color: #B2D23F;
+
+      }
+    }
+    .lest-model-1 {
+      padding-right: 60px;
+      position: relative;
+      h3{
+        font-size: 0.7rem;
+        font-family: 'regular';
+        padding-top: 4rem;
+
+      }
+      p{
+        font-size: 0.7rem;
+        font-family: 'regular';
+        color: red;
+
+      }
+      h5 {
+        font-size: 0.7rem;
+        font-family: 'regular';
+        color: #B2D23F;
+
+      }
+
+    }
+   
+   
+  }
+  .lest-model::before {
+    content: "1";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+    top: 50px;
+    width: 40px;
+    right: 2px;
+    height: 40px;
+    background-color: rgb(112 112 112 / 4%);
+    border-radius: 50%;
+  
+  }
+  .lest-model-1::before {
+    content: "2";
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    position: absolute;
+    top: 50px;
+    width: 40px;
+    right: 2px;
+    height: 40px;
+    background-color: rgb(112 112 112 / 4%);
+    border-radius: 50%;
+  
+  }
+  .step::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 76%;
+    background-color: #06787e34;
+    right: 20px;
+    top: calc(100% - 42px);
+    
+
+  }
+  .good-mor {
+    display: flex;
+    a.btn.good {
+      color: #06797E;
+      border: 1px solid #000
+    }
+    
+  }
+ 
+
+
+
+
+
+
+
 
 @import "./_responsive.scss";

@@ -374,7 +374,8 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="#">عرض تفاصيل الاختبار</a>
+                              <a class="dropdown-item"  data-bs-toggle="modal"
+                              data-bs-target="#add" href="#" >عرض تفاصيل الاختبار</a>
                             </li>
                             <li>
                               <a class="dropdown-item" href="#">عرض تفاصيل الطالب</a>
@@ -409,7 +410,8 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="#">عرض تفاصيل الاختبار</a>
+                              <a class="dropdown-item"  data-bs-toggle="modal"
+                              data-bs-target="#add" href="#">عرض تفاصيل الاختبار</a>
                             </li>
                             <li>
                               <a class="dropdown-item" href="#">عرض تفاصيل الطالب</a>
@@ -446,7 +448,8 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="#">عرض تفاصيل الاختبار</a>
+                              <a class="dropdown-item"  data-bs-toggle="modal"
+                              data-bs-target="#add" href="#">عرض تفاصيل الاختبار</a>
                             </li>
                             <li>
                               <a class="dropdown-item" href="#">عرض تفاصيل الطالب</a>
@@ -481,7 +484,8 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="#">عرض تفاصيل الاختبار</a>
+                              <a class="dropdown-item"  data-bs-toggle="modal"
+                              data-bs-target="#add" href="#">عرض تفاصيل الاختبار</a>
                             </li>
                             <li>
                               <a class="dropdown-item" href="#">عرض تفاصيل الطالب</a>
@@ -493,6 +497,90 @@
                     <!-- For loop this tr -->
                   </tbody>
                 </table>
+                <div class="modal" id="add" tabindex="-1">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">
+                          تفاصيل الاختبار للطالب
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="main-model">
+                          <h4>
+                            واجب على الجزء الأول من سورة البقرة ( 1- 25)
+                            بالتجويد
+                          </h4>
+                          <div class="home-work">
+                            <h3>
+                              <i
+                                class="fa-solid fa-user"
+                                style="
+                                  margin-inline-end: 10px;
+                                  color: #b2d23f;
+                                "
+                              ></i
+                              >المعلم المسئول<span>: أحمد عادل</span>
+                            </h3>
+                            <h3>
+                              <i
+                                class="fa-regular fa-calendar"
+                                style="
+                                  margin-inline-end: 10px;
+                                  color: #b2d23f;
+                                "
+                              ></i
+                              >تاريخ الإنجاز<span> :مارس - 30:8م </span>
+                            </h3>
+                            <h3>
+                              <i
+                                class="fa-regular fa-circle-check"
+                                style="
+                                  margin-inline-end: 10px;
+                                  color: #b2d23f;
+                                "
+                              ></i
+                              >الإجابات الصحيحة <span> : 10 </span>
+                            </h3>
+                            <h3>
+                              <i
+                                class="fa-solid fa-trophy"
+                                style="
+                                  margin-inline-end: 10px;
+                                  color: #b2d23f;
+                                "
+                              ></i
+                              >الدرجة النهائية <span> : 30 / 40 </span>
+                            </h3>
+                          </div>
+                        </div>
+                        <h4>الإجابات الخاطئة</h4>
+
+                        <div class="lest-model">
+                          <div class="step"></div>
+                          <h3>
+                            جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول
+                            موضع
+                          </h3>
+                          <p>فلا تقربوها</p>
+                          <h5>الإجابة الصحيحة : فلا تعتدوها</h5>
+                        </div>
+                        <div class="lest-model-1">
+                          <h3>سورة البقرة تعتبر سورة</h3>
+                          <p>مكية</p>
+                          <h5>الإجابة الصحيحة : مدنية</h5>
+                        </div>
+                      </div>
+                      <div class="modal-footer"></div>
+                    </div>
+                  </div>
+                </div>
 
                 <script>
                   $(document).ready(function () {
