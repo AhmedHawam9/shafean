@@ -1850,14 +1850,26 @@ h5.name {
     
 
   }
-  .good-mor {
-    display: flex;
-    a.btn.good {
-      color: #06797E;
-      border: 1px solid #000
-    }
+.header h4 {
+  padding-top: 3rem;
+  font-family: bold;
+  font-size: 1rem;
+}
+.button-reports {
+  padding-top: 2.5rem;
+}
     
-  }
+    .button-reports .btn {
+      color: #06797E;
+      border: 1px solid #06797E;
+      font-family: 'regular';
+    }
+    .button-reports .btn:hover {
+      background-color: #06797E ;
+      color: white;
+
+    }
+  
  
 
 

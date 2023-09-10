@@ -248,7 +248,12 @@
               <h5 class="title_section">التقارير الخاصة بمنصة شفيعا</h5>
             </div>
             <!-- taps -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist" style="border-bottom: unset;">
+            <ul
+              class="nav nav-tabs"
+              id="myTab"
+              role="tablist"
+              style="border-bottom: unset"
+            >
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
@@ -314,54 +319,23 @@
                 role="tabpanel"
                 aria-labelledby="Generalreports-tab"
               >
-        
-        
-         <div class="good-mor">
-          <h5>صباح الخير😄  </h5>
-          <div class="button-reports">
-            <a
-            href="#"
-            type="button"
-            class="btn good"
-            >إضافة مشرف جديد</a
-          >
-          </div>
-          <div class="button-reports">
-            <a
-            href="#"
-            type="button"
-            class="btn good"
-            >إضافة مشرف جديد</a
-          >
-          </div>
-          <div class="button-reports">
-            <a
-            href="#"
-            type="button"
-            class="btn good"
-            >إضافة معلم جديد</a
-          >
-          </div>
-          <div class="button-reports">
-            <a
-            href="#"
-            type="button"
-            class="btn good"
-            >إضافة امتحان جديد</a
-          >
-          </div>
-          <div class="button-reports">
-            <a
-            href="#"
-            type="button"
-            class="btn good"
-            >إضافة درس جديد</a
-          >
-          </div>
-         </div>
-      
-        
-      
+              <div class="row">
+                <div class="col-3">
+               <div class="header">
+                <h4> صباح الخير 😄</h4>
+               </div>
+                </div>
+                <div class="col-9">
+                 <div class="button-reports">
+                  <button type="button" class="btn ">إضافة مشرف جديد</button>
+                  <button type="button" class="btn ">إضافة مشرف جديد</button>
+                  <button type="button" class="btn ">إضافة معلم جديد</button>
+                  <button type="button" class="btn ">إضافة امتحان جديد</button>
+                  <button type="button" class="btn ">إضافة درس جديد</button>
+                 </div>
+                </div>
+              </div>
+             
               </div>
               <!-- taps 1 -->
               <!-- taps 2 -->
@@ -871,249 +845,249 @@
                 role="tabpanel"
                 aria-labelledby="Testreports-tab"
               >
-              <div class="table_details">
-                <!-- Start filters -->
-                <div class="filters">
-                  <div class="form-group">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input
-                      type="search"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="ابحث باسم الاختبار, الطالب......."
-                    />
-                  </div>
+                <div class="table_details">
+                  <!-- Start filters -->
+                  <div class="filters">
+                    <div class="form-group">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                      <input
+                        type="search"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="ابحث باسم الاختبار, الطالب......."
+                      />
+                    </div>
 
-                  <div class="form-group">
-                    <i class="fa-solid fa-calendar-days"></i>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="daterange"
-                      value=""
-                    />
-                    <script>
-                      $(function () {
-                        $('input[name="daterange"]').daterangepicker(
-                          {
-                            opens: "left",
-                          },
-                          function (start, end, label) {
-                            console.log(
-                              "A new date selection was made: " +
-                                start.format("YYYY-MM-DD") +
-                                " to " +
-                                end.format("YYYY-MM-DD")
-                            );
-                          }
-                        );
-                      });
-                    </script>
-                  </div>
+                    <div class="form-group">
+                      <i class="fa-solid fa-calendar-days"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="daterange"
+                        value=""
+                      />
+                      <script>
+                        $(function () {
+                          $('input[name="daterange"]').daterangepicker(
+                            {
+                              opens: "left",
+                            },
+                            function (start, end, label) {
+                              console.log(
+                                "A new date selection was made: " +
+                                  start.format("YYYY-MM-DD") +
+                                  " to " +
+                                  end.format("YYYY-MM-DD")
+                              );
+                            }
+                          );
+                        });
+                      </script>
+                    </div>
 
-                  <div class="form-group">
-                    <select
-                      name=""
-                      id=""
-                      class="selectpicker form-control"
-                      title="اسم الاختبار"
-                    >
-                      <option value="">.</option>
-                      <option value="">.</option>
-                      <option value="">.</option>
-                    </select>
+                    <div class="form-group">
+                      <select
+                        name=""
+                        id=""
+                        class="selectpicker form-control"
+                        title="اسم الاختبار"
+                      >
+                        <option value="">.</option>
+                        <option value="">.</option>
+                        <option value="">.</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- End filters -->
+
+                  <div class="table-responsive">
+                    <table class="table" id="table">
+                      <thead>
+                        <tr class="trAltCizgi">
+                          <th class="th">اسم الطالب</th>
+                          <th class="th">الانجاز</th>
+                          <th class="th">تاريخ الانجاز</th>
+                          <th class="th">الحالة</th>
+                          <th class="th"></th>
+                        </tr>
+                      </thead>
+                      <tbody class="tbody">
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >تم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-danger">
+                            <i
+                              class="fa-regular fa-circle-xmark text-danger"
+                            ></i
+                            >لم يتم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >تم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+
+                        <!-- For loop this tr -->
+                        <tr>
+                          <td class="id">
+                            <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                            أحمد على
+                          </td>
+                          <td>واجب ع ادرس القران الكريم سورة البقرة</td>
+                          <td>مايو 22 , 2022 - 2:30 م</td>
+                          <td class="text-danger">
+                            <i
+                              class="fa-regular fa-circle-xmark text-danger"
+                            ></i
+                            >لم يتم الانجاز
+                          </td>
+                          <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الاختبار</a
+                                  >
+                                </li>
+                                <li>
+                                  <a class="dropdown-item" href="#"
+                                    >عرض تفاصيل الطالب</a
+                                  >
+                                </li>
+                              </ul>
+                            </div>
+                          </td>
+                        </tr>
+                        <!-- For loop this tr -->
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-                <!-- End filters -->
-
-                <div class="table-responsive">
-                  <table class="table" id="table">
-                    <thead>
-                      <tr class="trAltCizgi">
-                        <th class="th">اسم الطالب</th>
-                        <th class="th">الانجاز</th>
-                        <th class="th">تاريخ الانجاز</th>
-                        <th class="th">الحالة</th>
-                        <th class="th"></th>
-                      </tr>
-                    </thead>
-                    <tbody class="tbody">
-                      <!-- For loop this tr -->
-                      <tr>
-                        <td class="id">
-                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                          أحمد على
-                        </td>
-                        <td>واجب ع ادرس القران الكريم سورة البقرة</td>
-                        <td>مايو 22 , 2022 - 2:30 م</td>
-                        <td class="text-success">
-                          <i
-                            class="fa-regular fa-circle-check text-success"
-                          ></i
-                          >تم الانجاز
-                        </td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >عرض تفاصيل الاختبار</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >عرض تفاصيل الطالب</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- For loop this tr -->
-
-                      <!-- For loop this tr -->
-                      <tr>
-                        <td class="id">
-                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                          أحمد على
-                        </td>
-                        <td>واجب ع ادرس القران الكريم سورة البقرة</td>
-                        <td>مايو 22 , 2022 - 2:30 م</td>
-                        <td class="text-danger">
-                          <i
-                            class="fa-regular fa-circle-xmark text-danger"
-                          ></i
-                          >لم يتم الانجاز
-                        </td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الاختبار</a
-                                  >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الطالب</a
-                                  >
-                                </li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- For loop this tr -->
-
-                      <!-- For loop this tr -->
-                      <tr>
-                        <td class="id">
-                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                          أحمد على
-                        </td>
-                        <td>واجب ع ادرس القران الكريم سورة البقرة</td>
-                        <td>مايو 22 , 2022 - 2:30 م</td>
-                        <td class="text-success">
-                          <i
-                            class="fa-regular fa-circle-check text-success"
-                          ></i
-                          >تم الانجاز
-                        </td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الاختبار</a
-                                  >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الطالب</a
-                                  >
-                                </li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- For loop this tr -->
-
-                      <!-- For loop this tr -->
-                      <tr>
-                        <td class="id">
-                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                          أحمد على
-                        </td>
-                        <td>واجب ع ادرس القران الكريم سورة البقرة</td>
-                        <td>مايو 22 , 2022 - 2:30 م</td>
-                        <td class="text-danger">
-                          <i
-                            class="fa-regular fa-circle-xmark text-danger"
-                          ></i
-                          >لم يتم الانجاز
-                        </td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-
-                            <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الاختبار</a
-                                  >
-                                </li>
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >عرض تفاصيل الطالب</a
-                                  >
-                                </li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- For loop this tr -->
-                    </tbody>
-                  </table>
-                </div>
-              </div>
               </div>
               <!-- taps 4 -->
             </div>
