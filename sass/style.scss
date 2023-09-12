@@ -1611,7 +1611,8 @@ h5.name {
   }
   .dropdown-toggle {
     position: absolute;
-    right: 10rem;
+    right: 16rem;
+    border: unset !important;
   }
 }
 
@@ -2158,6 +2159,98 @@ h5.name {
   -o-transition-property: width, background-color;
   -webkit-transition-property: width, background-color;
   width: 100%;
+}
+canvas#reports {
+  height: 400px !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
+  background-color: #06797E !important;
+  font-family: "regular";
+  border: 1px solid #06797E !important ;
+  transition: 0.7s;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+  box-shadow: unset !important ;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
+  background-color: unset !important ;
+  color: #06797E !important ;
+  border: 1px solid #06797E !important ;
+  font-family: "regular";
+  transition: 0.7s;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:hover {
+  background-color: #06797E !important;
+  color: white !important
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {
+  box-shadow: unset !important ;
+}
+div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {
+  background-image: unset !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover {
+  background-color: white !important;
+  color:#06797E !important;
+}
+input.form-check-input.lesson {
+  margin-top: 0 !important;
+
+}
+input.form-check-input.lesson:focus {
+  box-shadow: unset !important;
+  border: 1px solid #0000002e !important;
+}
+input.form-check-input.lesson:checked {
+  background-color: #06797E !important;
+ 
+}
+.formation {
+  h6{
+    font-size: 0.6rem;
+    font-family: "regular";
+  }
+  p {
+    font-size: 0.6rem;
+    font-family: "regular";
+    color: #BFBFBF;
+  }
+}
+button.btn.PrimaryButton.lesson {
+ 
+    width: 32rem;
+}
+a.dropdown-item {
+  font-family: "regular"
+}
+h4.modal_title.complaints {
+  font-size: 1.5rem;
+  font-family: bold !important;
+}
+.complaints {
+  span {
+    color: #64666aa9; 
+    font-family: "bold"
+  }
+  p{
+    font-family: "regular";
+     color: #64666aa9; 
+  }
+  
+}
+.header-com {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+button.btn.btn-primary{
+  font-family: "regular";
+  border: unset !important;
+  background-color: #06797E !important;
+  margin-top: 21px;
+    margin-inline-start: auto;
+    display: block;
 }
 
 
