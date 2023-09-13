@@ -1,4 +1,146 @@
 @media only screen and (max-width: 600px) {
+  .percentage_projects .nav-pills {
+    display: contents;
+  }
+  .delet {
+    width: 20rem;
+  }
+  .Help-Center {
+    width: 20rem;
+  }
+  .notifacatin-page {
+    width: 20rem;
+  }
+  .index_cards .content .sitiang {
+    display: block;
+  }
+  .Help-Center .form-group svg {
+    display: none;
+  }
+  .accordion-item h4 {
+    font-size: 0.6rem;
+  }
+  .Help-Center .header p {
+    font-size: 0.6rem;
+  }
+  .notifacatin-page .head h6 {
+    font-size: 0.7rem;
+   
+  }
+  .notifacatin-page .head p {
+    font-size: 0.6rem;
+  }
+  .sitiang .nav-pills {
+    width: 30% !important;
+    border: unset !important;
+    font-size: 0.7rem;
+   
+  }
+  .notifacatin-page .form-group label {
+    font-size: 0.6rem;
+  }
+  .notifacatin-page .form-group p {
+    font-size: 0.6rem;
+  }
+  div#nav-tab {
+    font-size: 15px;
+    width: 20rem;
+  }
+  .modal_child .modal-dialog .card_child .info {
+    display: block !important;
+  }
+  .modal_child .modal-dialog .card_child .info img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .sidebar .nav-pills .nav-item .nav-link {
+    padding: 10px;
+  }
+ 
+  .sidebar .nav-pills {
+    width: 60%;
+    padding: 0.5rem 0.5rem;
+    
+  }
+  .basic_information .info .title {
+    width: 19rem;
+  }
+  .basic_information .info .text {
+    width: 18rem;
+  }
+  
+  .prises {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .prises-1 {
+    margin: 0;
+    margin-top: 10px;
+  }
+  .prises-2 {
+    margin: 0;
+    margin-top: 10px;
+  }
+  img.imge {
+    width: 17rem;
+  }
+  .details_exam_card .list_details li {
+    width: unset;
+  }
+  .details_exam_card .list_details{ 
+    display: block;
+
+  }
+  .index_cards .content .btn_title_page {
+    padding: 0.4rem;
+  }
+  ul#myTab {
+    font-size: 0.6rem;
+    
+    padding: 0;
+  }
+  .index_cards .content .add_form .avatar-upload .avatar-edit label.change-pic {
+    margin-top: 9px;
+    margin-inline-start: 103px;
+    font-size: .5rem;
+  }
+  
+  .index_cards .content .add_form {
+    width: 100%;
+  }
+  .index_cards .content .table_details table thead tr th, .index_cards .content .table_data table thead tr th{
+    min-width: 150PX;
+  }
+  .table>:not(caption)>*>* {
+    min-width: 93px;
+  }
+  .last_job .card_job {
+    margin-top: 10px;
+  }
+  .statistics {
+    flex-direction: column;
+    .card_statistics {
+      width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    }
+  }
+  .card {
+    margin-top: 10px;
+    width: 100%;
+    border: unset;
+    position: relative;
+  
+    .dropdown-toggle::after {
+      content: unset;
+    }
+    .dropdown-toggle {
+      position: absolute;
+      right: 7rem;
+      border: unset !important;
+    }
+  }
   .tableAllProjects {
     padding: 1rem 1rem 5rem !important;
 
@@ -35,6 +177,14 @@
 
   .index_cards {
     .content {
+      .basic_information {
+        display: block;
+      }
+      .title_section {
+        font-size: .9rem;
+     
+      }
     }
   }
 }
+

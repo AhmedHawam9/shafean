@@ -305,8 +305,15 @@
 
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="details_student.html">عرض التفاصيل</a></li>
-                                            <li><a class="dropdown-item" href="#">نقل الى مجموعة اخري</a></li>
-                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
+                                            <li>
+                                              <a
+                                                class="dropdown-item"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#changeGroupModal"
+                                                >نقل الى مجموعة اخري</a
+                                              >
+                                            </li>                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
                                             <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a></li>
                                         </ul>
                                     </div>
@@ -334,8 +341,15 @@
 
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="details_student.html">عرض التفاصيل</a></li>
-                                            <li><a class="dropdown-item" href="#">نقل الى مجموعة اخري</a></li>
-                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
+                                            <li>
+                                              <a
+                                                class="dropdown-item"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#changeGroupModal"
+                                                >نقل الى مجموعة اخري</a
+                                              >
+                                            </li>                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
                                             <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a></li>
                                         </ul>
                                     </div>
@@ -363,8 +377,15 @@
 
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="details_student.html">عرض التفاصيل</a></li>
-                                            <li><a class="dropdown-item" href="#">نقل الى مجموعة اخري</a></li>
-                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
+                                            <li>
+                                              <a
+                                                class="dropdown-item"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#changeGroupModal"
+                                                >نقل الى مجموعة اخري</a
+                                              >
+                                            </li>                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
                                             <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a></li>
                                         </ul>
                                     </div>
@@ -392,8 +413,15 @@
 
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="details_student.html">عرض التفاصيل</a></li>
-                                            <li><a class="dropdown-item" href="#">نقل الى مجموعة اخري</a></li>
-                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
+                                            <li>
+                                              <a
+                                                class="dropdown-item"
+                                                href="#"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#changeGroupModal"
+                                                >نقل الى مجموعة اخري</a
+                                              >
+                                            </li>                                            <li><a class="dropdown-item" href="edit-student.html">تعديل البيانات</a></li>
                                             <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a></li>
                                         </ul>
                                     </div>
@@ -402,6 +430,40 @@
                             <!-- For loop this tr -->
                         </tbody>
                     </table>
+                     <!-- Modal chnage student grroup -->
+                     <div
+                     class="modal fade"
+                     id="changeGroupModal"
+                     tabindex="-1"
+                     aria-labelledby="changeGroupModalLabel"
+                     aria-hidden="true"
+                   >
+                     <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                         <form class="modal-body">
+                           <h5 class="title_section">
+                             اختر المجموعة التي تريد نقل الطالب اليها
+                           </h5>
+                           <div class="form-group">
+                             <label for="">المجموعة</label>
+                             <select
+                               name=""
+                               id=""
+                               class="form-control selectpicker"
+                               title="اختر المجموعة"
+                             >
+                               <option value="">مجموعة 1</option>
+                               <option value="">مجموعة 2</option>
+                             </select>
+                           </div>
+                           <button type="submit" class="btn PrimaryButton">
+                             تأكيد النقل
+                           </button>
+                         </form>
+                       </div>
+                     </div>
+                   </div>
+                   <!-- Modal chnage student grroup -->
                             <!-- sweetalrt -->
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"

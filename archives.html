@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+    integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -251,7 +258,7 @@
             <ul class="nav nav-tabs archives" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link"
+                  class="nav-link active"
                   id="students-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#students"
@@ -265,7 +272,7 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link active"
+                  class="nav-link "
                   id="groups-tab"
                   data-bs-toggle="tab"
                   data-bs-target="#groups"
@@ -375,11 +382,7 @@
                               </a>
 
                               <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >نقل الى الارشيف</a
-                                  >
-                                </li>
+                                
                                 <li>
                                   <a
                                     class="dropdown-item"
@@ -388,10 +391,10 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">تعديل</a>
+                                  <a class="dropdown-item" href="edit-group.html">تعديل</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف </a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a>
                                 </li>
                               </ul>
                             </div>
@@ -422,11 +425,7 @@
                               </a>
 
                               <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >نقل الى الارشيف</a
-                                  >
-                                </li>
+                               
                                 <li>
                                   <a
                                     class="dropdown-item"
@@ -435,10 +434,10 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">تعديل</a>
+                                  <a class="dropdown-item" href="edit-group.html">تعديل</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف </a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a>
                                 </li>
                               </ul>
                             </div>
@@ -469,11 +468,7 @@
                               </a>
 
                               <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >نقل الى الارشيف</a
-                                  >
-                                </li>
+                              
                                 <li>
                                   <a
                                     class="dropdown-item"
@@ -482,10 +477,10 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">تعديل</a>
+                                  <a class="dropdown-item" href="edit-group.html">تعديل</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف </a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a>
                                 </li>
                               </ul>
                             </div>
@@ -516,11 +511,7 @@
                               </a>
 
                               <ul class="dropdown-menu">
-                                <li>
-                                  <a class="dropdown-item" href="#"
-                                    >نقل الى الارشيف</a
-                                  >
-                                </li>
+                               
                                 <li>
                                   <a
                                     class="dropdown-item"
@@ -529,10 +520,10 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">تعديل</a>
+                                  <a class="dropdown-item" href="edit-group.html">تعديل</a>
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف </a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a>
                                 </li>
                               </ul>
                             </div>
@@ -675,7 +666,7 @@
 
                               <ul class="dropdown-menu">
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="details_student.html"
                                     >عرض التفاصيل</a
                                   >
                                 </li>
@@ -685,12 +676,12 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="edit-student.html"
                                     >تعديل البيانات</a
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف</a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a>
                                 </li>
                               </ul>
                             </div>
@@ -723,7 +714,7 @@
 
                               <ul class="dropdown-menu">
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="details_student.html"
                                     >عرض التفاصيل</a
                                   >
                                 </li>
@@ -733,12 +724,12 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="edit-student.html"
                                     >تعديل البيانات</a
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف</a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a>
                                 </li>
                               </ul>
                             </div>
@@ -771,7 +762,7 @@
 
                               <ul class="dropdown-menu">
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="details_student.html"
                                     >عرض التفاصيل</a
                                   >
                                 </li>
@@ -781,12 +772,12 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="edit-student.html"
                                     >تعديل البيانات</a
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف</a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a>
                                 </li>
                               </ul>
                             </div>
@@ -819,7 +810,7 @@
 
                               <ul class="dropdown-menu">
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="details_student.html"
                                     >عرض التفاصيل</a
                                   >
                                 </li>
@@ -829,12 +820,12 @@
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#"
+                                  <a class="dropdown-item" href="edit-student.html"
                                     >تعديل البيانات</a
                                   >
                                 </li>
                                 <li>
-                                  <a class="dropdown-item" href="#">حذف</a>
+                                  <a class="dropdown-item" href="#" onclick="blockAlert()">حذف</a>
                                 </li>
                               </ul>
                             </div>
@@ -843,6 +834,31 @@
                         <!-- For loop this tr -->
                       </tbody>
                     </table>
+                        <!-- sweetalrt -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            
+            '<h5 class="swal2-title">   هل أنت متأكد من الحذف ؟ </h5>' + 
+            '<p class="swal2-html-container">  </p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "تأكيد الحذف",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
+       <!-- sweetalrt -->
                   </div>
                 </div>
               </div>

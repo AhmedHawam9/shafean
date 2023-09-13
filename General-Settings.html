@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+  integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -324,6 +331,7 @@
                   role="tab"
                   aria-controls="v-pills-signeout"
                   aria-selected="false"
+                  onclick="blockAlert()"
                 >
                   تسجيل الخروج
                 </button>
@@ -463,9 +471,6 @@
                 </div>
                 <!-- frit taps -->
                 <!-- second tab -->
-
-                <!-- second tab -->
-                <!-- third tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-messages"
@@ -535,8 +540,8 @@
                     <hr />
                   </div>
                 </div>
+                <!-- second tab -->
                 <!-- thrid tab -->
-                <!-- fourth tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-settings"
@@ -709,8 +714,8 @@
                     </div>
                   </div>
                 </div>
+                <!-- thrid tab -->
                 <!-- fourth tab -->
-                <!-- five tab -->
                 <div
                   class="tab-pane fade"
                   id="v-pills-delet"
@@ -733,6 +738,17 @@
                     </button>
                   </div>
                 </div>
+                <!-- fourth tab -->
+                <!-- five tab -->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-signeout"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-signeout-tab"
+                >
+               
+                </div>
+                <!-- five tab -->
               </div>
 
               <!-- ======= Main ======= -->
@@ -742,6 +758,31 @@
       </section>
     </div>
     <!-- ? ======= footer =========== -->
+       <!-- sweetalrt -->
+       <script
+       src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+       integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     ></script>
+       <script>
+         function blockAlert() {
+           Swal.fire({
+             html:
+               
+               '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' + 
+               '<p class="swal2-html-container">  </p>',
+   
+             showCancelButton: true,
+             focusConfirm: false,
+             confirmButtonText: "نعم",
+             confirmButtonAriaLabel: "Thumbs up, great!",
+             cancelButtonText: "الغاء",
+             cancelButtonAriaLabel: "Thumbs down",
+           });
+         }
+       </script>
+          <!-- sweetalrt -->
 
     <script src="js/main.js"></script>
   </body>
