@@ -1,7 +1,19 @@
 
 @media only screen and (max-width: 991.98px) {
-  .index_cards {
-    .content {
-    }
+  .accuracy_projects .text-chart {
+    position: absolute;
+    top: 20rem;
+    right: 19rem;
   }
+  .index_cards {
+    
+    .content {
+      .details_exam_card .list_details{
+        display: block;
+      }
+     
+    }
+    
+  }
+ 
 }

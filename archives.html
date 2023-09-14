@@ -87,7 +87,7 @@
           </li>
           <li class="nav-item">
             <a href="grade.html" class="nav-link align-middle">
-              <img src="./media/image/icon/grade.svg" alt="icon" />
+              <img src="media/vuesax-bold-briefcase.png" alt="icon" />
               <span>المراحل الدراسية</span>
             </a>
           </li>
@@ -105,19 +105,19 @@
           </li>
           <li class="nav-item">
             <a href="contests.html" class="nav-link align-middle">
-              <img src="./media/image/icon/competitions.svg" alt="icon" />
+              <img src="./media/image/icon/setting.svg" alt="icon" />
               <span>المسابقات</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="Interactive-question.html" class="nav-link align-middle">
-              <img src="./media/image/icon/questions.svg" alt="icon" />
+              <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>الاسالة التفاعلية</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="groups.html" class="nav-link align-middle">
-              <img src="./media/image/icon/groups.svg" alt="icon" />
+              <img src="./media/image/icon/setting.svg" alt="icon" />
               <span>المجموعات</span>
             </a>
           </li>
@@ -135,19 +135,19 @@
           </li>
           <li class="nav-item">
             <a href="parents.html" class="nav-link align-middle">
-              <img src="./media/image/icon/parents.svg" alt="icon" />
+              <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>أولياء الامور</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="Moderators.html" class="nav-link align-middle">
-              <img src="./media/image/icon/leader.svg" alt="icon" />
+              <img src="./media/image/icon/setting.svg" alt="icon" />
               <span>المشرفين</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="Complaints.html" class="nav-link align-middle">
-              <img src="./media/image/icon/complaints.svg" alt="icon" />
+              <img src="./media/image/icon/setting.svg" alt="icon" />
               <span>الشكاوي</span>
             </a>
           </li>
@@ -672,6 +672,8 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#changeGroupModal"
                                     >نقل الى مجموعة اخري</a
                                   >
                                 </li>
@@ -720,6 +722,8 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#changeGroupModal"
                                     >نقل الى مجموعة اخري</a
                                   >
                                 </li>
@@ -768,6 +772,8 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#changeGroupModal"
                                     >نقل الى مجموعة اخري</a
                                   >
                                 </li>
@@ -816,6 +822,8 @@
                                 </li>
                                 <li>
                                   <a class="dropdown-item" href="#"
+                                  data-bs-toggle="modal"
+                                  data-bs-target="#changeGroupModal"
                                     >نقل الى مجموعة اخري</a
                                   >
                                 </li>
@@ -834,6 +842,40 @@
                         <!-- For loop this tr -->
                       </tbody>
                     </table>
+                     <!-- Modal chnage student grroup -->
+                     <div
+                     class="modal fade"
+                     id="changeGroupModal"
+                     tabindex="-1"
+                     aria-labelledby="changeGroupModalLabel"
+                     aria-hidden="true"
+                   >
+                     <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                         <form class="modal-body">
+                           <h5 class="title_section">
+                             اختر المجموعة التي تريد نقل الطالب اليها
+                           </h5>
+                           <div class="form-group">
+                             <label for="">المجموعة</label>
+                             <select
+                               name=""
+                               id=""
+                               class="form-control selectpicker"
+                               title="اختر المجموعة"
+                             >
+                               <option value="">مجموعة 1</option>
+                               <option value="">مجموعة 2</option>
+                             </select>
+                           </div>
+                           <button type="submit" class="btn PrimaryButton">
+                             تأكيد النقل
+                           </button>
+                         </form>
+                       </div>
+                     </div>
+                   </div>
+                   <!-- Modal chnage student grroup -->
                         <!-- sweetalrt -->
     <script
     src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
