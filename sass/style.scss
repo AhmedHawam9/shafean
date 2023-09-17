@@ -725,7 +725,7 @@ table tbody tr td {
               left: unset;
             }
             &.selected > * {
-              box-shadow: inset 0 0 0 9999px rgba(6, 121, 126, 0.9);
+              box-shadow: inset 0 0 0 9999px rgba(6, 120, 126, 0.658);
               color: #fff;
             }
             &.selected {
@@ -2356,6 +2356,47 @@ button.btn.btn-primary{
       }
     }
   }
+}
+.text-lesson {
+  font-family: 'regular';
+  margin-right: 66px;
+  color: #656565;
+}
+.comple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  h5 {
+    margin-top: 29px;
+  }
+}
+a.btn.start {
+  // margin-inline-start: 22rem;
+  background-color: #B2D23F;
+  color: white;
+  font-family: "regular";
+}
+.student-on {
+ display: flex
+
+}
+.main {
+  display: flex;
+    gap: 73px;
+    text-align: center;
+    flex-wrap: wrap;
+    h4 {
+      font-family: "regular";
+      font-size: 0.7rem;
+      margin-top: 26px;
+    }
+    .comp {
+      padding: 1rem 4rem;
+      background-color: #FAFAFA;
+      border-radius: 15px
+    }
 }
 
 
