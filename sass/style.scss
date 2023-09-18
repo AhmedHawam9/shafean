@@ -2395,9 +2395,30 @@ a.btn.start {
     .comp {
       padding: 1rem 4rem;
       background-color: #FAFAFA;
-      border-radius: 15px
+      border-radius: 15px;
     }
 }
-
+.modal-body.groups {
+  text-align: center;
+  font-size: 4.7rem;
+}
+.modal-body.setting {
+  text-align: center;
+  font-size: 3rem;
+  h4 {
+    font-size: 1.2rem;
+  }
+  .btn {
+    background-color: #06797E;
+    color: white;
+    font-family: "regular";
+    transition: 0.5s;
+  }
+  .btn:hover {
+    background-color: white;
+    color: #06797E;
+    border: 1px solid #06797E;
+  }
+}
 
 @import "./_responsive.scss";

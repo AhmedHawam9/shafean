@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-  integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -733,7 +733,12 @@
                       <input type="checkbox" id="z" class="form-check-input" />
                       <label for="z">أوافق على حذف الحساب الخاص بي</label>
                     </div>
-                    <button type="submit" class="btn PrimaryButton dele">
+                    <button
+                      type="submit"
+                      class="btn PrimaryButton dele"
+                      data-bs-toggle="modal"
+                      data-bs-target="#changeGroupModal"
+                    >
                       حذف الآن
                     </button>
                   </div>
@@ -745,9 +750,7 @@
                   id="v-pills-signeout"
                   role="tabpanel"
                   aria-labelledby="v-pills-signeout-tab"
-                >
-               
-                </div>
+                ></div>
                 <!-- five tab -->
               </div>
 
@@ -758,31 +761,51 @@
       </section>
     </div>
     <!-- ? ======= footer =========== -->
-       <!-- sweetalrt -->
-       <script
-       src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-       integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-       crossorigin="anonymous"
-       referrerpolicy="no-referrer"
-     ></script>
-       <script>
-         function blockAlert() {
-           Swal.fire({
-             html:
-               
-               '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' + 
-               '<p class="swal2-html-container">  </p>',
-   
-             showCancelButton: true,
-             focusConfirm: false,
-             confirmButtonText: "نعم",
-             confirmButtonAriaLabel: "Thumbs up, great!",
-             cancelButtonText: "الغاء",
-             cancelButtonAriaLabel: "Thumbs down",
-           });
-         }
-       </script>
-          <!-- sweetalrt -->
+    <!-- Modal chnage student grroup -->
+    <div
+      class="modal fade"
+      id="changeGroupModal"
+      tabindex="-1"
+      aria-labelledby="changeGroupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body setting">
+            <h4>هل تريد حذف الحساب؟</h4>
+
+            <button type="submit" class="btn PrimaryButton">تأكيد الحذف</button>
+
+            <button type="submit" class="btn PrimaryButton">الغاء</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal chnage student grroup -->
+    <!-- sweetalrt -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+      integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      function blockAlert() {
+        Swal.fire({
+          html:
+            '<h5 class="swal2-title">   هل أنت متأكد من تسجيل الخروج؟ </h5>' +
+            '<p class="swal2-html-container">  </p>',
+
+          showCancelButton: true,
+          focusConfirm: false,
+          confirmButtonText: "نعم",
+          confirmButtonAriaLabel: "Thumbs up, great!",
+          cancelButtonText: "الغاء",
+          cancelButtonAriaLabel: "Thumbs down",
+        });
+      }
+    </script>
+    <!-- sweetalrt -->
 
     <script src="js/main.js"></script>
   </body>
