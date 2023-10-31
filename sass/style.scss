@@ -2420,5 +2420,69 @@ a.btn.start {
     border: 1px solid #06797E;
   }
 }
+td.p {
+  background-color: rgb(42, 221, 42);
+  border: 1px solid white;
+  text-align: center;
+  h4 {
+    color: white;
+    font-size: 0.7rem;
+  }
+}
+td.d {
+  background-color: rgb(255, 0, 0);
+  border: 1px solid white;
+  text-align: center;
+  h4 {
+    color: white;
+    font-size: 0.7rem;
+  }
+}
+td.s {
+  text-align: center;
+}
+td.name-tab {
+  text-align: center !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+  border-right: 1px solid rgba(0, 0, 0, 0.212);
+}
+ 
+
+.name-f {
+  text-align: center !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+}
+th.th-h {
+  text-align: center !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.212);
+  border-right: 1px solid rgba(0, 0, 0, 0.212);
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+}
+td.hdor {
+  text-align: start !important;
+  text-align: center !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+  border-right: 1px solid rgba(0, 0, 0, 0.212);
+}
+th.th-j {
+  background-color: #06797e;
+  color: white !important;
+  text-align: center !important;
+  border-left: 1px solid rgb(255, 255, 255);
+  
+}
+th.th-k {
+  text-align: center !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.212);
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+  border-right: 1px solid rgba(0, 0, 0, 0.212);
+  font-family: "bold"
+}
+td.i {
+  text-align: center !important;
+  border-left: 1px solid rgba(0, 0, 0, 0.212);
+  border-right: 1px solid rgba(0, 0, 0, 0.212);
+  font-family: "regular"
+}
 
 @import "./_responsive.scss";

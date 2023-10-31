@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-    integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
+      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -151,10 +151,26 @@
               <span>الشكاوي</span>
             </a>
           </li>
+
           <li class="nav-item">
-            <a href="Reports-on-the-Shafia-platform.html" class="nav-link align-middle">
+            <a
+              href="Reports-on-the-Shafia-platform.html"
+              class="nav-link align-middle"
+            >
               <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Detailed_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير التفصيليه</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Association_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير الجمعيه أو المدرسه</span>
             </a>
           </li>
           <li class="nav-item">
@@ -236,10 +252,16 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                  <a class="dropdown-item" href="Reports-on-the-Shafia-platform.html">Reports</a>
+                  <a
+                    class="dropdown-item"
+                    href="Reports-on-the-Shafia-platform.html"
+                    >Reports</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="General-Settings.html">Setting</a>
+                  <a class="dropdown-item" href="General-Settings.html"
+                    >Setting</a
+                  >
                 </li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
@@ -253,7 +275,9 @@
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="title_section">الأسألة التفاعلية</h5>
-              <a href="Add-new-Interactive-question.html" class="btn btn_title_page"
+              <a
+                href="Add-new-Interactive-question.html"
+                class="btn btn_title_page"
                 >+ اضافة سؤال جديد</a
               >
             </div>
@@ -297,17 +321,17 @@
                   </script>
                 </div>
                 <div class="form-group">
-                    <select
-                      name=""
-                      id=""
-                      class="selectpicker form-control"
-                      title="كل المدرسين"
-                    >
-                      <option value=""> 1</option>
-                      <option value=""> 2</option>
-                      <option value=""> 3</option>
-                    </select>
-                  </div>
+                  <select
+                    name=""
+                    id=""
+                    class="selectpicker form-control"
+                    title="كل المدرسين"
+                  >
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </div>
                 <div class="form-group">
                   <select
                     name=""
@@ -315,9 +339,9 @@
                     class="selectpicker form-control"
                     title="كل المواد"
                   >
-                    <option value=""> 1</option>
-                    <option value=""> 2</option>
-                    <option value=""> 3</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
                   </select>
                 </div>
               </div>
@@ -338,10 +362,12 @@
                   <tbody class="tbody">
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox"></td>
+                      <td class="th"><input class="box" type="checkbox" /></td>
                       <td class="id">1</td>
-                      <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
-                      <td> القرآن الكريم</td>
+                      <td>
+                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
+                      </td>
+                      <td>القرآن الكريم</td>
                       <td>الفرقة الاولى</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
@@ -357,11 +383,20 @@
 
                           <ul class="dropdown-menu">
                             <li>
-                              <a class="dropdown-item" href="Add-new-interactive-question-1.html"
+                              <a
+                                class="dropdown-item"
+                                href="Add-new-interactive-question-1.html"
                                 >تعديل البيانات</a
                               >
                             </li>
-                            <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a></li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="blockAlert()"
+                                >حذف
+                              </a>
+                            </li>
                           </ul>
                         </div>
                       </td>
@@ -370,158 +405,201 @@
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox"></td>
-                        <td class="id">1</td>
-                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
-                        <td> القرآن الكريم</td>
-                        <td>الفرقة الاولى</td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-  
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="Add-new-interactive-question-1.html"
-                                  >تعديل البيانات</a
-                                >
-                              </li>
-                              <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td class="id">1</td>
+                      <td>
+                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
+                      </td>
+                      <td>القرآن الكريم</td>
+                      <td>الفرقة الاولى</td>
+                      <td class="flex_mobile">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="Add-new-interactive-question-1.html"
+                                >تعديل البيانات</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="blockAlert()"
+                                >حذف
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- For loop this tr -->
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox"></td>
-                        <td class="id">1</td>
-                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
-                        <td> القرآن الكريم</td>
-                        <td>الفرقة الاولى</td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-  
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="Add-new-interactive-question-1.html"
-                                  >تعديل البيانات</a
-                                >
-                              </li>
-                              <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td class="id">1</td>
+                      <td>
+                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
+                      </td>
+                      <td>القرآن الكريم</td>
+                      <td>الفرقة الاولى</td>
+                      <td class="flex_mobile">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="Add-new-interactive-question-1.html"
+                                >تعديل البيانات</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="blockAlert()"
+                                >حذف
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- For loop this tr -->
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox"></td>
-                        <td class="id">1</td>
-                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
-                        <td> القرآن الكريم</td>
-                        <td>الفرقة الاولى</td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-  
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="Add-new-interactive-question-1.html"
-                                  >تعديل البيانات</a
-                                >
-                              </li>
-                              <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td class="id">1</td>
+                      <td>
+                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
+                      </td>
+                      <td>القرآن الكريم</td>
+                      <td>الفرقة الاولى</td>
+                      <td class="flex_mobile">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="Add-new-interactive-question-1.html"
+                                >تعديل البيانات</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="blockAlert()"
+                                >حذف
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- For loop this tr -->
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox"></td>
-                        <td class="id">1</td>
-                        <td>اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</td>
-                        <td> القرآن الكريم</td>
-                        <td>الفرقة الاولى</td>
-                        <td class="flex_mobile">
-                          <div class="dropdown">
-                            <a
-                              class="btn dropdown-toggle"
-                              href="#"
-                              role="button"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </a>
-  
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="Add-new-interactive-question-1.html"
-                                  >تعديل البيانات</a
-                                >
-                              </li>
-                              <li><a class="dropdown-item" href="#" onclick="blockAlert()">حذف </a></li>
-                            </ul>
-                          </div>
-                        </td>
-                      </tr>
+                      <td class="th"><input class="box" type="checkbox" /></td>
+                      <td class="id">1</td>
+                      <td>
+                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
+                      </td>
+                      <td>القرآن الكريم</td>
+                      <td>الفرقة الاولى</td>
+                      <td class="flex_mobile">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="Add-new-interactive-question-1.html"
+                                >تعديل البيانات</a
+                              >
+                            </li>
+                            <li>
+                              <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="blockAlert()"
+                                >حذف
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
                     <!-- For loop this tr -->
                   </tbody>
                 </table>
-                                   <!-- sweetalrt -->
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-    integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-    <script>
-      function blockAlert() {
-        Swal.fire({
-          html:
-            
-            '<h5 class="swal2-title">   هل أنت متأكد من حذف السؤال؟ </h5>' + 
-            '<p class="swal2-html-container">  </p>',
+                <!-- sweetalrt -->
+                <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+                  integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+                ></script>
+                <script>
+                  function blockAlert() {
+                    Swal.fire({
+                      html:
+                        '<h5 class="swal2-title">   هل أنت متأكد من حذف السؤال؟ </h5>' +
+                        '<p class="swal2-html-container">  </p>',
 
-          showCancelButton: true,
-          focusConfirm: false,
-          confirmButtonText: "تأكيد الحذف",
-          confirmButtonAriaLabel: "Thumbs up, great!",
-          cancelButtonText: "الغاء",
-          cancelButtonAriaLabel: "Thumbs down",
-        });
-      }
-    </script>
-       <!-- sweetalrt -->
+                      showCancelButton: true,
+                      focusConfirm: false,
+                      confirmButtonText: "تأكيد الحذف",
+                      confirmButtonAriaLabel: "Thumbs up, great!",
+                      cancelButtonText: "الغاء",
+                      cancelButtonAriaLabel: "Thumbs down",
+                    });
+                  }
+                </script>
+                <!-- sweetalrt -->
                 <script>
                   $(document).ready(function () {
                     $("#table tbody").on("click", "tr", function () {
@@ -538,7 +616,6 @@
       <!-- ======= Main ======= -->
     </div>
     <!-- ? ======= footer =========== -->
-    
 
     <script src="js/main.js"></script>
   </body>

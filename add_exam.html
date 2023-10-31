@@ -145,9 +145,24 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="Reports-on-the-Shafia-platform.html" class="nav-link align-middle">
+            <a
+              href="Reports-on-the-Shafia-platform.html"
+              class="nav-link align-middle"
+            >
               <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Detailed_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير التفصيليه</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Association_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير الجمعيه أو المدرسه</span>
             </a>
           </li>
           <li class="nav-item">
@@ -229,10 +244,16 @@
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                  <a class="dropdown-item" href="Reports-on-the-Shafia-platform.html">Reports</a>
+                  <a
+                    class="dropdown-item"
+                    href="Reports-on-the-Shafia-platform.html"
+                    >Reports</a
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="General-Settings.html">Setting</a>
+                  <a class="dropdown-item" href="General-Settings.html"
+                    >Setting</a
+                  >
                 </li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
@@ -515,126 +536,140 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
-                        <h4 class="modal_title">تفاصيل السؤال</h4>
-                        <p class="modal_text">يمكنك التعديل على الإجابات او الدرجة المعطاه ويمكنك اضافة المزيد من الاسالة</p>
-                        <div class="add_form w-100">
-                            <div class="form-group">
-                                <label for="">* نوع السؤال</label>
-                                <select
-                                  name=""
-                                  id=""
-                                  class="form-control selectpicker"
-                                  title="اختر"
-                                >
-                                  <option value="">مجموعة 1</option>
-                                  <option value="">مجموعة 2</option>
-                                </select>
-                              </div>
+                      <h4 class="modal_title">تفاصيل السؤال</h4>
+                      <p class="modal_text">
+                        يمكنك التعديل على الإجابات او الدرجة المعطاه ويمكنك
+                        اضافة المزيد من الاسالة
+                      </p>
+                      <div class="add_form w-100">
+                        <div class="form-group">
+                          <label for="">* نوع السؤال</label>
+                          <select
+                            name=""
+                            id=""
+                            class="form-control selectpicker"
+                            title="اختر"
+                          >
+                            <option value="">مجموعة 1</option>
+                            <option value="">مجموعة 2</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="">*اسم السؤال</label>
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder="اكتب اسم السؤال"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="">* المادة</label>
+                          <select
+                            name=""
+                            id=""
+                            class="form-control selectpicker"
+                            title="اختر المجموعة"
+                          >
+                            <option value="">مجموعة 1</option>
+                            <option value="">مجموعة 2</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <div
+                            id="AppendAnswerNewQuestion"
+                            class="AppendAnswer"
+                          >
+                            <label for="" class="mb-2">الاجابات</label>
+                            <div
+                              class="d-flex align-items-center append_answer"
+                            >
+                              <input
+                                type="text"
+                                name=""
+                                id=""
+                                class="form-control"
+                                placeholder=""
+                              />
+                              <button type="button" class="remove btn">
+                                x
+                              </button>
+                              <input
+                                type="radio"
+                                class="form-check-input"
+                                name="radioAnswer"
+                                id=""
+                                checked
+                              />
+                            </div>
+                          </div>
+                          <small class="d-block text-start"
+                            ><button
+                              id="btnAddNew"
+                              class="btn btnAdd"
+                              type="button"
+                            >
+                              + إضافة إجابة اخري
+                            </button></small
+                          >
+                          <script>
+                            $(function () {
+                              $("#btnAddNew").bind("click", function () {
+                                var div = $("<div />");
+                                div.html(GetDynamicNewAnswer(""));
+                                $("#AppendAnswerNewQuestion").append(div);
+                              });
+                              $("body").on("click", ".remove", function () {
+                                $(this).closest("div").remove();
+                              });
+                            });
+                            function GetDynamicNewAnswer(value) {
+                              return (
+                                '<div class="d-flex align-items-center append_answer">' +
+                                '<input type="text" name="" id="" class="form-control" placeholder="">' +
+                                '<button type="button" class="remove btn">x</button>' +
+                                '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
+                                "</div>"
+                              );
+                            }
+                          </script>
+                        </div>
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-12 col-12">
                               <div class="form-group">
-                                <label for="">*اسم السؤال</label>
+                                <label for="">* مدة السؤال</label>
                                 <input
                                   type="text"
                                   name=""
                                   id=""
                                   class="form-control"
-                                  placeholder="اكتب اسم السؤال"
+                                  placeholder="ادخل درجة السؤال"
                                 />
                               </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-12">
                               <div class="form-group">
-                                <label for="">* المادة</label>
-                                <select
+                                <label for="">* درجة السؤال</label>
+                                <input
+                                  type="text"
                                   name=""
                                   id=""
-                                  class="form-control selectpicker"
-                                  title="اختر المجموعة"
-                                >
-                                  <option value="">مجموعة 1</option>
-                                  <option value="">مجموعة 2</option>
-                                </select>
+                                  class="form-control"
+                                  placeholder="ادخل درجة السؤال"
+                                />
                               </div>
-                              <div class="form-group">
-                                <div id="AppendAnswerNewQuestion" class="AppendAnswer">
-                                  <label for="" class="mb-2">الاجابات</label>
-                                  <div class="d-flex align-items-center append_answer">
-                                    <input
-                                      type="text"
-                                      name=""
-                                      id=""
-                                      class="form-control"
-                                      placeholder=""
-                                    />
-                                    <button type="button" class="remove btn">x</button>
-                                    <input
-                                      type="radio"
-                                      class="form-check-input"
-                                      name="radioAnswer"
-                                      id=""
-                                      checked
-                                    />
-                                  </div>
-                                </div>
-                                <small class="d-block text-start"
-                                  ><button id="btnAddNew" class="btn btnAdd" type="button">
-                                    + إضافة إجابة اخري
-                                  </button></small
-                                >
-                                <script>
-                                  $(function () {
-                                    $("#btnAddNew").bind("click", function () {
-                                      var div = $("<div />");
-                                      div.html(GetDynamicNewAnswer(""));
-                                      $("#AppendAnswerNewQuestion").append(div);
-                                    });
-                                    $("body").on("click", ".remove", function () {
-                                      $(this).closest("div").remove();
-                                    });
-                                  });
-                                  function GetDynamicNewAnswer(value) {
-                                    return (
-                                      '<div class="d-flex align-items-center append_answer">' +
-                                      '<input type="text" name="" id="" class="form-control" placeholder="">' +
-                                      '<button type="button" class="remove btn">x</button>' +
-                                      '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
-                                      "</div>"
-                                    );
-                                  }
-                                </script>
-                              </div>
-                              <div class="form-group">
-                                <div class="row">
-                                  <div class="col-lg-6 col-md-12 col-12">
-                                    <div class="form-group">
-                                      <label for="">* مدة السؤال</label>
-                                      <input
-                                        type="text"
-                                        name=""
-                                        id=""
-                                        class="form-control"
-                                        placeholder="ادخل درجة السؤال"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6 col-md-12 col-12">
-                                    <div class="form-group">
-                                      <label for="">* درجة السؤال</label>
-                                      <input
-                                        type="text"
-                                        name=""
-                                        id=""
-                                        class="form-control"
-                                        placeholder="ادخل درجة السؤال"
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <button
-                                type="button"
-                                class="btn SecondButton d-block mb-3 px-5"
-                              >
-                                إضافة الآن
-                              </button>
+                            </div>
+                          </div>
                         </div>
+                        <button
+                          type="button"
+                          class="btn SecondButton d-block mb-3 px-5"
+                        >
+                          إضافة الآن
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
