@@ -1,7 +1,11 @@
-@media only screen and (max-width: 1200px) {
-  .index_cards {
-    .content {
-        
+@media only screen and (max-width: 1300px) {
+  
+    .sidebar.open, .sidebar.opened{
+      width: 20%;
     }
-  }
+    .sidebar.open ~ .index_cards,
+    .sidebar.opened ~ .index_cards {
+      width: 80%;
+      margin-inline-start: 20%;
+    }
 }
