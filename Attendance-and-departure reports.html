@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="sass/style.min.css" />
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="css/select.dataTables.min.css" />
+    <link rel="stylesheet" href="css/daterangepicker.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.select.min.js"></script>
+    <script src="js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.min.js"></script>
+    <script src="js/charts.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>التقارير الخاصة بمنصة شفيعا</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="media/image/logo.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <!-- <div class="image_logo">
+          <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+        </div> -->
+          <li class="nav-item">
+            <a href="index.html" class="nav-link align-middle">
+              <img src="./media/image/icon/home.svg" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="lessons.html" class="nav-link align-middle">
+              <img src="./media/image/icon/lessons.svg" alt="icon" />
+              <span>الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="grade.html" class="nav-link align-middle">
+              <img src="media/vuesax-bold-briefcase.png" alt="icon" />
+              <span>المراحل الدراسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="subjects.html" class="nav-link align-middle">
+              <img src="./media/image/icon/subjects.svg" alt="icon" />
+              <span>المواد</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="exams.html" class="nav-link align-middle">
+              <img src="./media/image/icon/exams.svg" alt="icon" />
+              <span>الاختبارت</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contests.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>المسابقات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Interactive-question.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>الاسالة التفاعلية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="groups.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>المجموعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link align-middle">
+              <img src="./media/image/icon/students.svg" alt="icon" />
+              <span>الطلاب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="teachers.html" class="nav-link align-middle">
+              <img src="./media/image/icon/teachers.svg" alt="icon" />
+              <span>المعلمين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="parents.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>أولياء الامور</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Moderators.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>المشرفين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Complaints.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>الشكاوي</span>
+            </a>
+            <li class="nav-item">
+              <a
+                href="#submenuWebsite-1"
+                data-bs-toggle="collapse"
+                class="nav-link accordion-button align-middle collapsed"
+              >
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+                <span>التقارير</span>
+                <i class="fa-solid fa-angle-up"></i>
+              </a>
+              <ul
+                class="collapse flex-column"
+                id="submenuWebsite-1"
+                data-bs-parent="#menu"
+              >
+               
+                <li>
+                  <a href="Public-reports.html" class="nav-link">
+                 
+                    <span>التقارير العامه</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Achievements-reports.html" class="nav-link">
+                    
+                    <span>تقارير الأنجازات</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Attendance-and-departure reports.html" class="nav-link">
+                    
+                    <span>تقارير الحضور والأنصراف</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Exam-reports.html" class="nav-link">
+                   
+                    <span>تقارير الأمتحانات</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Competition-reports.html" class="nav-link">
+                   
+                    <span>تقارير المسابقات</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Behavioral-reports.html" class="nav-link">
+                   
+                    <span>تقارير السلوكيه</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Academic-reports.html#" class="nav-link">
+                   
+                    <span>تقارير الاكادميه</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+           <li class="nav-item">
+            <a
+              href="Missed-reports.html"
+              class="nav-link align-middle"
+            >
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير الفائته</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Detailed_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير التفصيليه</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="Association_reports.html" class="nav-link align-middle">
+              <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير الجمعيه أو المدرسه</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="General-Settings.html" class="nav-link align-middle">
+              <img src="./media/image/icon/setting.svg" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Search…"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item">
+                      <img
+                        src="./media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      Arabic
+                    </a>
+                    <a class="dropdown-item">
+                      <img
+                        src="./media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="Reports-on-the-Shafia-platform.html">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="General-Settings.html">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="container">
+            <div class="head-name">
+                تقارير الحضور والأنصراف
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">الطلاب</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">المعلمين</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">المشرفين</button>
+              </li>
+             
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">  <div class="table_details">
+                <!-- Start filters -->
+                <div class="filters">
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="المكفوفات بنات - الفصل الثاني"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="جميع الطلاب"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+  
+                  <div class="form-group">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="daterange"
+                      value=""
+                    />
+                    <script>
+                      $(function () {
+                        $('input[name="daterange"]').daterangepicker(
+                          {
+                            opens: "left",
+                          },
+                          function (start, end, label) {
+                            console.log(
+                              "A new date selection was made: " +
+                                start.format("YYYY-MM-DD") +
+                                " to " +
+                                end.format("YYYY-MM-DD")
+                            );
+                          }
+                        );
+                      });
+                    </script>
+                  </div>
+  
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="تقارير الطلاب"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End filters -->
+  
+                <div class="table-responsive">
+                  <table class="table" id="table">
+                    <thead>
+                      <tr class="trAltCizgi">
+                        <th class="th">اسم الطالب</th>
+                        <th class="th">1</th>
+                        <th class="th">2</th>
+                        <th class="th">3</th>
+                        <th class="th">4</th>
+                        <th class="th">5</th>
+                        <th class="th">6</th>
+                        <th class="th">7</th>
+                        <th class="th">8</th>
+                         <th class="th">9</th>
+                          <th class="th">10</th>
+                          <th class="th">11</th>
+                           <th class="th">12</th>
+                        <th class="th"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                  
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_student.html"
+                                  >عرض تفاصيل الطالب</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                        
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_student.html"
+                                  >عرض تفاصيل الطالب</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_student.html"
+                                  >عرض تفاصيل الطالب</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_student.html"
+                                  >عرض تفاصيل الطالب</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+                    </tbody>
+                  </table>
+                  <script>
+                    $(document).ready(function () {
+                      $("#table tbody").on("click", "tr", function () {
+                        $(this).toggleClass("selected");
+                      });
+                    });
+                  </script>
+                </div>
+              </div></div>
+              <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">  <div class="table_details">
+                <!-- Start filters -->
+                <div class="filters">
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="المكفوفات بنات - الفصل الثاني"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="جميع المعلمين"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+  
+                  <div class="form-group">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="daterange"
+                      value=""
+                    />
+                    <script>
+                      $(function () {
+                        $('input[name="daterange"]').daterangepicker(
+                          {
+                            opens: "left",
+                          },
+                          function (start, end, label) {
+                            console.log(
+                              "A new date selection was made: " +
+                                start.format("YYYY-MM-DD") +
+                                " to " +
+                                end.format("YYYY-MM-DD")
+                            );
+                          }
+                        );
+                      });
+                    </script>
+                  </div>
+  
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="تقارير المعلم"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End filters -->
+  
+                <div class="table-responsive">
+                  <table class="table" id="table">
+                    <thead>
+                      <tr class="trAltCizgi">
+                        <th class="th">اسم المعلم</th>
+                        <th class="th">1</th>
+                        <th class="th">2</th>
+                        <th class="th">3</th>
+                        <th class="th">4</th>
+                        <th class="th">5</th>
+                        <th class="th">6</th>
+                        <th class="th">7</th>
+                        <th class="th">8</th>
+                         <th class="th">9</th>
+                          <th class="th">10</th>
+                          <th class="th">11</th>
+                           <th class="th">12</th>
+                        <th class="th"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                  
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_teacher.html"
+                                  >عرض تفاصيل المعلم</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                        
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_teacher.html"
+                                  >عرض تفاصيل المعلم</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_teacher.html"
+                                  >عرض تفاصيل المعلم</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="details_teacher.html"
+                                  >عرض تفاصيل المعلم</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+                    </tbody>
+                  </table>
+                  <script>
+                    $(document).ready(function () {
+                      $("#table tbody").on("click", "tr", function () {
+                        $(this).toggleClass("selected");
+                      });
+                    });
+                  </script>
+                </div>
+              </div></div>
+              <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">  <div class="table_details">
+                <!-- Start filters -->
+                <div class="filters">
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="المكفوفات بنات - الفصل الثاني"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="جميع المشرفين"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+  
+                  <div class="form-group">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="daterange"
+                      value=""
+                    />
+                    <script>
+                      $(function () {
+                        $('input[name="daterange"]').daterangepicker(
+                          {
+                            opens: "left",
+                          },
+                          function (start, end, label) {
+                            console.log(
+                              "A new date selection was made: " +
+                                start.format("YYYY-MM-DD") +
+                                " to " +
+                                end.format("YYYY-MM-DD")
+                            );
+                          }
+                        );
+                      });
+                    </script>
+                  </div>
+  
+                  <div class="form-group">
+                    <select
+                      name=""
+                      id=""
+                      class="selectpicker form-control"
+                      title="تقارير المشرف"
+                    >
+                      <option value="">.</option>
+                      <option value="">.</option>
+                      <option value="">.</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- End filters -->
+  
+                <div class="table-responsive">
+                  <table class="table" id="table">
+                    <thead>
+                      <tr class="trAltCizgi">
+                        <th class="th">اسم المشرف</th>
+                        <th class="th">1</th>
+                        <th class="th">2</th>
+                        <th class="th">3</th>
+                        <th class="th">4</th>
+                        <th class="th">5</th>
+                        <th class="th">6</th>
+                        <th class="th">7</th>
+                        <th class="th">8</th>
+                         <th class="th">9</th>
+                          <th class="th">10</th>
+                          <th class="th">11</th>
+                           <th class="th">12</th>
+                        <th class="th"></th>
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                  
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="Moderators.html"
+                                  >عرض تفاصيل المشرف</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                        
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="Moderators.html"
+                                  >عرض تفاصيل المشرف</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="Moderators.html"
+                                  >عرض تفاصيل المشرف</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+  
+                      <!-- For loop this tr -->
+                      <tr>
+                        <td class="id">
+                          <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
+                          أحمد ابراهيم
+                      </td>
+                          <td class="text-success">
+                            <i
+                              class="fa-regular fa-circle-check text-success"
+                            ></i
+                            >حضور
+                          </td>
+                       
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td>
+                          ---
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-success">
+                          <i
+                            class="fa-regular fa-circle-check text-success"
+                          ></i
+                          >حضور
+                        </td>
+                        <td class="text-danger">
+                          <i
+                            class="fa-regular fa-circle-xmark text-danger"
+                          ></i
+                          >غياب
+                        </td>
+                        <td class="flex_mobile">
+                          <div class="dropdown">
+                            <a
+                              class="btn dropdown-toggle"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+  
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="Moderators.html"
+                                  >عرض تفاصيل المشرف</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- For loop this tr -->
+                    </tbody>
+                  </table>
+                  <script>
+                    $(document).ready(function () {
+                      $("#table tbody").on("click", "tr", function () {
+                        $(this).toggleClass("selected");
+                      });
+                    });
+                  </script>
+                </div>
+              </div></div>
+            </div>
+            
+          
+          </div>
+          </div>
+        </section>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
+    </div>
+    <!-- ? ======= footer =========== -->
+    <div class="modal" id="add" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              تفاصيل الواجب للطالب
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <h4>
+                واجب على الجزء الأول من سورة البقرة ( 1- 25)
+                بالتجويد
+              </h4>
+              <div class="home-work">
+                <h3>
+                  <i
+                    class="fa-solid fa-user"
+                    style="
+                      margin-inline-end: 10px;
+                      color: #b2d23f;
+                    "
+                  ></i
+                  >المعلم المسئول<span>: أحمد عادل</span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-regular fa-calendar"
+                    style="
+                      margin-inline-end: 10px;
+                      color: #b2d23f;
+                    "
+                  ></i
+                  >تاريخ الإنجاز<span> :مارس - 30:8م </span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="
+                      margin-inline-end: 10px;
+                      color: #b2d23f;
+                    "
+                  ></i
+                  >الإجابات الصحيحة <span> : 10 </span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-solid fa-trophy"
+                    style="
+                      margin-inline-end: 10px;
+                      color: #b2d23f;
+                    "
+                  ></i
+                  >الدرجة النهائية <span> : 30 / 40 </span>
+                </h3>
+              </div>
+            </div>
+            <h4>الإجابات الخاطئة</h4>
+
+            <div class="lest-model">
+              <div class="step"></div>
+              <h3>
+                جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول
+                موضع
+              </h3>
+              <p>فلا تقربوها</p>
+              <h5>الإجابة الصحيحة : فلا تعتدوها</h5>
+            </div>
+            <div class="lest-model-1">
+              <h3>سورة البقرة تعتبر سورة</h3>
+              <p>مكية</p>
+              <h5>الإجابة الصحيحة : مدنية</h5>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        var percentageJobs = document
+          .getElementById("percentageJobs")
+          .getContext("2d");
+        window.myBar = new Chart(percentageJobs, {
+          data: barChartDatareport,
+          options: chartOptionsreport,
+        });
+        var percentageProjectsDay = document
+          .getElementById("percentageProjectsDay")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsDay, {
+          data: barChartDataProjectsDay,
+          options: chartOptionsProjectsDay,
+        });
+        var percentageProjectsWeek = document
+          .getElementById("percentageProjectsWeek")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsWeek, {
+          data: barChartDataProjectsWeek,
+          options: chartOptionsProjectsWeek,
+        });
+        var percentageProjectsMonth = document
+          .getElementById("percentageProjectsMonth")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsMonth, {
+          data: barChartDataProjectsMonth,
+          options: chartOptionsProjectsMonth,
+        });
+        var reports = document
+          .getElementById("reports")
+          .getContext("2d");
+        window.myBar = new Chart(reports, {
+          data: barChartDataJobs,
+          options: chartOptionsJobs,
+        });
+      
+      };
+    </script>
+
+    <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
+    </script>
+  </body>
+</html>

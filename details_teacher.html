@@ -146,11 +146,71 @@
           </li>
           <li class="nav-item">
             <a
-              href="Reports-on-the-Shafia-platform.html"
+              href="#submenuWebsite-1"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+            <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-1"
+              data-bs-parent="#menu"
+            >
+             
+              <li>
+                <a href="Public-reports.html" class="nav-link">
+               
+                  <span>التقارير العامه</span></a
+                >
+              </li>
+              <li>
+                <a href="Achievements-reports.html" class="nav-link">
+                  
+                  <span>تقارير الأنجازات</span></a
+                >
+              </li>
+              <li>
+                <a href="Attendance-and-departure reports.html" class="nav-link">
+                  
+                  <span>تقارير الحضور والأنصراف</span></a
+                >
+              </li>
+              <li>
+                <a href="Exam-reports.html" class="nav-link">
+                 
+                  <span>تقارير الأمتحانات</span></a
+                >
+              </li>
+              <li>
+                <a href="Competition-reports.html" class="nav-link">
+                 
+                  <span>تقارير المسابقات</span></a
+                >
+              </li>
+              <li>
+                <a href="Behavioral-reports.html" class="nav-link">
+                 
+                  <span>تقارير السلوكيه</span></a
+                >
+              </li>
+              <li>
+                <a href="Academic-reports.html#" class="nav-link">
+                 
+                  <span>تقارير الاكادميه</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="Missed-reports.html"
               class="nav-link align-middle"
             >
               <img src="./media/image/icon/reports.svg" alt="icon" />
-              <span>التقارير</span>
+              <span>التقارير الفائته</span>
             </a>
           </li>
           <li class="nav-item">
@@ -436,7 +496,7 @@
                           <table class="table" id="table">
                             <thead>
                               <tr class="trAltCizgi">
-                                <th></th>
+                                <th> <input class="box" type="checkbox" /></th>
                                 <th class="th">اسم المجموعة</th>
                                 <th class="th">عدد الطلاب</th>
                                 <th class="th">المرحلة الدراسية</th>
@@ -610,6 +670,8 @@
                             });
                           </script>
                         </div>
+                        <button type="button" class="btn btn-danger">حذف المحدد</button>
+
                       </div>
                     </div>
                   </div>
@@ -686,7 +748,7 @@
                           <table class="table" id="table">
                             <thead>
                               <tr class="trAltCizgi">
-                                <th></th>
+                                <th> <input class="box" type="checkbox" /></th>
                                 <th class="th">الدرس</th>
                                 <th class="th">تاريخ الدرس</th>
                                 <th class="th">الحضور</th>
@@ -780,6 +842,7 @@
                             </tbody>
                           </table>
                         </div>
+                        <button type="button" class="btn btn-danger">حذف المحدد</button>
                       </div>
                     </div>
                   </div>
@@ -839,6 +902,7 @@
                                 );
                               });
                             </script>
+
                           </div>
                         </div>
                         <!-- End filters -->
@@ -847,7 +911,7 @@
                           <table class="table" id="table">
                             <thead>
                               <tr class="trAltCizgi">
-                                <th></th>
+                                <th><input class="box" type="checkbox" /></th>
                                 <th class="th">اسم الاختبار</th>
                                 <th class="th">المجموعة</th>
                                 <th class="th">موعد الاختبار</th>
@@ -1045,8 +1109,11 @@
                               });
                             });
                           </script>
+                                                                            <button type="button" class="btn btn-danger">حذف المحدد</button>
+
                         </div>
                       </div>
+
                     </div>
                   </div>
                   <!-- three -->
@@ -1115,7 +1182,8 @@
                           <table class="table" id="table">
                             <thead>
                               <tr class="trAltCizgi">
-                                <th></th>
+                                <th>                                  <input class="box" type="checkbox" />
+                                </th>
                                 <th class="th">اسم الواجب</th>
                                 <th class="th">المجموعة</th>
                                 <th class="th">موعد الواجب</th>
@@ -1314,6 +1382,8 @@
                             });
                           </script>
                         </div>
+                        <button type="button" class="btn btn-danger">حذف المحدد</button>
+
                       </div>
                     </div>
                   </div>

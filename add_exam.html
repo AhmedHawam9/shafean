@@ -146,11 +146,71 @@
           </li>
           <li class="nav-item">
             <a
-              href="Reports-on-the-Shafia-platform.html"
+              href="#submenuWebsite-1"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+            <img src="./media/image/icon/reports.svg" alt="icon" />
+              <span>التقارير</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite-1"
+              data-bs-parent="#menu"
+            >
+             
+              <li>
+                <a href="Public-reports.html" class="nav-link">
+               
+                  <span>التقارير العامه</span></a
+                >
+              </li>
+              <li>
+                <a href="Achievements-reports.html" class="nav-link">
+                  
+                  <span>تقارير الأنجازات</span></a
+                >
+              </li>
+              <li>
+                <a href="Attendance-and-departure reports.html" class="nav-link">
+                  
+                  <span>تقارير الحضور والأنصراف</span></a
+                >
+              </li>
+              <li>
+                <a href="Exam-reports.html" class="nav-link">
+                 
+                  <span>تقارير الأمتحانات</span></a
+                >
+              </li>
+              <li>
+                <a href="Competition-reports.html" class="nav-link">
+                 
+                  <span>تقارير المسابقات</span></a
+                >
+              </li>
+              <li>
+                <a href="Behavioral-reports.html" class="nav-link">
+                 
+                  <span>تقارير السلوكيه</span></a
+                >
+              </li>
+              <li>
+                <a href="Academic-reports.html#" class="nav-link">
+                 
+                  <span>تقارير الاكادميه</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="Missed-reports.html"
               class="nav-link align-middle"
             >
               <img src="./media/image/icon/reports.svg" alt="icon" />
-              <span>التقارير</span>
+              <span>التقارير الفائته</span>
             </a>
           </li>
           <li class="nav-item">
@@ -269,6 +329,28 @@
               <h5 class="title_section">إضافة اختبار جديد</h5>
             </div>
             <form action="questions_exam.html" class="add_form">
+              <h4 class="modal_title">
+                هل تريد إضافة الاسألة من بنك الاسالة المتاح في الداش
+                بورد ؟
+              </h4>
+              <div class="buttons">
+                <button
+                  type="button"
+                  class="btn PrimaryButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#questionBankModal"
+                >
+                  نعم , عرض الاسالة
+                </button>
+                <button
+                  type="button"
+                  class="btn SecondButton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#newQuestionModal"
+                >
+                  اضافة اسألة جديدة
+                </button>
+              </div>
               <div class="form-group">
                 <label for="">* نوع السؤال</label>
                 <select

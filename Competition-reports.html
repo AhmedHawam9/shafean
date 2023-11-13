@@ -20,13 +20,6 @@
     <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -44,10 +37,11 @@
     <script src="js/bootstrap-select.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/daterangepicker.min.js"></script>
+    <script src="js/charts.js"></script>
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
-    <title>الأسألة التفاعلية</title>
+    <title>التقارير الخاصة بمنصة شفيعا</title>
     <!-- ? Title -->
 
     <!-- ? Favicon -->
@@ -213,10 +207,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="Missed-reports.html"
-              class="nav-link align-middle"
-            >
+            <a href="Missed-reports.html" class="nav-link align-middle">
               <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير الفائته</span>
             </a>
@@ -333,13 +324,8 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-              <h5 class="title_section">الأسألة التفاعلية</h5>
-              <a
-                href="Add-new-Interactive-question.html"
-                class="btn btn_title_page"
-                >+ اضافة سؤال جديد</a
-              >
+            <div class="head-name">
+                تقارير المسابقات
             </div>
             <div class="table_details">
               <!-- Start filters -->
@@ -351,9 +337,10 @@
                     name=""
                     id=""
                     class="form-control"
-                    placeholder="ابحث باسم المادة , المدرس"
+                    placeholder="ابحث باسم الواجب, الطالب......."
                   />
                 </div>
+
                 <div class="form-group">
                   <i class="fa-solid fa-calendar-days"></i>
                   <input
@@ -380,28 +367,17 @@
                     });
                   </script>
                 </div>
+
                 <div class="form-group">
                   <select
                     name=""
                     id=""
                     class="selectpicker form-control"
-                    title="كل المدرسين"
+                    title="اسم المسابقه"
                   >
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <select
-                    name=""
-                    id=""
-                    class="selectpicker form-control"
-                    title="كل المواد"
-                  >
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
                   </select>
                 </div>
               </div>
@@ -411,25 +387,27 @@
                 <table class="table" id="table">
                   <thead>
                     <tr class="trAltCizgi">
-                      <th><input class="box" type="checkbox" /></th>
-                      <th class="th">رقم السؤال</th>
-                      <th class="th">اسم السؤال</th>
-                      <th class="th">المادة</th>
-                      <th class="th">المرحلة الدراسية</th>
-                      <th class="th"></th>
+                      <th><input class="box" type="checkbox"></th>
+                      <th class="th">اسم المسابقه</th>
+                      <th class="th">تاريخ الأنشاء</th>
+                      <th class="th">تاريخ الأنتهاء</th>
+                      <th class="th">المده</th>
+                      <th class="th">الحاله</th>
+                      <th class="th">عدد المشتركين</th>
+                      <th></th>
                     </tr>
                   </thead>
                   <tbody class="tbody">
                     <!-- For loop this tr -->
-                    <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">1</td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td>القرآن الكريم</td>
-                      <td>الفرقة الاولى</td>
-                      <td class="flex_mobile">
+                 <tr>
+                  <td><input class="box" type="checkbox"></td>
+                    <td>الحفظ والتجويد</td>
+                    <td>11/2/2024</td>
+                    <td>25/2/2024</td>
+                    <td>شهر</td>
+                    <td class="end">...</td>
+                    <td class="end">30</td>
+                    <td class="flex_mobile">
                         <div class="dropdown">
                           <a
                             class="btn dropdown-toggle"
@@ -445,233 +423,240 @@
                             <li>
                               <a
                                 class="dropdown-item"
-                                href="Add-new-interactive-question-1.html"
-                                >تعديل البيانات</a
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#add"
+                                >النتائج</a
                               >
                             </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
-                                href="#"
-                                onclick="blockAlert()"
-                                >حذف
-                              </a>
-                            </li>
+                         
                           </ul>
                         </div>
                       </td>
-                    </tr>
-                    <!-- For loop this tr -->
-
+                 </tr>
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">1</td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td>القرآن الكريم</td>
-                      <td>الفرقة الاولى</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
+                       <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
                               <a
-                                class="dropdown-item"
-                                href="Add-new-interactive-question-1.html"
-                                >تعديل البيانات</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
+                                class="btn dropdown-toggle"
                                 href="#"
-                                onclick="blockAlert()"
-                                >حذف
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                               </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- For loop this tr -->
-
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">1</td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td>القرآن الكريم</td>
-                      <td>الفرقة الاولى</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
+                       <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
                               <a
-                                class="dropdown-item"
-                                href="Add-new-interactive-question-1.html"
-                                >تعديل البيانات</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
+                                class="btn dropdown-toggle"
                                 href="#"
-                                onclick="blockAlert()"
-                                >حذف
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                               </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- For loop this tr -->
-
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">1</td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td>القرآن الكريم</td>
-                      <td>الفرقة الاولى</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
+                      <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
                               <a
-                                class="dropdown-item"
-                                href="Add-new-interactive-question-1.html"
-                                >تعديل البيانات</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
+                                class="btn dropdown-toggle"
                                 href="#"
-                                onclick="blockAlert()"
-                                >حذف
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                               </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <!-- For loop this tr -->
-
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">1</td>
-                      <td>
-                        اختبار على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد
-                      </td>
-                      <td>القرآن الكريم</td>
-                      <td>الفرقة الاولى</td>
-                      <td class="flex_mobile">
-                        <div class="dropdown">
-                          <a
-                            class="btn dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                          </a>
-
-                          <ul class="dropdown-menu">
-                            <li>
+                      <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
                               <a
-                                class="dropdown-item"
-                                href="Add-new-interactive-question-1.html"
-                                >تعديل البيانات</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="dropdown-item"
+                                class="btn dropdown-toggle"
                                 href="#"
-                                onclick="blockAlert()"
-                                >حذف
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                               </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td><input class="box" type="checkbox"></td>
+                        <td>الحفظ والتجويد</td>
+                        <td>11/2/2024</td>
+                        <td>25/2/2024</td>
+                        <td>شهر</td>
+                        <td class="end">...</td>
+                        <td class="end">30</td>
+                        <td class="flex_mobile">
+                            <div class="dropdown">
+                              <a
+                                class="btn dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                              >
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </a>
+    
+                              <ul class="dropdown-menu">
+                                <li>
+                                  <a
+                                    class="dropdown-item"
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#add"
+                                    >النتائج</a
+                                  >
+                                </li>
+                             
+                              </ul>
+                            </div>
+                          </td>
+                     </tr>
                     <!-- For loop this tr -->
                   </tbody>
                 </table>
-                <!-- sweetalrt -->
-                <script
-                  src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-                  integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer"
-                ></script>
-                <script>
-                  function blockAlert() {
-                    Swal.fire({
-                      html:
-                        '<h5 class="swal2-title">   هل أنت متأكد من حذف السؤال؟ </h5>' +
-                        '<p class="swal2-html-container">  </p>',
+                <button type="button" class="btn btn-danger">حذف المحدد</button>
 
-                      showCancelButton: true,
-                      focusConfirm: false,
-                      confirmButtonText: "تأكيد الحذف",
-                      confirmButtonAriaLabel: "Thumbs up, great!",
-                      cancelButtonText: "الغاء",
-                      cancelButtonAriaLabel: "Thumbs down",
-                    });
-                  }
-                </script>
-                <!-- sweetalrt -->
-                <script>
-                  $(document).ready(function () {
-                    $("#table tbody").on("click", "tr", function () {
-                      $(this).toggleClass("selected");
-                    });
-                  });
-                </script>
               </div>
-              <button type="button" class="btn btn-danger">حذف المحدد</button>
-
             </div>
-
           </div>
         </section>
         <!-- ======= End Content ======= -->
@@ -679,7 +664,118 @@
       <!-- ======= Main ======= -->
     </div>
     <!-- ? ======= footer =========== -->
+    <div class="modal" id="add" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">تفاصيل الواجب للطالب</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="main-model">
+              <h4>واجب على الجزء الأول من سورة البقرة ( 1- 25) بالتجويد</h4>
+              <div class="home-work">
+                <h3>
+                  <i
+                    class="fa-solid fa-user"
+                    style="margin-inline-end: 10px; color: #b2d23f"
+                  ></i
+                  >المعلم المسئول<span>: أحمد عادل</span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-regular fa-calendar"
+                    style="margin-inline-end: 10px; color: #b2d23f"
+                  ></i
+                  >تاريخ الإنجاز<span> :مارس - 30:8م </span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="margin-inline-end: 10px; color: #b2d23f"
+                  ></i
+                  >الإجابات الصحيحة <span> : 10 </span>
+                </h3>
+                <h3>
+                  <i
+                    class="fa-solid fa-trophy"
+                    style="margin-inline-end: 10px; color: #b2d23f"
+                  ></i
+                  >الدرجة النهائية <span> : 30 / 40 </span>
+                </h3>
+              </div>
+            </div>
+            <h4>الإجابات الخاطئة</h4>
+
+            <div class="lest-model">
+              <div class="step"></div>
+              <h3>جاءت ( تِلْكَ حُدُودُ اللَّهِ .. ) في أول موضع</h3>
+              <p>فلا تقربوها</p>
+              <h5>الإجابة الصحيحة : فلا تعتدوها</h5>
+            </div>
+            <div class="lest-model-1">
+              <h3>سورة البقرة تعتبر سورة</h3>
+              <p>مكية</p>
+              <h5>الإجابة الصحيحة : مدنية</h5>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function () {
+        var percentageJobs = document
+          .getElementById("percentageJobs")
+          .getContext("2d");
+        window.myBar = new Chart(percentageJobs, {
+          data: barChartDatareport,
+          options: chartOptionsreport,
+        });
+        var percentageProjectsDay = document
+          .getElementById("percentageProjectsDay")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsDay, {
+          data: barChartDataProjectsDay,
+          options: chartOptionsProjectsDay,
+        });
+        var percentageProjectsWeek = document
+          .getElementById("percentageProjectsWeek")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsWeek, {
+          data: barChartDataProjectsWeek,
+          options: chartOptionsProjectsWeek,
+        });
+        var percentageProjectsMonth = document
+          .getElementById("percentageProjectsMonth")
+          .getContext("2d");
+        window.myBar = new Chart(percentageProjectsMonth, {
+          data: barChartDataProjectsMonth,
+          options: chartOptionsProjectsMonth,
+        });
+        var reports = document.getElementById("reports").getContext("2d");
+        window.myBar = new Chart(reports, {
+          data: barChartDataJobs,
+          options: chartOptionsJobs,
+        });
+      };
+    </script>
 
     <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script>
+      $(".counter").counterUp({
+        delay: 20,
+        time: 2000,
+      });
+    </script>
   </body>
 </html>

@@ -284,8 +284,9 @@ table tbody tr td {
       margin-bottom: 2rem;
     }
     .modal_title {
-      font-family: "semibold";
+      font-family: "regular";
       color: $PrimaryText;
+      font-size: 1rem;
     }
     .modal_text {
       font-family: "regular";
@@ -605,7 +606,7 @@ table tbody tr td {
               font-family: "semibold";
               color: $PrimaryText;
               font-size: 0.8rem;
-              padding: 1rem 0;
+              // padding: 1rem 0;
               vertical-align: middle;
 
               .name {
@@ -840,7 +841,7 @@ table tbody tr td {
       .tab-content {
         .tab-pane {
           .table-responsive {
-            min-height: 40vh;
+            // min-height: 40vh;
           }
         }
       }
@@ -2483,6 +2484,63 @@ td.i {
   border-right: 1px solid rgba(0, 0, 0, 0.212);
   font-family: "regular"
 }
+.head-name {
+  font-family: "regular";
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+td.end {
+  text-align: start !important;
+}
+.sidebar .accordion-button::after {
+  content: unset !important ;
 
+}
+.sidebar .nav-pills .accordion-button svg {
+  float: left !important;
+  color: white !important;
+
+}
+.sidebar .nav-pills {
+  ::marker {
+    color: white !important;
+  }
+}
+// th.th {
+//   padding: 0.5rem 0 !important;
+// }
+button.btn.btn-danger {
+  display: block;
+  margin-inline-start: auto;
+  font-family: "regular";
+  transition: 0.7s;
+}
+button.btn.btn-danger:hover {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+}
+button.btn.btn-success {
+ 
+  font-family: "regular";
+  transition: 0.7s;
+}
+button.btn.btn-success:hover {
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+.cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+td.yy {
+  text-align: start !important;
+}
+.buttons {
+  margin-bottom: 15px;
+}
 @import "./_responsive.scss";
 @import "./_layout.scss";

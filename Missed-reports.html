@@ -40,7 +40,7 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
-    <title>أقسام المكتبة</title>
+    <title>محتوي المكتبة</title>
     <!-- ? Title -->
 
     <!-- ? Favicon -->
@@ -205,10 +205,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="Missed-reports.html"
-              class="nav-link align-middle"
-            >
+            <a href="Missed-reports.html" class="nav-link align-middle">
               <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير الفائته</span>
             </a>
@@ -326,24 +323,54 @@
         <section class="content">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-              <h5 class="title_section">أقسام المكتبة</h5>
-              <a href="add_group.html" class="btn btn_title_page"
-                >+ اضافة قسم جديد</a
-              >
+              <h5 class="title_section">تقارير الفائته</h5>
             </div>
             <div class="table_details">
               <!-- Start filters -->
               <div class="filters">
-                <div class="form-group" style="width: 100%">
+                <div class="form-group">
                   <i class="fa-solid fa-magnifying-glass"></i>
                   <input
                     type="search"
                     name=""
                     id=""
                     class="form-control"
-                    placeholder="ابحث باسم القسم......"
+                    placeholder="ابحث باسم الطالب........"
                   />
                 </div>
+                <div class="form-group">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="daterange"
+                    value=""
+                  />
+                  <script>
+                    $(function () {
+                      $('input[name="daterange"]').daterangepicker(
+                        {
+                          opens: "left",
+                        },
+                        function (start, end, label) {
+                          console.log(
+                            "A new date selection was made: " +
+                              start.format("YYYY-MM-DD") +
+                              " to " +
+                              end.format("YYYY-MM-DD")
+                          );
+                        }
+                      );
+                    });
+                  </script>
+                </div>
+                <!-- <div class="form-group">
+                        <select name="" id="" class="selectpicker form-control" title="كل المدرسين">
+                            <option value="">مدرس 1</option>
+                            <option value="">مدرس 2</option>
+                            <option value="">مدرس 3</option>
+                        </select>
+                    </div> -->
               </div>
               <!-- End filters -->
 
@@ -351,21 +378,22 @@
                 <table class="table" id="table">
                   <thead>
                     <tr class="trAltCizgi">
-                      <th></th>
-                      <th class="th">اسم القسم</th>
-                      <th class="th">تاريخ الانشاء</th>
+                      <th class="name">اسم الطالب</th>
+                      <th class="th">التاريخ</th>
+                      <th class="th">الحضور والأنصراف</th>
+                      <th class="th">التقيم الأكاديمي</th>
+                      <th class="th">التقيم السلوكي</th>
                       <th class="th"></th>
                     </tr>
                   </thead>
                   <tbody class="tbody">
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        القرآن الكريم
-                      </td>
-                      <td>مايو,2023</td>
+                      <td class="id">محمد احمد</td>
+                      <td>مايو 22 , 2022 - 2:30 م</td>
+                      <td>غياب</td>
+                      <td>..</td>
+                      <td>..</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
                           <a
@@ -379,14 +407,7 @@
                           </a>
 
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li>
-                              <a class="dropdown-item" href="details_group.html"
-                                >..</a
-                              >
-                            </li>
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li><a class="dropdown-item" href="#">.. </a></li>
+                            <li><a class="dropdown-item" href="#">اضافه</a></li>
                           </ul>
                         </div>
                       </td>
@@ -395,12 +416,11 @@
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        القرآن الكريم
-                      </td>
-                      <td>مايو,2023</td>
+                      <td class="id">محمد احمد</td>
+                      <td>مايو 22 , 2022 - 2:30 م</td>
+                      <td>غياب</td>
+                      <td>..</td>
+                      <td>..</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
                           <a
@@ -414,14 +434,7 @@
                           </a>
 
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li>
-                              <a class="dropdown-item" href="details_group.html"
-                                >..</a
-                              >
-                            </li>
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li><a class="dropdown-item" href="#">.. </a></li>
+                            <li><a class="dropdown-item" href="#">اضافه</a></li>
                           </ul>
                         </div>
                       </td>
@@ -430,12 +443,11 @@
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        القرآن الكريم
-                      </td>
-                      <td>مايو,2023</td>
+                      <td class="id">محمد احمد</td>
+                      <td>مايو 22 , 2022 - 2:30 م</td>
+                      <td>غياب</td>
+                      <td>..</td>
+                      <td>..</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
                           <a
@@ -449,14 +461,7 @@
                           </a>
 
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li>
-                              <a class="dropdown-item" href="details_group.html"
-                                >..</a
-                              >
-                            </li>
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li><a class="dropdown-item" href="#">.. </a></li>
+                            <li><a class="dropdown-item" href="#">اضافه</a></li>
                           </ul>
                         </div>
                       </td>
@@ -465,12 +470,11 @@
 
                     <!-- For loop this tr -->
                     <tr>
-                      <td class="th"><input class="box" type="checkbox" /></td>
-                      <td class="id">
-                        <!-- <input class="form-check-input" type="checkbox" value="" name="table">  -->
-                        القرآن الكريم
-                      </td>
-                      <td>مايو,2023</td>
+                      <td class="id">محمد احمد</td>
+                      <td>مايو 22 , 2022 - 2:30 م</td>
+                      <td>غياب</td>
+                      <td>..</td>
+                      <td>..</td>
                       <td class="flex_mobile">
                         <div class="dropdown">
                           <a
@@ -484,14 +488,34 @@
                           </a>
 
                           <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li>
-                              <a class="dropdown-item" href="details_group.html"
-                                >..</a
-                              >
-                            </li>
-                            <li><a class="dropdown-item" href="#">..</a></li>
-                            <li><a class="dropdown-item" href="#">.. </a></li>
+                            <li><a class="dropdown-item" href="#">اضافه</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <!-- For loop this tr -->
+
+                    <!-- For loop this tr -->
+                    <tr>
+                      <td class="id">محمد احمد</td>
+                      <td>مايو 22 , 2022 - 2:30 م</td>
+                      <td>غياب</td>
+                      <td>..</td>
+                      <td>..</td>
+                      <td class="flex_mobile">
+                        <div class="dropdown">
+                          <a
+                            class="btn dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
+
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">اضافه</a></li>
                           </ul>
                         </div>
                       </td>
@@ -499,6 +523,30 @@
                     <!-- For loop this tr -->
                   </tbody>
                 </table>
+                <!-- sweetalrt -->
+                <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
+                  integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+                ></script>
+                <script>
+                  function blockAlert() {
+                    Swal.fire({
+                      html:
+                        '<h5 class="swal2-title">   هل أنت متأكد من حذف المراحله؟ </h5>' +
+                        '<p class="swal2-html-container">  </p>',
+
+                      showCancelButton: true,
+                      focusConfirm: false,
+                      confirmButtonText: "تأكيد الحذف",
+                      confirmButtonAriaLabel: "Thumbs up, great!",
+                      cancelButtonText: "الغاء",
+                      cancelButtonAriaLabel: "Thumbs down",
+                    });
+                  }
+                </script>
+                <!-- sweetalrt -->
 
                 <script>
                   $(document).ready(function () {

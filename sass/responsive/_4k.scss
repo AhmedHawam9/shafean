@@ -4,6 +4,11 @@
   .container {
     max-width: 1600px;
   }
+  .card .dropdown-toggle {
+    position: absolute;
+    right: 26rem;
+    border: unset !important;
+}
 }
 
 /* ======= 4K style ======= */
