@@ -145,11 +145,24 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="Question-bank.html" class="nav-link align-middle">
-            <img src="./media/image/icon/lessons.svg" alt="icon" />           
-               <span>بنك الأسئله</span>
-          </a>
-        </li>
+            <a href="Question-bank.html" class="nav-link align-middle">
+              <img src="./media/image/icon/lessons.svg" alt="icon" />
+              <span>بنك الأسئله</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="Electronic-library.html" class="nav-link align-middle">
+              <img src="./media/image/icon/lessons.svg" alt="icon" />
+              <span>المكتبه الألكترونيه</span>
+            </a>
+          </li>
+         <li class="nav-item">
+            <a href="https://ahmedhawam9.github.io/sheafen_web" class="nav-link align-middle">
+              <img src="./media/image/icon/lessons.svg" alt="icon" />
+              <span>الموقع الألكتروني</span>
+            </a>
+          </li>
         <li class="nav-item">
           <a
             href="#submenuWebsite-1"
@@ -296,14 +309,33 @@
       <section class="content">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h5 class="title_section">إضافة مرحلة دراسية جديدة</h5>
+                <h5 class="title_section">إضافة مكتبه الألكترونيه جديدة</h5>
             </div>
-            <form action="grade.html" class="add_form">
+            <form action="Electronic-library.html" class="add_form">
                 <div class="form-group">
-                  <label for="">*اسم المرحلة الدراسية</label>
+                  <label for="">*اسم المكتبه</label>
                   <input type="text" name="" id="" class="form-control" placeholder="اكتب هنا">
                 </div>
-                <button type="submit" class="btn PrimaryButton">اضافة</button>
+                <div class="form-group">
+                    <label for="">*نوع الملف</label>
+                        <select
+                          name=""
+                          id=""
+                          class="form-control selectpicker"
+                          title="اختر نوع الملف"
+                        >
+                          <option value="">pdf</option>
+                          <option value="">video </option>
+                        </select>
+                      </div>
+                    <div class="form-group">
+                        <label for="">*الوصف</label>
+                        <textarea class="form-control" name="" id="" cols="80" rows="5"></textarea>
+                    </div>
+                    
+                   
+                  </div>
+                <button type="submit" class="btn PrimaryButton">حفظ</button>
             </form>
         </div>
       </section>
