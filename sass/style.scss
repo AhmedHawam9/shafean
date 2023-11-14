@@ -1025,9 +1025,9 @@ table tbody tr td {
             margin-inline-start: 2.2rem;
           }
         }
-        .AppendAnswer {
-          padding-inline-start: 2.5rem;
-        }
+        // .AppendAnswer {
+        //   padding-inline-start: 2.5rem;
+        // }
         .append_answer {
           margin-bottom: 1rem;
           position: relative;
@@ -2541,6 +2541,32 @@ td.yy {
 }
 .buttons {
   margin-bottom: 15px;
+}
+button.btn.btn-success.nas {
+  width: 18%;
+  display: block;
+  margin-inline-start: auto;
+  margin-bottom: 11px;
+  margin-left: 29px;
+}
+button.btn.SecondButton.d-block.mb-3.px-5 {
+  width: 100%;
+}
+button.btn.PrimaryButton.mio {
+  padding: 1.2rem 0.2rem;
+  width: 10%;
+  display: block;
+  margin-inline-start: auto;
+}
+h4.sec_title {
+  font-family: "regular";
+}
+p.sec_text {
+  font-family: 'regular';
+}
+button.btn.SecondButton.ng.d-block.mb-3.px-5 {
+    width: 20%;
+
 }
 @import "./_responsive.scss";
 @import "./_layout.scss";

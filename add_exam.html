@@ -150,7 +150,7 @@
               data-bs-toggle="collapse"
               class="nav-link accordion-button align-middle collapsed"
             >
-            <img src="./media/image/icon/reports.svg" alt="icon" />
+              <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير</span>
               <i class="fa-solid fa-angle-up"></i>
             </a>
@@ -159,56 +159,48 @@
               id="submenuWebsite-1"
               data-bs-parent="#menu"
             >
-             
               <li>
                 <a href="Public-reports.html" class="nav-link">
-               
                   <span>التقارير العامه</span></a
                 >
               </li>
               <li>
                 <a href="Achievements-reports.html" class="nav-link">
-                  
                   <span>تقارير الأنجازات</span></a
                 >
               </li>
               <li>
-                <a href="Attendance-and-departure reports.html" class="nav-link">
-                  
+                <a
+                  href="Attendance-and-departure reports.html"
+                  class="nav-link"
+                >
                   <span>تقارير الحضور والأنصراف</span></a
                 >
               </li>
               <li>
                 <a href="Exam-reports.html" class="nav-link">
-                 
                   <span>تقارير الأمتحانات</span></a
                 >
               </li>
               <li>
                 <a href="Competition-reports.html" class="nav-link">
-                 
                   <span>تقارير المسابقات</span></a
                 >
               </li>
               <li>
                 <a href="Behavioral-reports.html" class="nav-link">
-                 
                   <span>تقارير السلوكيه</span></a
                 >
               </li>
               <li>
                 <a href="Academic-reports.html#" class="nav-link">
-                 
                   <span>تقارير الاكادميه</span></a
                 >
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="Missed-reports.html"
-              class="nav-link align-middle"
-            >
+            <a href="Missed-reports.html" class="nav-link align-middle">
               <img src="./media/image/icon/reports.svg" alt="icon" />
               <span>التقارير الفائته</span>
             </a>
@@ -328,197 +320,288 @@
             <div class="d-flex justify-content-between align-items-center">
               <h5 class="title_section">إضافة اختبار جديد</h5>
             </div>
-            <form action="questions_exam.html" class="add_form">
-              <h4 class="modal_title">
-                هل تريد إضافة الاسألة من بنك الاسالة المتاح في الداش
-                بورد ؟
-              </h4>
-              <div class="buttons">
+            <form action="questions_exam.html" class="add_form w-100 row">
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">*اسم الأمحتان</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="اكتب اسم الأمتحان"
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">* تاريخ البدايه</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">* وقت البدايه</label>
+                  <input
+                    type="time"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">* تاريخ النهايه</label>
+                  <input
+                    type="date"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">* وقت النهاية</label>
+                  <input
+                    type="time"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-group">
+                  <label for="">* المده</label>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+
+              <div class="col-3">
+                <div class="form-group">
+                  <label for="">*اختار مجموعه</label>
+                  <select
+                    name=""
+                    id=""
+                    class="form-control selectpicker"
+                    title=" اختر المجموعه"
+                  >
+                    <option value="">مجموعة 1</option>
+                    <option value="">مجموعة 2</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="form-group">
+                  <label for="">*عدد الاسئله</label>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="حدد عدد الأسئله"
+                  />
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="form-group">
+                  <label for="">* نوع الأمتحان</label>
+                  <select
+                    name=""
+                    id=""
+                    class="form-control selectpicker"
+                    title="حدد نوع الأمتحان"
+                  >
+                    <option value="">صوتي</option>
+                    <option value="">كتابي</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-2">
+                <div class="form-group">
+                  <label for="">* نوع الدرجه</label>
+                  <select
+                    name=""
+                    id=""
+                    class="form-control selectpicker"
+                    title="اختر نوع الدرجه"
+                  >
+                    <option value="">نسبه مئويه</option>
+                    <option value="">درجات</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="form-group">
+                  <label for="">*الدرجه</label>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="اكتب الدرجه"
+                  />
+                </div>
+              </div>
+              <!-- <div class="col-3">
+                <button
+                  id="shoeBtn"
+                  type="button"
+                  class="btn SecondButton d-block mb-3 px-5"
+                >
+                  اضافة سؤال جديد
+                </button>
+              </div> -->
+              <div class="col-3">
                 <button
                   type="button"
-                  class="btn PrimaryButton"
+                  class="btn SecondButton d-block mb-3 px-5"
                   data-bs-toggle="modal"
                   data-bs-target="#questionBankModal"
                 >
-                  نعم , عرض الاسالة
+                  اضافة سؤال جديد من بنك الاسئله
                 </button>
-                <button
-                  type="button"
-                  class="btn SecondButton"
-                  data-bs-toggle="modal"
-                  data-bs-target="#newQuestionModal"
-                >
-                  اضافة اسألة جديدة
-                </button>
-              </div>
-              <div class="form-group">
-                <label for="">* نوع السؤال</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">*اسم السؤال</label>
-                <input
-                  type="text"
-                  name=""
-                  id=""
-                  class="form-control"
-                  placeholder="اكتب اسم السؤال"
-                />
-              </div>
-              <div class="form-group">
-                <label for="">* المادة</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر المجموعة"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="">* المرحلة الدراسية</label>
-                <select
-                  name=""
-                  id=""
-                  class="form-control selectpicker"
-                  title="اختر المجموعة"
-                >
-                  <option value="">مجموعة 1</option>
-                  <option value="">مجموعة 2</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <div id="AppendAnswer" class="AppendAnswer">
-                  <label for="" class="mb-2">الاجابات</label>
-                  <div class="d-flex align-items-center append_answer">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder=""
-                    />
-                    <button type="button" class="remove btn">x</button>
-                    <input
-                      type="radio"
-                      class="form-check-input"
-                      name="radioAnswer"
-                      id=""
-                      checked
-                    />
-                  </div>
-                </div>
-                <small class="d-block text-start"
-                  ><button id="btnAdd" class="btn btnAdd" type="button">
-                    + إضافة إجابة اخري
-                  </button></small
-                >
-                <script>
-                  $(function () {
-                    $("#btnAdd").bind("click", function () {
-                      var div = $("<div />");
-                      div.html(GetDynamicNewAnswer(""));
-                      $("#AppendAnswer").append(div);
-                    });
-                    $("body").on("click", ".remove", function () {
-                      $(this).closest("div").remove();
-                    });
-                  });
-                  function GetDynamicNewAnswer(value) {
-                    return (
-                      '<div class="d-flex align-items-center append_answer">' +
-                      '<input type="text" name="" id="" class="form-control" placeholder="">' +
-                      '<button type="button" class="remove btn">x</button>' +
-                      '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
-                      "</div>"
-                    );
-                  }
-                </script>
-              </div>
-              <div class="form-group">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="form-group">
-                      <label for="">* مدة السؤال</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="ادخل مدة السؤال"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-12">
-                    <div class="form-group">
-                      <label for="">* درجة السؤال</label>
-                      <input
-                        type="text"
-                        name=""
-                        id=""
-                        class="form-control"
-                        placeholder="ادخل درجة السؤال"
-                      />
-                    </div>
-                  </div>
-                </div>
               </div>
               <button
-                type="button"
-                class="btn SecondButton d-block mb-3 px-5"
-                data-bs-toggle="modal"
-                data-bs-target="#addQuestionModal"
-              >
-                اضافة سؤال جديد
-              </button>
+              type="button"
+              class="btn SecondButton ng d-block mb-3 px-5"
+              id="reprtBtn"
+             
+            >
+              اضافة سؤال 
+            </button>
+            <div class="sec-hidden" id="myDIV" style="display: none;">
+              <div class="head-sec">
+                <h4 class="sec_title">تفاصيل السؤال</h4>
+                <p class="sec_text">
+                  يمكنك التعديل على الإجابات او الدرجة المعطاه ويمكنك اضافة
+                  المزيد من الاسالة
+                </p>
+                <div class="add_form w-100 row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="">* نوع السؤال</label>
+                      <select
+                        name=""
+                        id=""
+                        class="form-control selectpicker"
+                        title="اختر"
+                      >
+                        <option value="">مجموعة 1</option>
+                        <option value="">مجموعة 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="">*اسم السؤال</label>
+                      <input
+                        type="text"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="اكتب اسم السؤال"
+                      />
+                    </div>
+                  </div>
 
-              <!-- Modal choose question bank or new question -->
-              <div
-                class="modal fade"
-                id="addQuestionModal"
-                tabindex="-1"
-                aria-labelledby="addQuestionModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <h4 class="modal_title text-center">
-                        هل تريد إضافة الاسألة من بنك الاسالة المتاح في الداش
-                        بورد ؟
-                      </h4>
-                      <div class="buttons">
-                        <button
+                  <div class="col-6">
+                    <div class="form-group">
+                      <div id="AppendAnswerNewQuestion" class="AppendAnswer">
+                        <label for="" class="mb-2">الاجابات</label>
+                        <div class="d-flex align-items-center append_answer">
+                          <input
+                            type="text"
+                            name=""
+                            id=""
+                            class="form-control"
+                            placeholder=""
+                          />
+                          <button type="button" class="remove btn">x</button>
+                          <input
+                            type="radio"
+                            class="form-check-input"
+                            name="radioAnswer"
+                            id=""
+                            checked
+                          />
+                        </div>
+                      </div>
+                      <small class="d-block text-start"
+                        ><button
+                          id="btnAddNew"
+                          class="btn btnAdd"
                           type="button"
-                          class="btn PrimaryButton"
-                          data-bs-toggle="modal"
-                          data-bs-target="#questionBankModal"
                         >
-                          نعم , عرض الاسالة
-                        </button>
-                        <button
-                          type="button"
-                          class="btn SecondButton"
-                          data-bs-toggle="modal"
-                          data-bs-target="#newQuestionModal"
-                        >
-                          اضافة اسألة جديدة
-                        </button>
+                          + إضافة إجابة اخري
+                        </button></small
+                      >
+                      <script>
+                        $(function () {
+                          $("#btnAddNew").bind("click", function () {
+                            var div = $("<div />");
+                            div.html(GetDynamicNewAnswer(""));
+                            $("#AppendAnswerNewQuestion").append(div);
+                          });
+                          $("body").on("click", ".remove", function () {
+                            $(this).closest("div").remove();
+                          });
+                        });
+                        function GetDynamicNewAnswer(value) {
+                          return (
+                            '<div class="d-flex align-items-center append_answer">' +
+                            '<input type="text" name="" id="" class="form-control" placeholder="">' +
+                            '<button type="button" class="remove btn">x</button>' +
+                            '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
+                            "</div>"
+                          );
+                        }
+                      </script>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-group">
+                            <label for="">* درجة السؤال</label>
+                            <input
+                              type="text"
+                              name=""
+                              id=""
+                              class="form-control"
+                              placeholder="ادخل درجة السؤال"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+            <button id="addNow" type="button" class="btn SecondButton d-block mb-3 px-5" style="display: none !important;">
+              إضافة الآن
+            </button>
+
+              <!-- Modal choose question bank or new question -->
 
               <!-- Modal question Bank -->
               <div
@@ -562,8 +645,8 @@
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
+                                  name="flexRadioDefault-1"
+                                  id="flexRadioDefault1-1"
                                 />
                               </td>
                             </tr>
@@ -578,8 +661,8 @@
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
+                                  name="flexRadioDefault-2"
+                                  id="flexRadioDefault1-2"
                                 />
                               </td>
                             </tr>
@@ -594,8 +677,8 @@
                                 <input
                                   class="form-check-input"
                                   type="radio"
-                                  name="flexRadioDefault"
-                                  id="flexRadioDefault1"
+                                  name="flexRadioDefault-3"
+                                  id="flexRadioDefault1-3"
                                 />
                               </td>
                             </tr>
@@ -603,161 +686,16 @@
                         </table>
                       </div>
                     </div>
+                    <button type="button" class="btn btn-success nas">
+                      اضافة
+                    </button>
                   </div>
                 </div>
               </div>
 
               <!-- Modal add new question -->
-              <div
-                class="modal modal_add_new_question fade"
-                id="newQuestionModal"
-                tabindex="-1"
-                aria-labelledby="newQuestionModalLabel"
-                aria-hidden="true"
-              >
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <h4 class="modal_title">تفاصيل السؤال</h4>
-                      <p class="modal_text">
-                        يمكنك التعديل على الإجابات او الدرجة المعطاه ويمكنك
-                        اضافة المزيد من الاسالة
-                      </p>
-                      <div class="add_form w-100">
-                        <div class="form-group">
-                          <label for="">* نوع السؤال</label>
-                          <select
-                            name=""
-                            id=""
-                            class="form-control selectpicker"
-                            title="اختر"
-                          >
-                            <option value="">مجموعة 1</option>
-                            <option value="">مجموعة 2</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <label for="">*اسم السؤال</label>
-                          <input
-                            type="text"
-                            name=""
-                            id=""
-                            class="form-control"
-                            placeholder="اكتب اسم السؤال"
-                          />
-                        </div>
-                        <div class="form-group">
-                          <label for="">* المادة</label>
-                          <select
-                            name=""
-                            id=""
-                            class="form-control selectpicker"
-                            title="اختر المجموعة"
-                          >
-                            <option value="">مجموعة 1</option>
-                            <option value="">مجموعة 2</option>
-                          </select>
-                        </div>
-                        <div class="form-group">
-                          <div
-                            id="AppendAnswerNewQuestion"
-                            class="AppendAnswer"
-                          >
-                            <label for="" class="mb-2">الاجابات</label>
-                            <div
-                              class="d-flex align-items-center append_answer"
-                            >
-                              <input
-                                type="text"
-                                name=""
-                                id=""
-                                class="form-control"
-                                placeholder=""
-                              />
-                              <button type="button" class="remove btn">
-                                x
-                              </button>
-                              <input
-                                type="radio"
-                                class="form-check-input"
-                                name="radioAnswer"
-                                id=""
-                                checked
-                              />
-                            </div>
-                          </div>
-                          <small class="d-block text-start"
-                            ><button
-                              id="btnAddNew"
-                              class="btn btnAdd"
-                              type="button"
-                            >
-                              + إضافة إجابة اخري
-                            </button></small
-                          >
-                          <script>
-                            $(function () {
-                              $("#btnAddNew").bind("click", function () {
-                                var div = $("<div />");
-                                div.html(GetDynamicNewAnswer(""));
-                                $("#AppendAnswerNewQuestion").append(div);
-                              });
-                              $("body").on("click", ".remove", function () {
-                                $(this).closest("div").remove();
-                              });
-                            });
-                            function GetDynamicNewAnswer(value) {
-                              return (
-                                '<div class="d-flex align-items-center append_answer">' +
-                                '<input type="text" name="" id="" class="form-control" placeholder="">' +
-                                '<button type="button" class="remove btn">x</button>' +
-                                '<input type="radio" class="form-check-input" name="radioAnswer" id="">' +
-                                "</div>"
-                              );
-                            }
-                          </script>
-                        </div>
-                        <div class="form-group">
-                          <div class="row">
-                            <div class="col-lg-6 col-md-12 col-12">
-                              <div class="form-group">
-                                <label for="">* مدة السؤال</label>
-                                <input
-                                  type="text"
-                                  name=""
-                                  id=""
-                                  class="form-control"
-                                  placeholder="ادخل درجة السؤال"
-                                />
-                              </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-12">
-                              <div class="form-group">
-                                <label for="">* درجة السؤال</label>
-                                <input
-                                  type="text"
-                                  name=""
-                                  id=""
-                                  class="form-control"
-                                  placeholder="ادخل درجة السؤال"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <button
-                          type="button"
-                          class="btn SecondButton d-block mb-3 px-5"
-                        >
-                          إضافة الآن
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <button type="submit" class="btn PrimaryButton">الحفظ</button>
+              <button type="submit" class="btn PrimaryButton mio">الحفظ</button>
             </form>
           </div>
         </section>
@@ -767,6 +705,68 @@
     </div>
     <!-- ? ======= footer =========== -->
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let addBtn = document.getElementById("reprtBtn");
+        let addNowBtn = document.getElementById("addNow");
+        let appendSection = document.getElementById("myDIV");
+    
+        addBtn.addEventListener("click", function () {
+          let newSection = appendSection.cloneNode(true);
+          resetInputValues(newSection);
+    
+          // Replace the "اضافة سؤال" button with the trash button
+          replaceAddButtonWithTrashButton(addBtn, newSection);
+    
+          // Insert the new section after the existing section
+          appendSection.insertAdjacentElement("afterend", newSection);
+    
+          // Display the "إضافة الآن" button
+          appendSection.style.display = "block"
+          addNowBtn.style.display = "block";
+        });
+    
+        function resetInputValues(section) {
+          let inputs = section.querySelectorAll("input");
+          inputs.forEach(function (input) {
+            if (input.type === "text") {
+              input.value = "";
+            } else if (input.type === "radio") {
+              input.checked = false;
+            }
+          });
+        }
+    
+        function replaceAddButtonWithTrashButton(addButton, section) {
+          addButton.style.display = "none"; // Hide the "اضافة سؤال" button
+    
+          let trashButton = document.createElement("button");
+          trashButton.type = "button";
+          trashButton.classList.add("btn", "SecondButton", "ng", "d-block", "mb-3", "px-5", "trash-icon");
+          trashButton.innerText = "حذف السؤال";
+          trashButton.addEventListener("click", function () {
+            section.remove(); // Remove the corresponding section when the trash button is clicked
+            addBtn.style.display = "block"; // Show the "اضافة سؤال" button again
+          });
+    
+          section.appendChild(trashButton); // Append the trash button to the new section
+        }
+      });
+    </script>
+    
+    <!-- <script>
+      let btn = document.getElementById("shoeBtn");
+    
+      btn.addEventListener("click", function () {
+        let btnAdd = document.getElementById("addNow");
+        let x = document.getElementById("myDIV");
+    
+        if (x.style.display === "none" && btnAdd.style.display === "none") {
+          x.style.display = "block";
+          btnAdd.style.display = "block";
+        }
+      });
+    </script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
