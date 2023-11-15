@@ -78,7 +78,7 @@
     font-size: 0.6rem;
   }
   .sitiang .nav-pills {
-    width: 30% !important;
+    width: 60% !important;
     border: unset !important;
     font-size: 0.6rem;
     flex-direction: row !important;
@@ -249,5 +249,10 @@
   border-right: unset !important;
   font-family: 'bold';
  }
+ .accuracy_projects .text-chart {
+  position: absolute !important;
+  top: 7rem !important;
+  right: 6rem !important;
+}
 }
 

@@ -2078,12 +2078,14 @@ h5.name {
     font-family: "regular";
     color: #828c8d;
   }
-  .text-chart {
-    position: absolute;
-    top: 8rem;
-    right: 7rem;
+   .text-chart {
+   
+      position: absolute;
+      top: 14rem;
+      right: 13rem;
   }
 }
+
 .average {
   display: flex;
   justify-content: flex-start;
@@ -2806,12 +2808,53 @@ input.form-control {
     height: 21px;
     color: #e8efed;
 }
+.sidebar svg {
+  width: 21px;
+  height: 21px;
+  color: #e8efed;
+  
+}
+
 .date p {
   background-color: #e8efed;
   font-family: "regular";
   padding: 0.5rem;
   border-radius: 8px;
 }
+.modal-body.move {
+  label {
+    font-family: "regular"
+  }
+  .form-group {
+    margin-top: 10px
+  }
+  .filter-option-inner-inner {
+    font-family: "regular";
+   text-align: right !important;
+  }
+ 
+}
+button.btn.btn-primary.move {
+  width: 15%;
+  margin-inline-start: unset;
+  margin-bottom: 11px;
+  margin-inline-start: auto;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .accuracy_projects .text-chart {
+    position: absolute !important;
+    top: 6rem !important;
+    right: 5rem !important;
+}
+
+}
+@media only screen and (max-width:3000px) {
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 2216px !important;
+}
+}
+
 
 @import "./_responsive.scss";
 @import "./_layout.scss";
