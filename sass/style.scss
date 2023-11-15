@@ -1337,7 +1337,7 @@ table tbody tr td {
       display: flex;
       justify-content: center;
       .nav-pills {
-        width: 20%;
+        width:40%;
         padding-inline-end: 0;
       }
 
@@ -2644,8 +2644,174 @@ li.nav-item.add-rate {
   border-radius: 4px;
 }
 .index_cards .content .nav-pills {
-  width: 100% !important;
+ 
   padding-inline-end: 5%;
 }
+.all-meaasae h4 {
+    font-family: "semibold";
+    font-size: 20px;
+    padding-right: 1rem;
+    margin: 1rem 0;
+}
+.all-teachers {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    border-bottom: 1px solid;
+}
+.name-teacher {
+  display: flex;
+  justify-content: space-between;
+}
+.explain-teacher h6 {
+  font-family: "light";
+  font-size: 12px;
+  color: #656565;
+}
+.explain-teacher p {
+    font-family: "medium";
+    font-size: 10px;
+    padding: 3px;
+    color: white;
+    background-color: #06797e;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.chat-of-massege .status-of-teacher {
+    display: flex;
+    border-bottom: 2px solid #06797e;
+    border-top: 2px solid #06797e;
+        border-left: 2px solid #06797e;
+
+    /* align-items: center; */
+}
+.wats-chat {
+  border-left: 2px solid #06797e;
+  border-bottom: 2px solid #06797e;
+}
+.status-of-teacher .list-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.status-name-teacher p {
+  font-family: "regular";
+  font-size: 12px;
+  color: #656565;
+}
+.status-name-teacher h4 {
+  font-family: "semibold";
+  font-size: 12px;
+}
+.all-teachers .teacher h5 {
+  font-family: "regular";
+  font-size: 12px;
+}
+.wats-chat .date {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.wats-chat .quesion {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.2rem;
+  width: fit-content;
+  margin: 1rem;
+}
+.wats-chat .quesion h6 {
+  font-family: "regular";
+  font-size: 14px;
+}
+.wats-chat .quesion p {
+  font-family: "regular";
+  font-size: 9px;
+}
+.wats-chat .anser-flex {
+  display: flex;
+  justify-content: end;
+}
+.wats-chat .anser {
+  background-color: #06797e;
+  color: white;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.2rem;
+  margin: 1rem;
+}
+.wats-chat .anser-flex h6 {
+  font-family: "regular";
+  font-size: 14px;
+}
+.wats-chat .anser-flex p {
+  font-family: "regular";
+  font-size: 9px;
+}
+.wats-chat .send-massge {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin-top: 7rem;
+}
+.wats-chat .send-massge .tlegram {
+  background-color: #06797e;
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 10px;
+}
+input.form-control {
+  // margin-top: 1rem;
+  border-radius: 33px;
+  padding: 0.75rem;
+  background-color: #f7f7f7;
+  padding-right: 40px;
+  border: unset;
+  font-family: "light";
+  font-size: 13px;
+}
+.tab-of-masseges {
+    display: flex;
+}
+.bord {
+  width: 35%;
+  padding: 1px;
+  border-right: 2px solid #06797e;
+  border-bottom: 2px solid #06797e;
+  border-top: 2px solid #06797e;
+}
+.chat-of-massege {
+  width: 65%;
+  border-right: 2px solid #06797e;
+  border-bottom-left-radius: 10px;
+  margin: 0 1px;
+}
+.img-teacher img {
+  width: 86%;
+  margin-bottom: 8px;
+}
+.img img {
+  width: 86%;
+  margin-bottom: 8px;
+}
+
+  .sidebar.open svg {
+    width: 21px;
+    height: 21px;
+    color: #e8efed;
+}
+.date p {
+  background-color: #e8efed;
+  font-family: "regular";
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
 @import "./_responsive.scss";
 @import "./_layout.scss";
