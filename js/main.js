@@ -57,3 +57,10 @@ $(document).ready(function () {
     $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
   });
 });
+$(document).ready(function() {
+  $('.summernote').summernote(
+    {
+      height: 300,
+    }
+  );
+});

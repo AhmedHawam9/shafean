@@ -36,6 +36,9 @@
   <script src="js/moment.min.js"></script>
   <script src="js/daterangepicker.min.js"></script>
   <!-- ? Custom JavaScript -->
+  <!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
   <!-- ? Title -->
   <title>تطبيق ولي الامر</title>
@@ -370,13 +373,17 @@
                 <h5 class="title_section">تطبيق ولي الامر</h5>
             </div>
             <form action="#" class="add_form">
+              <div class="form-group">
+                <label for="">*الرابط Android</label>
+                <input type="url" class="form-control" placeholder="اكتب هنا">
+              </div>
                 <div class="form-group">
-                    <label for="">*الرابط</label>
-                    <input type="url" class="form-control" placeholder="اكتب هنا">
-                  </div>
+                <label for="">*الرابط IOS</label>
+                <input type="url" class="form-control" placeholder="اكتب هنا">
+              </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1" class="form-label">*الوصف</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control summernote" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
                 <div class="form-group upload_file">
                     <label for="">* اضافة صورة رأسيه</label>
@@ -468,6 +475,41 @@
                           </div>
                     </div>
                   </div>
+                  
+                  <div class="sec-hidden">
+                    <div class="row">
+                      <div class="col-lg-3"  id="myDIV" style="display: none">
+                          <div class="form-group upload_file">
+                              <label for="">* اضافة صورةالتطبيق</label>
+                              <label for="imageCover" class="upload_file_label">
+                                <i class="fa-regular fa-image"></i>
+                                <p>اسحب صورة معبرة واسقطها هنا</p>
+                                <span id="fileNameImage">او اضغط هنا</span>
+                              </label>
+                              <input
+                                type="file"
+                                name=""
+                                id="imageCover"
+                                class="form-control"
+                                accept="image/*"
+                                hidden
+                              />
+                            </div>
+                      </div>
+                   
+                    </div>
+        
+        
+    </div>
+    <button
+    type="button"
+    class="btn SecondButton mf "
+    id="reprtBtn"
+  >
+    اضافة صوره جديده
+  </button>
+         </div>
+        
                
                
                  
@@ -480,7 +522,59 @@
     <!-- ======= Main ======= -->
   </div>
   <!-- ? ======= footer =========== -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let addBtn = document.getElementById("reprtBtn");
+      let addNowBtn = document.getElementById("addNow");
+      let appendSection = document.getElementById("myDIV");
 
+      addBtn.addEventListener("click", function () {
+        let newSection = appendSection.cloneNode(true);
+        resetInputValues(newSection);
+
+        replaceAddButtonWithTrashButton(addBtn, newSection);
+
+        appendSection.insertAdjacentElement("afterend", newSection);
+
+        appendSection.style.display = "block";
+        addNowBtn.style.display = "block";
+      });
+
+      function resetInputValues(section) {
+        let inputs = section.querySelectorAll("input");
+        inputs.forEach(function (input) {
+          if (input.type === "text") {
+            input.value = "";
+          } else if (input.type === "radio") {
+            input.checked = false;
+          }
+        });
+      }
+
+      function replaceAddButtonWithTrashButton(addButton, section) {
+
+        let trashButton = document.createElement("button");
+        trashButton.type = "button";
+        trashButton.classList.add(
+          "btn",
+          "SecondButton",
+          "ng",
+          "d-block",
+          "mb-3",
+          "px-5",
+          "w-100",
+          "trash-icon",
+        );
+        trashButton.innerText = "حذف الصور";
+        trashButton.addEventListener("click", function () {
+          section.remove(); // Remove the corresponding section when the trash button is clicked
+          addBtn.style.display = "block"; // Show the "اضافة سؤال" button again
+        });
+
+        section.appendChild(trashButton); // Append the trash button to the new section
+      }
+    });
+  </script>
   <script src="js/main.js"></script>
 </body>
 
