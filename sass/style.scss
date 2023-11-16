@@ -2854,7 +2854,43 @@ button.btn.btn-primary.move {
   max-width: 2216px !important;
 }
 }
+.sec-1 {
+  background-color: #06797e42;
+  padding: 1rem 1rem;
+  margin-bottom: 14px;
+  border-radius: 15px
 
+}
+.craet {
+  label {
+    font-family:"regular" !important;
+  }
+ 
+  margin-bottom: 10px;
+}
+ .modal-body.select {
+  font-family: "regular";
+  th.ny {
+    text-align: end !important;
+  }
+  .table_details .filters .form-group svg, .index_cards .content .table_data .filters .form-group svg{
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    color: #828c8d;
+}
+  }
+  button.btn.send-now {
+    background: #06797E;
+    width: 100%;
+    color: white;
+    transition: 0.7s;
+}
+button.btn.send-now:hover {
+  background-color: white;
+  border: 1px solid #06797E;
+  color: #06797E
+}
 
 @import "./_responsive.scss";
 @import "./_layout.scss";

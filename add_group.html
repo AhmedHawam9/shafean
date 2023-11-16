@@ -171,32 +171,20 @@
             data-bs-parent="#menu"
           >
             <li>
-              <a href="#" class="nav-link">
-                <span>عرض المدونه</span></a
-              >
+              <a href="View-blog.html" class="nav-link"> <span>عرض المدونه</span></a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>الأقسام</span></a
-              >
+              <a href="sections.html" class="nav-link"> <span>الأقسام</span></a>
             </li>
             <li>
-              <a
-                href="#"
-                class="nav-link"
-              >
-                <span>الهشتاج</span></a
-              >
+              <a href="Hashtag.html" class="nav-link"> <span>الهشتاج</span></a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>اضافة مدونه</span></a
-              >
+              <a href="add-blog.html" class="nav-link"> <span>اضافة مدونه</span></a>
             </li>
           </ul>
         </li>
 
-       
         <li class="nav-item">
           <a
             href="#submenuWebsite"
@@ -213,42 +201,31 @@
             data-bs-parent="#menu"
           >
             <li>
-              <a href="#" class="nav-link">
+              <a href="slider.html" class="nav-link">
                 <span>اضافة اسليدر</span></a
               >
             </li>
             <li>
-              <a href="#" class="nav-link">
+              <a href="who-are-we.html" class="nav-link">
                 <span>من نحن</span></a
               >
             </li>
             <li>
-              <a
-                href="#"
-                class="nav-link"
-              >
+              <a href="Success-Partners.html" class="nav-link">
                 <span>شركاء النجاح</span></a
               >
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>الخدمات</span></a
-              >
+              <a href="Services.html" class="nav-link"> <span>الخدمات</span></a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>تطبيق المعلم</span></a
-              >
+              <a href="Teacher-application.html" class="nav-link"> <span>تطبيق المعلم</span></a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>تطبيق الطالب</span></a
-              >
+              <a href="Student-application.html" class="nav-link"> <span>تطبيق الطالب</span></a>
             </li>
             <li>
-              <a href="#" class="nav-link">
-                <span>تطبيق ولي الأمر</span></a
-              >
+              <a href="Guardian-application.html" class="nav-link"> <span>تطبيق ولي الأمر</span></a>
             </li>
           </ul>
         </li>
@@ -431,7 +408,140 @@
                         fileNameImage.textContent = file.name;
                     });
                 </script>
+                <div class="craet">
+                  <input type="checkbox" class="form-check-input" data-bs-toggle="modal"
+                  data-bs-target="#move-student">
+                  <label for="">انشاء رابط تسجيل</label>
+                 
+                </div>
                 <button type="btn" class="btn PrimaryButton">الحفظ والمتابعة</button>
+                <div class="modal" tabindex="-1" id="move-student">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header select">
+                        <h5 class="modal-title">  اختيار الطلاب</h5>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body select">
+                        <p>قم بتحديد الطلاب الذين تود ارسال رابط التسجيل اليهم للدخول الى المجموعة</p>
+                        <div class="table_details">
+                          <!-- Start filters -->
+                          <div class="filters">
+                            <div class="form-group">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                              <input
+                                type="search"
+                                name=""
+                                id=""
+                                class="form-control"
+                                placeholder="ابحث باسم الطالب......"
+                              />
+                            </div>
+            
+                           
+                          </div>
+                          <!-- End filters -->
+            
+                          <div class="table-responsive">
+                            <table class="table" id="table">
+                              <thead>
+                                <tr class="trAltCizgi">
+                                  
+                                  <th class="th">اسم الطالب</th>
+                                  <th class="th">رقم التليفون</th>
+                                  <th class="th">نوع الاعاقه</th>
+                           
+                                  <th class="ny"><input class="form-check-input" type="checkbox"></th>
+                                
+                                </tr>
+                              </thead>
+                              <tbody class="tbody">
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                                  <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                                <tr>
+                                
+                                  <td>أحمد ابراهيم</td>
+                                  <td>01027003762</td>
+                                  <td>اعاقه سمع</td>
+                               <td><input class="form-check-input" type="checkbox"></td>
+                                 
+                                
+                                </tr>
+                                <!-- For loop this tr -->
+                              </tbody>
+                            </table>
+                            <button type="button" class="btn send-now">ارسال الان</button>
+                          </div>
+                        </div>
+                      
+                      
+                        </div>
+                       
+                       </div>
+                      </div>
+                     
+                    </div>
+                  </div>
             </form>
         </div>
       </section>
