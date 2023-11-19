@@ -1337,15 +1337,14 @@ table tbody tr td {
       display: flex;
       justify-content: center;
       .nav-pills {
-        width:40%;
+        width: 40%;
         padding-inline-end: 0;
       }
 
       .nav-pills .nav-link.active {
         background-color: unset !important;
         color: #011c1e !important;
-        border-right: 3px solid #24684f ;
-       
+        border-right: 3px solid #24684f;
       }
     }
   }
@@ -2012,7 +2011,7 @@ h5.name {
     color: #011c1e;
     margin-bottom: 2rem;
     font-size: 0.8rem;
-    font-family: 'bold';
+    font-family: "bold";
   }
 }
 .left_content {
@@ -2030,7 +2029,6 @@ h5.name {
     font-size: 0.7rem !important;
   }
   .region_project {
-   
     .table {
       font-family: "regular";
       font-size: 0.7rem;
@@ -2078,11 +2076,10 @@ h5.name {
     font-family: "regular";
     color: #828c8d;
   }
-   .text-chart {
-   
-      position: absolute;
-      top: 14rem;
-      right: 13rem;
+  .text-chart {
+    position: absolute;
+    top: 14rem;
+    right: 13rem;
   }
 }
 
@@ -2102,7 +2099,7 @@ h5.name {
 .percent {
   color: #707070b0;
 }
-.repoets-img  {
+.repoets-img {
   img {
     width: 100%;
   }
@@ -2117,12 +2114,12 @@ h5.name {
     font-size: 0.9rem;
   }
   .chart-container #percentageJobs {
-    height:365px !important;
+    height: 365px !important;
   }
 }
 .region_project-report {
   img {
-    width: 100%
+    width: 100%;
   }
   .table {
     font-family: "regular";
@@ -2167,10 +2164,10 @@ h5.name {
 canvas#reports {
   height: 400px !important;
 }
-div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm{
-  background-color: #06797E !important;
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+  background-color: #06797e !important;
   font-family: "regular";
-  border: 1px solid #06797E !important ;
+  border: 1px solid #06797e !important ;
   transition: 0.7s;
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
@@ -2178,54 +2175,53 @@ div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel {
   background-color: unset !important ;
-  color: #06797E !important ;
-  border: 1px solid #06797E !important ;
+  color: #06797e !important ;
+  border: 1px solid #06797e !important ;
   font-family: "regular";
   transition: 0.7s;
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:hover {
-  background-color: #06797E !important;
-  color: white !important
+  background-color: #06797e !important;
+  color: white !important;
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-cancel:focus {
   box-shadow: unset !important ;
 }
-div:where(.swal2-container) div:where(.swal2-actions):not(.swal2-loading) .swal2-styled:hover {
+div:where(.swal2-container)
+  div:where(.swal2-actions):not(.swal2-loading)
+  .swal2-styled:hover {
   background-image: unset !important;
 }
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:hover {
   background-color: white !important;
-  color:#06797E !important;
+  color: #06797e !important;
 }
 input.form-check-input.lesson {
   margin-top: 0 !important;
-
 }
 input.form-check-input.lesson:focus {
   box-shadow: unset !important;
   border: 1px solid #0000002e !important;
 }
 input.form-check-input.lesson:checked {
-  background-color: #06797E !important;
- 
+  background-color: #06797e !important;
 }
 .formation {
-  h6{
+  h6 {
     font-size: 0.6rem;
     font-family: "regular";
   }
   p {
     font-size: 0.6rem;
     font-family: "regular";
-    color: #BFBFBF;
+    color: #bfbfbf;
   }
 }
 button.btn.PrimaryButton.lesson {
- 
-    width: 32rem;
+  width: 32rem;
 }
 a.dropdown-item {
-  font-family: "regular"
+  font-family: "regular";
 }
 h4.modal_title.complaints {
   font-size: 1.5rem;
@@ -2233,39 +2229,36 @@ h4.modal_title.complaints {
 }
 .complaints {
   span {
-    color: #64666aa9; 
-    font-family: "bold"
+    color: #64666aa9;
+    font-family: "bold";
   }
-  p{
+  p {
     font-family: "regular";
-     color: #64666aa9; 
+    color: #64666aa9;
   }
-  
 }
 .header-com {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-button.btn.btn-primary{
+button.btn.btn-primary {
   font-family: "regular";
   border: unset !important;
-  background-color: #06797E !important;
+  background-color: #06797e !important;
   margin-top: 21px;
-    margin-inline-start: auto;
-    display: block;
+  margin-inline-start: auto;
+  display: block;
 }
 .welcome {
   font-family: bold;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 .best_job {
-  h5{
+  h5 {
     font-family: "bold";
     font-size: 0.7rem;
   }
-    
 }
 .completion_projects {
   margin: 2rem 0;
@@ -2360,7 +2353,7 @@ button.btn.btn-primary{
   }
 }
 .text-lesson {
-  font-family: 'regular';
+  font-family: "regular";
   margin-right: 66px;
   color: #656565;
 }
@@ -2376,29 +2369,28 @@ button.btn.btn-primary{
 }
 a.btn.start {
   // margin-inline-start: 22rem;
-  background-color: #B2D23F;
+  background-color: #b2d23f;
   color: white;
   font-family: "regular";
 }
 .student-on {
- display: flex
-
+  display: flex;
 }
 .main {
   display: flex;
-    gap: 73px;
-    text-align: center;
-    flex-wrap: wrap;
-    h4 {
-      font-family: "regular";
-      font-size: 0.7rem;
-      margin-top: 26px;
-    }
-    .comp {
-      padding: 1rem 4rem;
-      background-color: #FAFAFA;
-      border-radius: 15px;
-    }
+  gap: 73px;
+  text-align: center;
+  flex-wrap: wrap;
+  h4 {
+    font-family: "regular";
+    font-size: 0.7rem;
+    margin-top: 26px;
+  }
+  .comp {
+    padding: 1rem 4rem;
+    background-color: #fafafa;
+    border-radius: 15px;
+  }
 }
 .modal-body.groups {
   text-align: center;
@@ -2411,15 +2403,15 @@ a.btn.start {
     font-size: 1.2rem;
   }
   .btn {
-    background-color: #06797E;
+    background-color: #06797e;
     color: white;
     font-family: "regular";
     transition: 0.5s;
   }
   .btn:hover {
     background-color: white;
-    color: #06797E;
-    border: 1px solid #06797E;
+    color: #06797e;
+    border: 1px solid #06797e;
   }
 }
 td.p {
@@ -2448,7 +2440,6 @@ td.name-tab {
   border-left: 1px solid rgba(0, 0, 0, 0.212);
   border-right: 1px solid rgba(0, 0, 0, 0.212);
 }
- 
 
 .name-f {
   text-align: center !important;
@@ -2471,20 +2462,19 @@ th.th-j {
   color: white !important;
   text-align: center !important;
   border-left: 1px solid rgb(255, 255, 255);
-  
 }
 th.th-k {
   text-align: center !important;
   border-top: 1px solid rgba(0, 0, 0, 0.212);
   border-left: 1px solid rgba(0, 0, 0, 0.212);
   border-right: 1px solid rgba(0, 0, 0, 0.212);
-  font-family: "bold"
+  font-family: "bold";
 }
 td.i {
   text-align: center !important;
   border-left: 1px solid rgba(0, 0, 0, 0.212);
   border-right: 1px solid rgba(0, 0, 0, 0.212);
-  font-family: "regular"
+  font-family: "regular";
 }
 .head-name {
   font-family: "regular";
@@ -2496,12 +2486,10 @@ td.end {
 }
 .sidebar .accordion-button::after {
   content: unset !important ;
-
 }
 .sidebar .nav-pills .accordion-button svg {
   float: left !important;
   color: white !important;
-
 }
 .sidebar .nav-pills {
   ::marker {
@@ -2523,7 +2511,6 @@ button.btn.btn-danger:hover {
   color: red;
 }
 button.btn.btn-success {
- 
   font-family: "regular";
   transition: 0.7s;
 }
@@ -2564,11 +2551,10 @@ h4.sec_title {
   font-family: "regular";
 }
 p.sec_text {
-  font-family: 'regular';
+  font-family: "regular";
 }
 button.btn.SecondButton.ng.d-block.mb-3.px-5 {
-    width: 20%;
-
+  width: 20%;
 }
 button.btn.Lesson-details {
   font-family: "regular";
@@ -2636,8 +2622,8 @@ button.btn.add {
   width: 100%;
 }
 li.nav-item.add-rate {
-    width: 50%;
-    color: black !important;
+  width: 50%;
+  color: black !important;
 }
 .nav-link.add-rate.active {
   background-color: #b2d23f !important;
@@ -2646,22 +2632,21 @@ li.nav-item.add-rate {
   border-radius: 4px;
 }
 .index_cards .content .nav-pills {
- 
   padding-inline-end: 5%;
 }
 .all-meaasae h4 {
-    font-family: "semibold";
-    font-size: 20px;
-    padding-right: 1rem;
-    margin: 1rem 0;
+  font-family: "semibold";
+  font-size: 20px;
+  padding-right: 1rem;
+  margin: 1rem 0;
 }
 .all-teachers {
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-    padding-right: 1rem;
-    border-bottom: 1px solid;
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid;
 }
 .name-teacher {
   display: flex;
@@ -2673,34 +2658,34 @@ li.nav-item.add-rate {
   color: #656565;
 }
 .explain-teacher p {
-    font-family: "medium";
-    font-size: 10px;
-    padding: 3px;
-    color: white;
-    background-color: #06797e;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+  font-family: "medium";
+  font-size: 10px;
+  padding: 3px;
+  color: white;
+  background-color: #06797e;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 .chat-of-massege .status-of-teacher {
-    display: flex;
-    border-bottom: 2px solid #06797e;
-    border-top: 2px solid #06797e;
-        border-left: 2px solid #06797e;
+  display: flex;
+  border-bottom: 2px solid #06797e;
+  border-top: 2px solid #06797e;
+  border-left: 2px solid #06797e;
 
-    /* align-items: center; */
+  /* align-items: center; */
 }
 .wats-chat {
   border-left: 2px solid #06797e;
   border-bottom: 2px solid #06797e;
 }
 .status-of-teacher .list-name {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
 }
 
 .status-name-teacher p {
@@ -2779,7 +2764,7 @@ input.form-control {
   font-size: 13px;
 }
 .tab-of-masseges {
-    display: flex;
+  display: flex;
 }
 .bord {
   width: 35%;
@@ -2803,16 +2788,15 @@ input.form-control {
   margin-bottom: 8px;
 }
 
-  .sidebar.open svg {
-    width: 21px;
-    height: 21px;
-    color: #e8efed;
+.sidebar.open svg {
+  width: 21px;
+  height: 21px;
+  color: #e8efed;
 }
 .sidebar svg {
   width: 21px;
   height: 21px;
   color: #e8efed;
-  
 }
 
 .date p {
@@ -2823,16 +2807,15 @@ input.form-control {
 }
 .modal-body.move {
   label {
-    font-family: "regular"
+    font-family: "regular";
   }
   .form-group {
-    margin-top: 10px
+    margin-top: 10px;
   }
   .filter-option-inner-inner {
     font-family: "regular";
-   text-align: right !important;
+    text-align: right !important;
   }
- 
 }
 button.btn.btn-primary.move {
   width: 15%;
@@ -2846,55 +2829,150 @@ button.btn.btn-primary.move {
     position: absolute !important;
     top: 6rem !important;
     right: 5rem !important;
+  }
 }
-
-}
-@media only screen and (max-width:3000px) {
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-  max-width: 2216px !important;
-}
+@media only screen and (max-width: 3000px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 2216px !important;
+  }
 }
 .sec-1 {
   background-color: #06797e42;
   padding: 1rem 1rem;
   margin-bottom: 14px;
-  border-radius: 15px
-
+  border-radius: 15px;
 }
 .craet {
   label {
-    font-family:"regular" !important;
+    font-family: "regular" !important;
   }
- 
+
   margin-bottom: 10px;
 }
- .modal-body.select {
+.modal-body.select {
   font-family: "regular";
   th.ny {
     text-align: end !important;
   }
-  .table_details .filters .form-group svg, .index_cards .content .table_data .filters .form-group svg{
+  .table_details .filters .form-group svg,
+  .index_cards .content .table_data .filters .form-group svg {
     position: absolute;
     top: 50%;
     right: 0.5rem;
     color: #828c8d;
-}
   }
-  button.btn.send-now {
-    background: #06797E;
-    width: 100%;
-    color: white;
-    transition: 0.7s;
+}
+button.btn.send-now {
+  background: #06797e;
+  width: 100%;
+  color: white;
+  transition: 0.7s;
 }
 button.btn.send-now:hover {
   background-color: white;
-  border: 1px solid #06797E;
-  color: #06797E
+  border: 1px solid #06797e;
+  color: #06797e;
 }
 
-.btn.SecondButton.mf{
-  margin-bottom: 10px
+.btn.SecondButton.mf {
+  margin-bottom: 10px;
 }
-
+.det {
+  display: flex;
+  gap: 3rem;
+}
+button.btn.add-ask {
+  margin-top: 16px;
+  background-color: #06797e;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  padding: 0.5rem;
+  font-family: "regular";
+  transition: 0.7s;
+}
+.text-follow {
+  text-align: center;
+}
+button.btn.follwo {
+  margin-top: 30px;
+  background-color: #06797e;
+  color: white;
+  font-family: "regular";
+  border-radius: 50px;
+  width: 100%;
+  transition: 0.7s;
+  padding: 0.7rem;
+}
+.yes-tr h4 {
+  font-family: "regular";
+}
+.choose {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  text-align: right !important;
+}
+label.ans {
+  font-family: "regular";
+}
+.remove.btn {
+  background-color: #dc3545;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+  margin-inline-start: 1rem;
+  border-radius: 50%;
+  border: rgba(0, 0, 0, 0);
+  border-inline-start: 1px solid #cdcdcd;
+}
+.AppendAnswer {
+  margin-top: 10px;
+}
+button#btnAdd-new {
+  font-family: "regular";
+}
+button.btn.follwo:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+.head-new-que h4 {
+  font-family: "regular";
+}
+button.btn.PrimaryButton.na {
+  background-color: #06797e;
+  font-family: "regular";
+  color: white;
+  transition: 0.7s;
+}
+button.btn.PrimaryButton.na:hover {
+  color: #06797e;
+  background-color: white;
+  border: 1px solid #06797e;
+}
+svg.svg-inline--fa.fa-magnifying-glass.teacher {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+}
+h3.AS {
+  font-family: "regular";
+  font-size: 0.9rem;
+  margin-top: 18px;
+}
 @import "./_responsive.scss";
 @import "./_layout.scss";
