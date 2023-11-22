@@ -1,3 +1,19 @@
+
+
+//loader
+// let loader = document.getElementById('preloader');
+// window.addEventListener('load', function () {
+//   loader.style.display = 'none';
+// });
+//loader
+
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
 //=========== Active sidebar dashboard =============
 const currentLocationDashboard = location.href;
 const menuItemDashboard = document.querySelectorAll(
@@ -9,8 +25,9 @@ const menuChildDashboard = document.querySelectorAll(
 const menuLengthDashboard = menuChildDashboard.length;
 for (let i = 0; i < menuLengthDashboard; i++) {
   if (menuChildDashboard[i].href === currentLocationDashboard) {
-    menuChildDashboard[i].className = "nav-link active";
-    menuChildDashboard[i].parentElement.parentElement.className = "flex-column collapse show";
+      menuChildDashboard[i].className = "nav-link active";
+      menuChildDashboard[i].parentElement.parentElement.className =
+          "flex-column collapse show";
   }
 }
 //=========== Active sidebar dashboard =============
@@ -22,41 +39,50 @@ toggler.addEventListener("click", function () {
   sideBar.classList.toggle("open");
 });
 //=========== sidebar toggle =============
+// //=========== Close inspect =============
 
-//=========== Close inspect =============
-// document.addEventListener("contextmenu", (event) => event.preventDefault());
-// document.onkeydown = function (e) {
-//   if (event.keyCode == 123) {
-//     return false;
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
-//     return false;
-//   }
-//   if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
-//     return false;
-//   }
-//   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
-//     return false;
-//   }
-// };
-//=========== Close inspect =============
-
-$(document).ready(function () {
-  $(".sidebar").hover(
-    function () {
-      $(".sidebar").addClass("opened");
-    },
-    function () {
-      $(".sidebar").removeClass("opened");
-    }
-  );
-});
+// $(document).ready(function () {
+//   $(".sidebar").hover(
+//     function () {
+//       $(".sidebar").addClass("opened");
+//     },
+//     function () {
+//       $(".sidebar").removeClass("opened");
+//     }
+//   );
+// });
 
 $(document).ready(function () {
   $(".close").on("click", function () {
-    $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
+      $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
   });
 });
+// $(document).ready(function () {
+//     $(".sidebar").hover(
+//       function () {
+//         $(".sidebar").addClass("opened");
+//       },
+//       function () {
+//         $(".sidebar").removeClass("opened");
+//       }
+//     );
+
+//     $(".sidebar").on("click", function (event) {
+//       event.stopPropagation(); // Prevents the click event from reaching parent elements
+//     });
+
+//     $(".close").on("click", function (event) {
+//       $(".sidebar.open .nav-pills .nav-item ul").removeClass("show");
+//       event.stopPropagation(); // Prevents the click event from reaching parent elements
+//     });
+//   });
+
+
+
+
+
+
+
 $(document).ready(function() {
   $('.summernote').summernote(
     {
