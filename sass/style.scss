@@ -2974,5 +2974,13 @@ h3.AS {
   font-size: 0.9rem;
   margin-top: 18px;
 }
+.date {
+  display: flex;
+  gap: 30px;
+}
+.date .form-group {
+  width: 100%;
+}
+
 @import "./_responsive.scss";
 @import "./_layout.scss";
