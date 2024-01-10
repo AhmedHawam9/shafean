@@ -2984,7 +2984,7 @@ h3.AS {
   width: 100%;
 }
 .end-page {
-  background-color: rgb(236, 234, 231);
+  background-color: white;
   padding: 1rem;
   position: fixed;
   bottom: 0;
@@ -3008,6 +3008,7 @@ h3.AS {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 65%;
   img {
     width: 6%;
   }
@@ -3023,6 +3024,9 @@ h3.AS {
   table {
     border: 1px solid #00000030;
   }
+}
+.all-permisson {
+  font-family: "regular"
 }
 @import "./_responsive.scss";
 @import "./_layout.scss";
