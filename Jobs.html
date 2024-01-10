@@ -20,13 +20,6 @@
     <link rel="stylesheet" href="css/jquery.dataTables.min.css" />
     <link rel="stylesheet" href="css/select.dataTables.min.css" />
     <link rel="stylesheet" href="css/daterangepicker.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.css"
-      integrity="sha512-yX1R8uWi11xPfY7HDg7rkLL/9F1jq8Hyiz8qF4DV2nedX4IVl7ruR2+h3TFceHIcT5Oq7ooKi09UZbI39B7ylw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -47,7 +40,7 @@
     <!-- ? Custom JavaScript -->
 
     <!-- ? Title -->
-    <title>تقارير الجمعيه أو المدرسه</title>
+    <title>إضافة مرحلة دراسية جديدة</title>
     <!-- ? Title -->
 
     <!-- ? Favicon -->
@@ -490,178 +483,58 @@
         <section class="content">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-              <h5 class="title_section">تقارير الجمعيه أو المدرسه</h5>
+              <h5 class="title_section">الوظائف</h5>
             </div>
-            <div class="table_details">
-              <!-- Start filters -->
-              <div class="filters">
-                <div class="form-group">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                  <input
-                    type="search"
-                    name=""
-                    id=""
-                    class="form-control"
-                    placeholder="ابحث باسم المجموعة"
-                  />
-                </div>
-                <div class="form-group">
-                  <i class="fa-solid fa-calendar-days"></i>
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="daterange"
-                    value=""
-                  />
-                  <script>
-                    $(function () {
-                      $('input[name="daterange"]').daterangepicker(
-                        {
-                          opens: "left",
-                        },
-                        function (start, end, label) {
-                          console.log(
-                            "A new date selection was made: " +
-                              start.format("YYYY-MM-DD") +
-                              " to " +
-                              end.format("YYYY-MM-DD")
-                          );
-                        }
-                      );
-                    });
-                  </script>
-                </div>
+            <form action="#" class="add_form">
+              <div class="form-group">
+                <label for="">* نوع الوظيفه</label>
+                <select
+                  name=""
+                  id=""
+                  class="form-control selectpicker"
+                  title="اختر"
+                >
+                  <option value="">1</option>
+                  <option value="">2</option>
+                </select>
               </div>
-              <!-- End filters -->
-
-              <div class="table-responsive">
-                <table class="table" id="table">
-                  <thead>
-                    <tr class="trAltCizgi">
-                      <th class="th-k">رقم</th>
-                      <th class="th-k">اسم المجموعه</th>
-                      <th class="th-k">عدد الطلاب</th>
-                      <th class="th-k">اجمالي أيام الحضور</th>
-                      <th class="th-k">اجمالي أيام الغياب</th>
-                      <th class="th-k">اجمالي الحفظ</th>
-                      <th class="th-k">اجمالي المراجعه</th>
-                    </tr>
-                  </thead>
-                  <tbody class="tbody">
-                    <tr>
-                      <td class="i">1</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                    <tr>
-                      <td class="i">1</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                    <tr>
-                      <td class="i">2</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                    <tr>
-                      <td class="i">3</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                    <tr>
-                      <td class="i">4</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                    <tr>
-                      <td class="i">5</td>
-                      <td class="i">مجموعة الصم</td>
-                      <td class="i">30</td>
-                      <td class="i">20</td>
-                      <td class="i">550</td>
-                      <td class="i">556</td>
-                      <td class="i">5555</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- sweetalrt -->
-                <script
-                  src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.22/sweetalert2.min.js"
-                  integrity="sha512-pQdCIGAWAwzEHgw7boqX3wRNUqyaj7ta8qHsZ2yZtJofKqwSsh98Q+NJn96MAYCMcMnoZhdUo771JzaJCbrJMg=="
-                  crossorigin="anonymous"
-                  referrerpolicy="no-referrer"
-                ></script>
-                <script>
-                  function blockAlert() {
-                    Swal.fire({
-                      html:
-                        '<h5 class="swal2-title">   هل أنت متأكد من حذف المراحله؟ </h5>' +
-                        '<p class="swal2-html-container">  </p>',
-
-                      showCancelButton: true,
-                      focusConfirm: false,
-                      confirmButtonText: "تأكيد الحذف",
-                      confirmButtonAriaLabel: "Thumbs up, great!",
-                      cancelButtonText: "الغاء",
-                      cancelButtonAriaLabel: "Thumbs down",
-                    });
-                  }
-                </script>
-                <!-- sweetalrt -->
-
-                <script>
-                  $(document).ready(function () {
-                    $("#table tbody").on("click", "tr", function () {
-                      $(this).toggleClass("selected");
-                    });
-                  });
-                </script>
+              <div class="form-group">
+                <label for="">*اسم الصلاحيه</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="اكتب هنا"
+                />
               </div>
-            </div>
+
+              <button type="submit" class="btn PrimaryButton">اضافة</button>
+            </form>
           </div>
         </section>
         <!-- ======= End Content ======= -->
-            <!--start footer -->
-            <div class="end-page">
-              <div class="made">
-                <div class="text-footer">
-                  <div class="alltet">
-                    <p>كل الحقوق محفوظة@شفيعا 2022</p>
-                    <p>بدعم من اوقاف الضحيان</p>
-                    <img src="media/logo-preview.png" alt="" />
-                  </div>
-    
-                  <p>
-                    Made with by <img src="mida/hurt.png" alt="" /><a
-                      href="https://crazyideaco.com/"
-                      >Crazy Idea</a
-                    >
-                  </p>
-                </div>
+        <!--start footer -->
+        <div class="end-page">
+          <div class="made">
+            <div class="text-footer">
+              <div class="alltet">
+                <p>كل الحقوق محفوظة@شفيعا 2022</p>
+                <p>بدعم من اوقاف الضحيان</p>
+                <img src="media/logo-preview.png" alt="" />
               </div>
+
+              <p>
+                Made with by <img src="mida/hurt.png" alt="" /><a
+                  href="https://crazyideaco.com/"
+                  >Crazy Idea</a
+                >
+              </p>
             </div>
-            <!--end footer -->
-          </section>
+          </div>
+        </div>
+        <!--end footer -->
+      </section>
       <!-- ======= Main ======= -->
     </div>
     <!-- ? ======= footer =========== -->

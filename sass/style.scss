@@ -276,6 +276,7 @@ table tbody tr td {
     background-color: #fff;
     padding: 5rem 1rem 0;
      min-height: 100vh;
+     margin-bottom: 100px;
     // height: 100%;
 
     .title_section {
@@ -2982,6 +2983,46 @@ h3.AS {
 .date .form-group {
   width: 100%;
 }
-
+.end-page {
+  background-color: rgb(236, 234, 231);
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 15% );
+}
+.text-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  p{
+    font-family: "bold";
+    margin-bottom: 0;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+.alltet {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  img {
+    width: 6%;
+  }
+}
+.all-rolues {
+  margin-bottom: 90px;
+  padding: 1rem;
+  font-family: 'regular';
+  td {
+    border-left: 1px solid #00000030;
+    width: 20%;
+  }
+  table {
+    border: 1px solid #00000030;
+  }
+}
 @import "./_responsive.scss";
 @import "./_layout.scss";
