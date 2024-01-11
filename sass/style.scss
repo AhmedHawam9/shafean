@@ -3046,8 +3046,13 @@ svg.svg-inline--fa.fa-pen-to-square.edit-jop {
 table.table.job {
   font-family: 'regular';
 }
-table.table.premations {
+table.table {
   font-family: "regular";
+}
+.all-permisson {
+  font-family: "regular";
+  display: flex;
+  justify-content: space-between;
 }
 @import "./_responsive.scss";
 @import "./_layout.scss";
