@@ -272,11 +272,18 @@
   justify-content: center;
 }
 .alltet {
-  flex-wrap: wrap;
-  justify-content: center;
+display: block;
+  gap: unset;
+  p{
+    font-size: 0.7rem;
+  }
 }
+
 .alltet img {
   width: 19%;
+}
+.text-footer p {
+  font-size: 0.7rem;
 }
 }
 

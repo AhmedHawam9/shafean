@@ -2989,6 +2989,8 @@ h3.AS {
   position: fixed;
   bottom: 0;
   width: calc(100% - 15% );
+  // margin-inline-start: 15%;
+
 }
 .text-footer {
   display: flex;
@@ -3013,6 +3015,13 @@ h3.AS {
     width: 6%;
   }
 }
+.slogn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
 .all-rolues {
   margin-bottom: 90px;
   padding: 1rem;
@@ -3027,6 +3036,18 @@ h3.AS {
 }
 .all-permisson {
   font-family: "regular"
+}
+svg.svg-inline--fa.fa-trash-can.delet-jop {
+  color: red;
+}
+svg.svg-inline--fa.fa-pen-to-square.edit-jop {
+  color: #06797e;
+}
+table.table.job {
+  font-family: 'regular';
+}
+table.table.premations {
+  font-family: "regular";
 }
 @import "./_responsive.scss";
 @import "./_layout.scss";
